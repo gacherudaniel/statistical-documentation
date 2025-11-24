@@ -11,6 +11,7 @@ import { Timeliness } from "./sections/Timeliness";
 import { Accessibility } from "./sections/Accessibility";
 import { Coherence } from "./sections/Coherence";
 import { References } from "./sections/References";
+import { CPIContent } from "./products/CPIContent";
 
 export type SectionKey =
   | "general"
@@ -101,40 +102,10 @@ export default function KNBSQualityReport() {
                 />
               </>
             ) : selectedProductId === "cpi" ? (
-              <>
-                {/* CPI Quality Report Content */}
-                <div className="bg-white rounded-lg shadow-sm border p-6">
-                  <h2 className="text-xl font-bold text-knbs-600 mb-4">
-                    CPI Consumer Price Index - Quality Report
-                  </h2>
-                  <p className="text-gray-700 mb-4">
-                    This is the quality report for the Consumer Price Index
-                    (CPI).
-                  </p>
-
-                  <div className="bg-knbs-50 border-l-4 border-knbs-500 p-4">
-                    <h3 className="font-semibold text-knbs-700 mb-2">
-                      Overview
-                    </h3>
-                    <p className="text-sm text-gray-700">
-                      The Consumer Price Index measures the average change over
-                      time in the prices paid by urban consumers for a market
-                      basket of consumer goods and services.
-                    </p>
-                  </div>
-                </div>
-
-                {/* You can add CPI-specific sections here */}
-                <GeneralInfo
-                  isOpen={expandedSections.general}
-                  onToggle={toggleSection}
-                />
-                <Relevance
-                  isOpen={expandedSections.relevance}
-                  onToggle={toggleSection}
-                />
-                {/* Add more CPI-specific sections as needed */}
-              </>
+              <CPIContent
+                expandedSections={expandedSections}
+                onToggle={toggleSection}
+              />
             ) : null}
           </div>
         </div>
