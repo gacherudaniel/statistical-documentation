@@ -70,7 +70,7 @@ export function Timeliness({ isOpen, onToggle }: TimelinessProps) {
                         <td className="px-4 py-2">1-15 Jan</td>
                         <td className="px-4 py-2">31 January 2025</td>
                         <td className="px-4 py-2 text-center">
-                          <span className="inline-block px-2 py-1 text-xs rounded bg-green-100 text-green-700">
+                          <span className="inline-block px-2 py-1 text-xs rounded bg-knbs-100 text-knbs-700">
                             Published
                           </span>
                         </td>
@@ -80,7 +80,7 @@ export function Timeliness({ isOpen, onToggle }: TimelinessProps) {
                         <td className="px-4 py-2">1-15 Feb</td>
                         <td className="px-4 py-2">28 February 2025</td>
                         <td className="px-4 py-2 text-center">
-                          <span className="inline-block px-2 py-1 text-xs rounded bg-green-100 text-green-700">
+                          <span className="inline-block px-2 py-1 text-xs rounded bg-knbs-100 text-knbs-700">
                             Published
                           </span>
                         </td>
@@ -90,7 +90,7 @@ export function Timeliness({ isOpen, onToggle }: TimelinessProps) {
                         <td className="px-4 py-2">1-15 Mar</td>
                         <td className="px-4 py-2">31 March 2025</td>
                         <td className="px-4 py-2 text-center">
-                          <span className="inline-block px-2 py-1 text-xs rounded bg-green-100 text-green-700">
+                          <span className="inline-block px-2 py-1 text-xs rounded bg-knbs-100 text-knbs-700">
                             Published
                           </span>
                         </td>
@@ -100,7 +100,7 @@ export function Timeliness({ isOpen, onToggle }: TimelinessProps) {
                         <td className="px-4 py-2">1-15 Apr</td>
                         <td className="px-4 py-2">30 April 2025</td>
                         <td className="px-4 py-2 text-center">
-                          <span className="inline-block px-2 py-1 text-xs rounded bg-green-100 text-green-700">
+                          <span className="inline-block px-2 py-1 text-xs rounded bg-knbs-100 text-knbs-700">
                             Published
                           </span>
                         </td>
@@ -110,7 +110,7 @@ export function Timeliness({ isOpen, onToggle }: TimelinessProps) {
                         <td className="px-4 py-2">1-15 May</td>
                         <td className="px-4 py-2">30 May 2025</td>
                         <td className="px-4 py-2 text-center">
-                          <span className="inline-block px-2 py-1 text-xs rounded bg-amber-100 text-amber-700">
+                          <span className="inline-block px-2 py-1 text-xs rounded bg-knbs-200 text-knbs-800">
                             Scheduled
                           </span>
                         </td>
@@ -139,32 +139,28 @@ export function Timeliness({ isOpen, onToggle }: TimelinessProps) {
               </p>
 
               <div className="grid grid-cols-3 gap-4">
-                <div className="bg-green-50 p-4 rounded border border-green-200">
-                  <p className="text-xs text-green-600 uppercase mb-1">
+                <div className="bg-knbs-50 p-4 rounded border border-knbs-200">
+                  <p className="text-xs text-knbs-600 uppercase mb-1">
                     On-time Releases (2024)
                   </p>
-                  <p className="text-3xl font-bold text-green-700">12/12</p>
-                  <p className="text-xs text-green-600 mt-1">
-                    100% punctuality
-                  </p>
+                  <p className="text-3xl font-bold text-knbs-700">12/12</p>
+                  <p className="text-xs text-knbs-600 mt-1">100% punctuality</p>
                 </div>
-                <div className="bg-blue-50 p-4 rounded border border-blue-200">
-                  <p className="text-xs text-blue-600 uppercase mb-1">
+                <div className="bg-knbs-100 p-4 rounded border border-knbs-300">
+                  <p className="text-xs text-knbs-700 uppercase mb-1">
                     Average Lead Time
                   </p>
-                  <p className="text-3xl font-bold text-blue-700">25</p>
-                  <p className="text-xs text-blue-600 mt-1">
+                  <p className="text-3xl font-bold text-knbs-800">25</p>
+                  <p className="text-xs text-knbs-700 mt-1">
                     Days from month end
                   </p>
                 </div>
-                <div className="bg-purple-50 p-4 rounded border border-purple-200">
-                  <p className="text-xs text-purple-600 uppercase mb-1">
+                <div className="bg-knbs-200 p-4 rounded border border-knbs-400">
+                  <p className="text-xs text-knbs-800 uppercase mb-1">
                     Pre-announcement
                   </p>
-                  <p className="text-3xl font-bold text-purple-700">1 Yr</p>
-                  <p className="text-xs text-purple-600 mt-1">
-                    Advance calendar
-                  </p>
+                  <p className="text-3xl font-bold text-knbs-900">1 Yr</p>
+                  <p className="text-xs text-knbs-800 mt-1">Advance calendar</p>
                 </div>
               </div>
 

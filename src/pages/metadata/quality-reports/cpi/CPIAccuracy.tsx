@@ -2,6 +2,7 @@
 import type { SectionKey } from "../QualityReport";
 import { SectionHeader } from "../common/SectionHeader";
 import { SubSection } from "../common/SubSection";
+import { Smartphone, CheckCircle, BarChart3, Megaphone } from "lucide-react";
 
 interface AccuracyProps {
   isOpen: boolean;
@@ -214,7 +215,7 @@ export function Accuracy({ isOpen, onToggle }: AccuracyProps) {
                 <div className="flex items-center justify-between mb-4">
                   <div className="text-center flex-1">
                     <div className="w-16 h-16 bg-knbs-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <span className="text-2xl">📱</span>
+                      <Smartphone className="w-8 h-8 text-knbs-600" />
                     </div>
                     <p className="text-xs font-semibold text-gray-700">
                       Field Collection
@@ -224,7 +225,7 @@ export function Accuracy({ isOpen, onToggle }: AccuracyProps) {
                   <div className="text-knbs-400 text-2xl">→</div>
                   <div className="text-center flex-1">
                     <div className="w-16 h-16 bg-knbs-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <span className="text-2xl">✓</span>
+                      <CheckCircle className="w-8 h-8 text-knbs-600" />
                     </div>
                     <p className="text-xs font-semibold text-gray-700">
                       Data Validation
@@ -234,7 +235,7 @@ export function Accuracy({ isOpen, onToggle }: AccuracyProps) {
                   <div className="text-knbs-400 text-2xl">→</div>
                   <div className="text-center flex-1">
                     <div className="w-16 h-16 bg-knbs-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <span className="text-2xl">📊</span>
+                      <BarChart3 className="w-8 h-8 text-knbs-600" />
                     </div>
                     <p className="text-xs font-semibold text-gray-700">
                       Index Compilation
@@ -244,7 +245,7 @@ export function Accuracy({ isOpen, onToggle }: AccuracyProps) {
                   <div className="text-knbs-400 text-2xl">→</div>
                   <div className="text-center flex-1">
                     <div className="w-16 h-16 bg-knbs-500 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <span className="text-2xl text-white">📢</span>
+                      <Megaphone className="w-8 h-8 text-white" />
                     </div>
                     <p className="text-xs font-semibold text-gray-700">
                       Publication

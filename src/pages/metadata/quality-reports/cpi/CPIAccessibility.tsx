@@ -8,6 +8,12 @@ import {
   Building2,
   Database,
   Download,
+  Globe,
+  BookOpen,
+  Calendar,
+  Clock,
+  BarChart3,
+  Search,
 } from "lucide-react";
 
 interface AccessibilityProps {
@@ -66,7 +72,9 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
               {/* Online Access */}
               <div>
                 <h5 className="font-medium text-knbs-700 mb-3 flex items-center gap-2">
-                  <span className="bg-knbs-100 p-1.5 rounded">🌐</span>
+                  <div className="bg-knbs-100 p-1.5 rounded">
+                    <Globe className="text-knbs-600" size={16} />
+                  </div>
                   Online Resources
                 </h5>
 
@@ -157,7 +165,9 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
               {/* Physical Access */}
               <div>
                 <h5 className="font-medium text-knbs-700 mb-3 flex items-center gap-2">
-                  <span className="bg-knbs-100 p-1.5 rounded">📚</span>
+                  <div className="bg-knbs-100 p-1.5 rounded">
+                    <BookOpen className="text-knbs-600" size={16} />
+                  </div>
                   Physical Access Points
                 </h5>
 
@@ -222,17 +232,23 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
                 </h5>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <p className="text-sm font-medium text-gray-800 mb-2">
-                      📅 Publication Date
-                    </p>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Calendar className="text-knbs-600" size={16} />
+                      <p className="text-sm font-medium text-gray-800">
+                        Publication Date
+                      </p>
+                    </div>
                     <p className="text-sm text-gray-700">
                       Within <strong>15 days</strong> after reference month
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-gray-800 mb-2">
-                      ⏰ Release Time
-                    </p>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Clock className="text-knbs-600" size={16} />
+                      <p className="text-sm font-medium text-gray-800">
+                        Release Time
+                      </p>
+                    </div>
                     <p className="text-sm text-gray-700">
                       <strong>9:00 AM EAT</strong> on publication day
                     </p>
@@ -261,9 +277,12 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded border border-gray-200">
-                  <h5 className="font-medium text-gray-800 mb-2 text-sm">
-                    📄 Monthly Bulletin
-                  </h5>
+                  <div className="flex items-center gap-2 mb-2">
+                    <FileText className="text-gray-600" size={16} />
+                    <h5 className="font-medium text-gray-800 text-sm">
+                      Monthly Bulletin
+                    </h5>
+                  </div>
                   <ul className="text-sm text-gray-700 space-y-1">
                     <li>• Index numbers by COICOP division</li>
                     <li>• Month-on-month changes</li>
@@ -273,9 +292,12 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
                 </div>
 
                 <div className="bg-gray-50 p-4 rounded border border-gray-200">
-                  <h5 className="font-medium text-gray-800 mb-2 text-sm">
-                    📊 Technical Notes
-                  </h5>
+                  <div className="flex items-center gap-2 mb-2">
+                    <BarChart3 className="text-gray-600" size={16} />
+                    <h5 className="font-medium text-gray-800 text-sm">
+                      Technical Notes
+                    </h5>
+                  </div>
                   <ul className="text-sm text-gray-700 space-y-1">
                     <li>• Methodology summary</li>
                     <li>• Weight structure</li>
@@ -285,9 +307,12 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
                 </div>
 
                 <div className="bg-gray-50 p-4 rounded border border-gray-200">
-                  <h5 className="font-medium text-gray-800 mb-2 text-sm">
-                    📖 Annual Methodology Report
-                  </h5>
+                  <div className="flex items-center gap-2 mb-2">
+                    <BookOpen className="text-gray-600" size={16} />
+                    <h5 className="font-medium text-gray-800 text-sm">
+                      Annual Methodology Report
+                    </h5>
+                  </div>
                   <ul className="text-sm text-gray-700 space-y-1">
                     <li>• Detailed methodology</li>
                     <li>• Quality procedures</li>
@@ -297,9 +322,12 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
                 </div>
 
                 <div className="bg-gray-50 p-4 rounded border border-gray-200">
-                  <h5 className="font-medium text-gray-800 mb-2 text-sm">
-                    🔍 Quality Report
-                  </h5>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Search className="text-gray-600" size={16} />
+                    <h5 className="font-medium text-gray-800 text-sm">
+                      Quality Report
+                    </h5>
+                  </div>
                   <ul className="text-sm text-gray-700 space-y-1">
                     <li>• Quality dimensions assessment</li>
                     <li>• Data sources</li>

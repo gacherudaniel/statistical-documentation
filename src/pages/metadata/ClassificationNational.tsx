@@ -51,8 +51,7 @@ export function ClassificationNational() {
           version: "Rev. 1 (2023)",
           basedOn: "ISIC Rev. 4",
           link: "https://kesic.labourmarket.go.ke/kesic-classic-segments/",
-          downloadLink:
-            "https://www.labour.go.ke/sites/default/files/2022-10/PRINT-COPY-OF-KESIC-STANDARD.pdf",
+          
         },
       ],
     },

@@ -160,11 +160,11 @@ export function ClassificationInternational() {
           link: "https://unstats.un.org/unsd/nationalaccount/sna.asp",
         },
         {
-          name: "International Classification for Health Accounts",
-          acronym: "ICHA",
+          name: "International Classification of Activities for Time-Use Statistics 2016",
+          acronym: "ICATUS 2016",
           description:
             "A framework for the production of health accounts and provides a standard for reporting expenditure on health both internationally and nationally.",
-          link: "https://www.who.int/health-accounts/methodology/sha2011.pdf",
+          link: "https://unstats.un.org/unsd/classifications/Family/Detail/2083",
         },
       ],
     },
