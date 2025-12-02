@@ -179,7 +179,7 @@ export default function KNBSQualityReport() {
         <div className="max-w-7xl mx-auto px-4 py-2">
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <Home size={14} />
-            <span>/</span>
+            <span></span>
             <a href="#" className="text-teal-700 hover:underline">
               Quality Reports
             </a>
