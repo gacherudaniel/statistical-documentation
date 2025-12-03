@@ -1,0 +1,2959 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kenya Statistical Production Model",
+    "section": "",
+    "text": "0.1 Overview\nStatistical activities are grouped into 8 Phases with supporting sub-processes that support statistical production.\nThis documentation covers:\nNavigate through the chapters using the sidebar to explore each process in detail.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Kenya Statistical Production Model",
+    "section": "",
+    "text": "Introduction: About KNBS, GSBPM framework, and supporting models\nProcess 1: Specify needs\nProcess 2: Design\nProcess 3: Build\nProcess 4: Collect\nProcess 5: Process\nProcess 6: Analyse\nProcess 7: Disseminate\nProcess 8: Evaluate",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
+  },
+  {
+    "objectID": "Introduction/About KNBS.html",
+    "href": "Introduction/About KNBS.html",
+    "title": "2  About Kenya National Bureau of Statistics",
+    "section": "",
+    "text": "The Kenya National Bureau of Statistics (KNBS) is eatablished under the Statistics Act, 2006 as the principal government agency for collection, compilation, analysis, publication and dissemination of statistical information, and the co-ordination of the National Statistical System, and for connected purposes. Among its functions is establishing standards and ensuring the use of best practices and methods in the production and dissemination of statistical information across the National Statistical System (NSS).\nThis role involved the development of appropriate documents for standardization of statistic production. Key among these, is guiding documents on the production process of statistics.\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About Kenya National Bureau of Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "Introduction/GSBPM.html",
+    "href": "Introduction/GSBPM.html",
+    "title": "3  Generic Statistical Business Process Model",
+    "section": "",
+    "text": "Generic Statistical Business Process Model (GSBPM) is a Set of pre-defined processes, set together to reflect the entire statistical production. It was first developed in 2008 by a collaboration between United Nations Economic Commission for Europe (UNECE)/Eurostat/Organization for Economic Co-operation and Development (OECD) through the High Level Group for the Modernisation of Official Statistics (HLG-MOS). The Current version 5.1 was released in 2019.\nThe generic framework is applicable to a wide range of statistical activities and therefore statistical organizations can customize the model to align with their specific needs, priorities, and constraints. The generic framework has been customized to the Kenyan context through tailoring the processes, methodologies, and tools outlined in the GSBPM to accommodate specific data requirements, legal frameworks, cultural considerations, and resource constraints.\nKNBS welcomes all producers of statistics to adopt this framework as a standard guide in the statistical production process.\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Generic Statistical Business Process Model</span>"
+    ]
+  },
+  {
+    "objectID": "Introduction/Supporting Frameworks.html",
+    "href": "Introduction/Supporting Frameworks.html",
+    "title": "4  Supporting Models and Frameworks",
+    "section": "",
+    "text": "This includes the overarching processes whcih are the framework that are needed to support the entire statistical production such as such as Quality Management, Metadata Management and Data management.These include:\n\nKenya Statistics Quality Assurance Framework (KeSQAF)\nGeneric Activity Model for Statistical Organizations (GAMSO)\nGeneric Statistical Information Model (GISM)\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Supporting Models and Frameworks</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.html",
+    "href": "Process1/1.html",
+    "title": "5  1 Specify needs",
+    "section": "",
+    "text": "Phase\n\n\nThis phase is triggered when a need for new statistics is identified or feedback about current statistics initiates a review. It includes all activities associated with engaging stakeholders to identify their detailed statistical needs (current or future), proposing high level solution options and preparing a business case to meet these needs.\nThe “Specify Needs” phase is broken down into six sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative\n\n1.1 Identify needs\n1.2 Consult and confirm needs\n1.3 Establish output objectives\n1.4 Identify concepts\n1.5 Check data avaialability\n1.6 Prepare and submit business case\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1 Specify needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.1.html",
+    "href": "Process1/1.1.html",
+    "title": "6  1.1 Identify needs",
+    "section": "",
+    "text": "6.1 Input\nThis sub-process includes the initial investigation and identification of a statistical need. It may be triggered by several factors such as a new information request or an environmental change such as a reduced budget, action plans from evaluations of previous iterations of the process or other processes that might provide input to this sub-process. It also includes consideration of best practices amongst other (national and international) statistical organisations producing similar data and the methods used by those organisations.",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.1 Identify needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.1.html#input",
+    "href": "Process1/1.1.html#input",
+    "title": "6  1.1 Identify needs",
+    "section": "",
+    "text": "New data/information requests\nReports from previous evaluations",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.1 Identify needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.1.html#output",
+    "href": "Process1/1.1.html#output",
+    "title": "6  1.1 Identify needs",
+    "section": "6.2 Output",
+    "text": "6.2 Output\n\nNew Identified statistical need.",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.1 Identify needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.1.html#documentation-and-tools",
+    "href": "Process1/1.1.html#documentation-and-tools",
+    "title": "6  1.1 Identify needs",
+    "section": "6.3 Documentation and Tools",
+    "text": "6.3 Documentation and Tools\n-Statistical guidelines",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.1 Identify needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.1.html#latest-update",
+    "href": "Process1/1.1.html#latest-update",
+    "title": "6  1.1 Identify needs",
+    "section": "6.4 Latest update",
+    "text": "6.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.1 Identify needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.1.html#verified",
+    "href": "Process1/1.1.html#verified",
+    "title": "6  1.1 Identify needs",
+    "section": "6.5 Verified",
+    "text": "6.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.1 Identify needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.2.html",
+    "href": "Process1/1.2.html",
+    "title": "7  1.2 Consult and confirm needs",
+    "section": "",
+    "text": "7.1 Input\nThis sub-process focuses on consulting with the internal and external stakeholders and confirming in detail their statistical needs. A good understanding of user needs is required so that Producers know not only what it is expected to deliver, but also when, how, and, perhaps most importantly, why. For the second and subsequent iterations of this phase, the main focus will be on determining whether previously identified needs have changed. This detailed understanding of user needs is the critical part of this sub-process.",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.2 Consult and confirm needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.2.html#input",
+    "href": "Process1/1.2.html#input",
+    "title": "7  1.2 Consult and confirm needs",
+    "section": "",
+    "text": "Output from Sub-process 1.1\nNew data/information requests\nReports from previous evaluations",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.2 Consult and confirm needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.2.html#output",
+    "href": "Process1/1.2.html#output",
+    "title": "7  1.2 Consult and confirm needs",
+    "section": "7.2 Output",
+    "text": "7.2 Output\n\nTo what extent have stakeholders been identified and included in discussions about statistical needs?\nTo what extent has relevant supporting documentation been gathered?",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.2 Consult and confirm needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.2.html#documentation-and-tools",
+    "href": "Process1/1.2.html#documentation-and-tools",
+    "title": "7  1.2 Consult and confirm needs",
+    "section": "7.3 Documentation and Tools",
+    "text": "7.3 Documentation and Tools\n-Statistical methods and standards -Applicable procedures for new data requests -Statistical guidelines",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.2 Consult and confirm needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.2.html#latest-update",
+    "href": "Process1/1.2.html#latest-update",
+    "title": "7  1.2 Consult and confirm needs",
+    "section": "7.4 Latest update",
+    "text": "7.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.2 Consult and confirm needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.2.html#verified",
+    "href": "Process1/1.2.html#verified",
+    "title": "7  1.2 Consult and confirm needs",
+    "section": "7.5 Verified",
+    "text": "7.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.2 Consult and confirm needs</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.3.html",
+    "href": "Process1/1.3.html",
+    "title": "8  1.3 Establish output objectives",
+    "section": "",
+    "text": "8.1 Input\nThis sub-process identifies the statistical output objectives that are required to meet the user needs as identified in sub-process 1.2 . It includes agreeing on the suitability of the proposed outputs and their quality measures with users. Legal frameworks and available resources are likely to cause constraints when establishing output objectives.",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.3 Establish output objectives</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.3.html#input",
+    "href": "Process1/1.3.html#input",
+    "title": "8  1.3 Establish output objectives",
+    "section": "",
+    "text": "Outputs from sub-process 1.2\nAgreement with relevant institutions\nstatistical practices",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.3 Establish output objectives</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.3.html#output",
+    "href": "Process1/1.3.html#output",
+    "title": "8  1.3 Establish output objectives",
+    "section": "8.2 Output",
+    "text": "8.2 Output\n\nDraft of statistical objectives\nQuality measures",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.3 Establish output objectives</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.3.html#documentation-and-tools",
+    "href": "Process1/1.3.html#documentation-and-tools",
+    "title": "8  1.3 Establish output objectives",
+    "section": "8.3 Documentation and Tools",
+    "text": "8.3 Documentation and Tools\n\nExisting legal frameworks\nStatistical strategies\nchecklist -Statistical guidelines",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.3 Establish output objectives</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.3.html#latest-update",
+    "href": "Process1/1.3.html#latest-update",
+    "title": "8  1.3 Establish output objectives",
+    "section": "8.4 Latest update",
+    "text": "8.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.3 Establish output objectives</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.3.html#verified",
+    "href": "Process1/1.3.html#verified",
+    "title": "8  1.3 Establish output objectives",
+    "section": "8.5 Verified",
+    "text": "8.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.3 Establish output objectives</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.4.html",
+    "href": "Process1/1.4.html",
+    "title": "9  1.4 Identify concepts",
+    "section": "",
+    "text": "9.1 Refer to sub-process 2.2\nThis sub-process clarifies the required concepts to be measured from the point of view of the users. Though the concepts identified might not align with existing statistical standards, including the choice or definition of the statistical and other concepts and variables to be used, it be should be undertaken during design variable descriptions",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>1.4 Identify concepts</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.4.html#input",
+    "href": "Process1/1.4.html#input",
+    "title": "9  1.4 Identify concepts",
+    "section": "9.2 Input",
+    "text": "9.2 Input\n\nStatistical guidelines\nExisting definitions and metadata handbook",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>1.4 Identify concepts</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.4.html#output",
+    "href": "Process1/1.4.html#output",
+    "title": "9  1.4 Identify concepts",
+    "section": "9.3 Output",
+    "text": "9.3 Output\n\nAligned concepts and variables to the statistical need",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>1.4 Identify concepts</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.4.html#documentation-and-tools",
+    "href": "Process1/1.4.html#documentation-and-tools",
+    "title": "9  1.4 Identify concepts",
+    "section": "9.4 Documentation and Tools",
+    "text": "9.4 Documentation and Tools\n\nStatistical guidelines\nExisting definitions and metadata handbook\nStatistical concepts",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>1.4 Identify concepts</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.4.html#latest-update",
+    "href": "Process1/1.4.html#latest-update",
+    "title": "9  1.4 Identify concepts",
+    "section": "9.5 Latest update",
+    "text": "9.5 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>1.4 Identify concepts</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.4.html#verified",
+    "href": "Process1/1.4.html#verified",
+    "title": "9  1.4 Identify concepts",
+    "section": "9.6 Verified",
+    "text": "9.6 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>1.4 Identify concepts</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.5.html",
+    "href": "Process1/1.5.html",
+    "title": "10  1.5 Check data availability",
+    "section": "",
+    "text": "10.1 Input\nThis sub-process checks whether current sources of data could meet user requirements and the conditions under which they would be available including any restrictions on their use. An assessment of possible alternatives including research into potential administrative or other non-statistical sources of data, to:\ni.Determine whether they would be suitable for use for statistical purposes;\nii.Assess the division of responsibilities between data providers and the statistical organisation; iii.Check necessary ICT resources as well as any formal agreements with data providers for accessing and sharing the data.\nAfter existing sources have been assessed, a strategy for filling any remaining gaps in the data requirement is prepared. This may include identifying possible partnerships with data holders. This sub-process also includes a more general assessment of the legal framework in which data would be collected and used and may therefore identify proposals for changes to existing legislation or the introduction of a new legal framework",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>1.5 Check data availability</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.5.html#input",
+    "href": "Process1/1.5.html#input",
+    "title": "10  1.5 Check data availability",
+    "section": "",
+    "text": "ICT Systems\nData collection instruments’ guidelines",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>1.5 Check data availability</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.5.html#output",
+    "href": "Process1/1.5.html#output",
+    "title": "10  1.5 Check data availability",
+    "section": "10.2 Output",
+    "text": "10.2 Output\n\nReport on available data, limitations, and strategy",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>1.5 Check data availability</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.5.html#documentation-and-tools",
+    "href": "Process1/1.5.html#documentation-and-tools",
+    "title": "10  1.5 Check data availability",
+    "section": "10.3 Documentation and Tools",
+    "text": "10.3 Documentation and Tools\n\nLegal framework for the exercise\nStatistical guidelines\nRelevant checklists",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>1.5 Check data availability</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.5.html#latest-update",
+    "href": "Process1/1.5.html#latest-update",
+    "title": "10  1.5 Check data availability",
+    "section": "10.4 Latest update",
+    "text": "10.4 Latest update\n\nGo Back\n\n19th March 2024",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>1.5 Check data availability</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.5.html#verified",
+    "href": "Process1/1.5.html#verified",
+    "title": "10  1.5 Check data availability",
+    "section": "10.5 Verified",
+    "text": "10.5 Verified\ndate\nGo to Home page",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>1.5 Check data availability</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.6.html",
+    "href": "Process1/1.6.html",
+    "title": "11  1.6 Prepare and submit business case",
+    "section": "",
+    "text": "11.1 Input\nThis sub-process documents the findings of the other sub-processes in this phase in the form of a business for approval to implement the new or modified statistical business process. Such a business case needs to conform to the requirements of the approval body. This will include elements such as:\nThe business case describes options and makes recommendations, the benefits, costs, deliverables, time frame, budget, required technical and human resources, risk assessment and impact on stakeholders for each option.\nAfter the business case is prepared, it is submitted for approval to move to the next phase of the business process. Typically, the business case is reviewed and formally approved or disapproved by the appropriate persons/committee.",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>1.6 Prepare and submit business case</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.6.html#input",
+    "href": "Process1/1.6.html#input",
+    "title": "11  1.6 Prepare and submit business case",
+    "section": "",
+    "text": "Draft of the business case, details on data to be collected",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>1.6 Prepare and submit business case</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.6.html#output",
+    "href": "Process1/1.6.html#output",
+    "title": "11  1.6 Prepare and submit business case",
+    "section": "11.2 Output",
+    "text": "11.2 Output\n\nBusiness case, confirmation on the details of the survey like the budget and resources",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>1.6 Prepare and submit business case</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.6.html#documentation-and-tools",
+    "href": "Process1/1.6.html#documentation-and-tools",
+    "title": "11  1.6 Prepare and submit business case",
+    "section": "11.3 Documentation and Tools",
+    "text": "11.3 Documentation and Tools\n\nLegal framework for carrying out the survey",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>1.6 Prepare and submit business case</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.6.html#latest-update",
+    "href": "Process1/1.6.html#latest-update",
+    "title": "11  1.6 Prepare and submit business case",
+    "section": "11.4 Latest update",
+    "text": "11.4 Latest update\n\nGo Back\n\n19th March 2024",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>1.6 Prepare and submit business case</span>"
+    ]
+  },
+  {
+    "objectID": "Process1/1.6.html#verified",
+    "href": "Process1/1.6.html#verified",
+    "title": "11  1.6 Prepare and submit business case",
+    "section": "11.5 Verified",
+    "text": "11.5 Verified\ndate\nGo to Home page",
+    "crumbs": [
+      "Process 1: Specify Needs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>1.6 Prepare and submit business case</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.html",
+    "href": "Process2/2.html",
+    "title": "12  2 Design",
+    "section": "",
+    "text": "Phase\n\n\nThis phase describes the development and design activities, and any associated practical research work needed to define the statistical outputs, concepts, methodologies, collection instruments and operational processes. It includes all the design elements needed to define or refine the statistical products or services identified in the business case. It also specifies all relevant metadata, ready for use later in the business process, as well as quality assurance procedures. For statistical outputs produced regularly, this phase usually occurs for the first iteration and whenever improvement actions are identified in the “Evaluate” phase of a previous iteration.\nDesign activities make substantial use of international and national standards to reduce the length and cost of the design process and enhance the comparability and usability of outputs. Organisations are encouraged to reuse or adapt design elements from existing processes and to consider geospatial aspects of data in the design to enhance the usability and value of the statistical information. Additionally, the outputs of design processes may form the basis for future standards at the organisational, national or international levels.\nThe “Design” phase is broken down into six sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative.\n\n2.1 Design outputs\n2.2 Design variable descriptions\n2.3 Design collection\n2.4 Design frame and sample\n2.5 Design processing and analysis\n2.6 Design production systems and workflow\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>2 Design</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.1.html",
+    "href": "Process2/2.1.html",
+    "title": "13  2.1 Design outputs",
+    "section": "",
+    "text": "13.1 Input\nThis sub-process contains the detailed design of the statistical outputs, products and services to be produced. It also includes the related development work and preparation of the systems and tools used in the “Disseminate” phase. Processes governing access to any confidential outputs are also designed here. Outputs should be designed to follow existing standards wherever possible, so inputs to this process may include metadata from similar or previous collections (including extractions from statistical, administrative, geospatial and other non-statistical registers and databases), international standards, and information about practices in other statistical organisations from sub-process 1.1, Outputs may also be designed in partnership with other interested bodies, particularly if they are considered to be joint outputs, or they will be disseminated by another organisation.",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>2.1 Design outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.1.html#input",
+    "href": "Process2/2.1.html#input",
+    "title": "13  2.1 Design outputs",
+    "section": "",
+    "text": "Approved business case\nBest national and international statistical standards",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>2.1 Design outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.1.html#output",
+    "href": "Process2/2.1.html#output",
+    "title": "13  2.1 Design outputs",
+    "section": "13.2 Output",
+    "text": "13.2 Output\n\nSurvey design",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>2.1 Design outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.1.html#documentation-and-tools",
+    "href": "Process2/2.1.html#documentation-and-tools",
+    "title": "13  2.1 Design outputs",
+    "section": "13.3 Documentation and Tools",
+    "text": "13.3 Documentation and Tools\n\nStatistical guidelines and framework\nICT Inrastructure",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>2.1 Design outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.1.html#latest-update",
+    "href": "Process2/2.1.html#latest-update",
+    "title": "13  2.1 Design outputs",
+    "section": "13.4 Latest update",
+    "text": "13.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>2.1 Design outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.1.html#verified",
+    "href": "Process2/2.1.html#verified",
+    "title": "13  2.1 Design outputs",
+    "section": "13.5 Verified",
+    "text": "13.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>2.1 Design outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.2.html",
+    "href": "Process2/2.2.html",
+    "title": "14  2.2 Design variable descriptions",
+    "section": "",
+    "text": "14.1 Refer to sub-process 2.3\nThis sub-process defines the variables to be collected via the collection instrument, as well as any other variables that will be derived from them in sub-process 5.5, and any statistical or geospatial classifications that will be used. It is expected that existing national and international standards will be followed wherever possible. This sub-process may need to run in parallel with sub-process 2.3 , as the definition of the variables to be collected, and the choice of collection instruments may be interdependent to some degree. Preparation of metadata descriptions of collected and derived variables, and statistical and geospatial classification is a necessary precondition for subsequent phases.",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>2.2 Design variable descriptions</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.2.html#input",
+    "href": "Process2/2.2.html#input",
+    "title": "14  2.2 Design variable descriptions",
+    "section": "14.2 Input",
+    "text": "14.2 Input\n\nApproved business case\nStatistical standards",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>2.2 Design variable descriptions</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.2.html#output",
+    "href": "Process2/2.2.html#output",
+    "title": "14  2.2 Design variable descriptions",
+    "section": "14.3 Output",
+    "text": "14.3 Output\n\nVariables to be used",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>2.2 Design variable descriptions</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.2.html#documentation-and-tools",
+    "href": "Process2/2.2.html#documentation-and-tools",
+    "title": "14  2.2 Design variable descriptions",
+    "section": "14.4 Documentation and Tools",
+    "text": "14.4 Documentation and Tools\n\nStatistical guidelines and frameworks\nICT Infrastructure",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>2.2 Design variable descriptions</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.2.html#latest-update",
+    "href": "Process2/2.2.html#latest-update",
+    "title": "14  2.2 Design variable descriptions",
+    "section": "14.5 Latest update",
+    "text": "14.5 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>2.2 Design variable descriptions</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.2.html#verified",
+    "href": "Process2/2.2.html#verified",
+    "title": "14  2.2 Design variable descriptions",
+    "section": "14.6 Verified",
+    "text": "14.6 Verified\n\nGo Back\n\ndate\nGo to Home page",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>2.2 Design variable descriptions</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.3.html",
+    "href": "Process2/2.3.html",
+    "title": "15  2.3 Design collection",
+    "section": "",
+    "text": "15.1 Refer to sub-process 2.2\nThis sub-process determines the most appropriate collection instruments and methods which may depend on: i.The type of data collection (census, sample survey, or other), the collection unit type (enterprise, person, or other) and ii.The available sources of data.\nThe actual activities in this sub-process will vary according to the type of collection instrument required, which can include computer-assisted interviewing, paper questionnaires, administrative registers (e.g. by using existing service interfaces), data transfer methods, web-scraping technologies as well as technology for geospatial data. Direct or indirect use of administrative data may be introduced in the data collection mode for either controlling survey data or assisting it when capturing survey information.\nThis sub-process includes the design of the collection instruments, questions and response templates (in conjunction with the variables and statistical classifications designed in sub-process 2.2). It also includes the confirmation of any formal agreements. This sub-process is enabled by tools such as question libraries (to facilitate the reuse of questions and related attributes), questionnaire tools (to enable the quick and easy compilation of questions into formats suitable for cognitive testing) and agreement templates (to help standardise terms and conditions). This sub-process also includes the design of provider management systems that are specific to this business process.\nWhere statistical organisations do not collect data directly (i.e. a third party controls the collection and processing of the data), this sub-process may include the design of mechanisms to monitor the data and the metadata to assess the impacts of any change made by the third party.",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>2.3 Design collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.3.html#input",
+    "href": "Process2/2.3.html#input",
+    "title": "15  2.3 Design collection",
+    "section": "15.2 Input",
+    "text": "15.2 Input\n\nData collection instruments\nICT Systems\nVariables to be used.",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>2.3 Design collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.3.html#output",
+    "href": "Process2/2.3.html#output",
+    "title": "15  2.3 Design collection",
+    "section": "15.3 Output",
+    "text": "15.3 Output\n\nDesign of the collection instruments and management systems",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>2.3 Design collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.3.html#documentation-and-tools",
+    "href": "Process2/2.3.html#documentation-and-tools",
+    "title": "15  2.3 Design collection",
+    "section": "15.4 Documentation and Tools",
+    "text": "15.4 Documentation and Tools\n\nICT Infrastructure",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>2.3 Design collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.3.html#latest-update",
+    "href": "Process2/2.3.html#latest-update",
+    "title": "15  2.3 Design collection",
+    "section": "15.5 Latest update",
+    "text": "15.5 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>2.3 Design collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.3.html#verified",
+    "href": "Process2/2.3.html#verified",
+    "title": "15  2.3 Design collection",
+    "section": "15.6 Verified",
+    "text": "15.6 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>2.3 Design collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.4.html",
+    "href": "Process2/2.4.html",
+    "title": "16  2.4 Design frame and sample",
+    "section": "",
+    "text": "16.1 Refer to sub-process 4.1\nThis sub-process only applies to processes which involve data collection based on sampling, such as through statistical surveys. It identifies and specifies the population of interest, defines a sampling frame (and, where necessary, the register from which it is derived), and determines the most appropriate sampling criteria and methodology (which could include complete enumeration). Common sources for a sampling frame are administrative and statistical registers, censuses and information from other sample surveys. It may include geospatial data and classifications.\nThis sub-process describes how these sources can be combined if needed. Analysis of whether the frame covers the target population should be performed. A sampling plan should be made. The actual sample is created in sub-process 4.1 (Create frame and select sample), using the methodology specified in this sub-process.",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>2.4 Design frame and sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.4.html#input",
+    "href": "Process2/2.4.html#input",
+    "title": "16  2.4 Design frame and sample",
+    "section": "16.2 Input",
+    "text": "16.2 Input\n\nApproved business case\nStatistical Guidelines on sampling and frames",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>2.4 Design frame and sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.4.html#output",
+    "href": "Process2/2.4.html#output",
+    "title": "16  2.4 Design frame and sample",
+    "section": "16.3 Output",
+    "text": "16.3 Output\n\nSample",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>2.4 Design frame and sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.4.html#documentation-and-tools",
+    "href": "Process2/2.4.html#documentation-and-tools",
+    "title": "16  2.4 Design frame and sample",
+    "section": "16.4 Documentation and Tools",
+    "text": "16.4 Documentation and Tools\n\nApproved business case\nManagement of statistical registers -Statistical application",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>2.4 Design frame and sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.4.html#latest-update",
+    "href": "Process2/2.4.html#latest-update",
+    "title": "16  2.4 Design frame and sample",
+    "section": "16.5 Latest update",
+    "text": "16.5 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>2.4 Design frame and sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.4.html#verified",
+    "href": "Process2/2.4.html#verified",
+    "title": "16  2.4 Design frame and sample",
+    "section": "16.6 Verified",
+    "text": "16.6 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>2.4 Design frame and sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.5.html",
+    "href": "Process2/2.5.html",
+    "title": "17  2.5 Design processing and analysis",
+    "section": "",
+    "text": "17.1 Input\nThis sub-process designs the statistical processing methodology to be applied during the “Process” and “Analyse” phases. This can include among others, the specification of routines and rules for coding, editing and imputation which may vary based on the mode of data collection and source of data. This sub-process also includes the design of specifications for data integration from multiple data sources, validation of data and estimation. Statistical disclosure control methods are also designed here if they are specific to this business process.",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>2.5 Design processing and analysis</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.5.html#input",
+    "href": "Process2/2.5.html#input",
+    "title": "17  2.5 Design processing and analysis",
+    "section": "",
+    "text": "Data coding/Statistical applications\nApproved business case",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>2.5 Design processing and analysis</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.5.html#output",
+    "href": "Process2/2.5.html#output",
+    "title": "17  2.5 Design processing and analysis",
+    "section": "17.2 Output",
+    "text": "17.2 Output\n\nSurvey Methodology\nData validation systems",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>2.5 Design processing and analysis</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.5.html#documentation-and-tools",
+    "href": "Process2/2.5.html#documentation-and-tools",
+    "title": "17  2.5 Design processing and analysis",
+    "section": "17.3 Documentation and Tools",
+    "text": "17.3 Documentation and Tools\n\nApproved business case\nICT equipment",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>2.5 Design processing and analysis</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.5.html#latest-update",
+    "href": "Process2/2.5.html#latest-update",
+    "title": "17  2.5 Design processing and analysis",
+    "section": "17.4 Latest update",
+    "text": "17.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>2.5 Design processing and analysis</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.5.html#verified",
+    "href": "Process2/2.5.html#verified",
+    "title": "17  2.5 Design processing and analysis",
+    "section": "17.5 Verified",
+    "text": "17.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>2.5 Design processing and analysis</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.6.html",
+    "href": "Process2/2.6.html",
+    "title": "18  2.6 Design production systems and workflow",
+    "section": "",
+    "text": "18.1 Input\nThis sub-process determines the workflow from data collection to dissemination, taking an overview of all the processes required within the whole production process and ensuring that they fit together efficiently with no gaps or redundancies. Various systems and databases are needed throughout the process. The GSBPM can be used as the basis of the business architecture layer when a statistical organisation has an existing enterprise architecture in place. The design might be adjusted to fit the organization. A general principle is to reuse processes and technology across many statistical business processes, so existing production solutions (e.g. services, systems and databases) should be examined first, to determine whether they are fit for purpose for this specific production process, then, if any gaps are identified, new solutions should be designed. It also considers how staff will interact with systems and who will be responsible for what and when.",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>2.6 Design production systems and workflow</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.6.html#input",
+    "href": "Process2/2.6.html#input",
+    "title": "18  2.6 Design production systems and workflow",
+    "section": "",
+    "text": "Outputs from sub-process 2.5",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>2.6 Design production systems and workflow</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.6.html#output",
+    "href": "Process2/2.6.html#output",
+    "title": "18  2.6 Design production systems and workflow",
+    "section": "18.2 Output",
+    "text": "18.2 Output\n\nSurvey Methodology\nData validation systems",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>2.6 Design production systems and workflow</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.6.html#documentation-and-tools",
+    "href": "Process2/2.6.html#documentation-and-tools",
+    "title": "18  2.6 Design production systems and workflow",
+    "section": "18.3 Documentation and Tools",
+    "text": "18.3 Documentation and Tools\n\nData validation procedures\nICT infrastructure",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>2.6 Design production systems and workflow</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.6.html#latest-update",
+    "href": "Process2/2.6.html#latest-update",
+    "title": "18  2.6 Design production systems and workflow",
+    "section": "18.4 Latest update",
+    "text": "18.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>2.6 Design production systems and workflow</span>"
+    ]
+  },
+  {
+    "objectID": "Process2/2.6.html#verified",
+    "href": "Process2/2.6.html#verified",
+    "title": "18  2.6 Design production systems and workflow",
+    "section": "18.5 Verified",
+    "text": "18.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 2: Design",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>2.6 Design production systems and workflow</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.html",
+    "href": "Process3/3.html",
+    "title": "19  3 Build",
+    "section": "",
+    "text": "Phase\n\n\nThis phase builds and tests the production solution to the point where it is ready for use in the “live” environment. The outputs of the “Design” phase are assembled and configured in this phase to create the complete operational environment to run the process. New services are built by exception, created in response to gaps in the existing catalogue of services sourced from within the organisation and externally. These new services are constructed to be broadly reusable in alignment with the business architecture of the organisation where possible.\nFor statistical outputs produced on a regular basis, this phase usually occurs for the first iteration, following a review or a change in methodology or technology, rather than for every iteration. The phase is broken down into seven sub-processes , which are generally sequential, from left to right, but can also occur in parallel, and can be iterative.\nThe “Build” phase is broken down into seven sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative\n\n3.1 Reuse or build collection instruments\n3.2 Reuse or build processing and analysis components\n3.3 Build or build dissemination components\n3.4 Configure workflows\n3.5 Test production systems\n3.6 Test statistical business process\n3.7 Finalise production systems\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>3 Build</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.1.html",
+    "href": "Process3/3.1.html",
+    "title": "20  3.1 Reuse or build collection instruments",
+    "section": "",
+    "text": "20.1 Input\nThis sub-process describes the activities to build and reuse the collection instruments to be used during the “Collect” phase. The collection instruments are built based on the design specifications created during the “Design” phase. A collection may use one or more modes to receive the data (e.g., personal or telephone interviews; paper, electronic or web questionnaires; SDMX web services). Collection instruments may also be data extraction routines used to gather data from existing statistical or administrative registers (e.g., by using existing service interfaces). This subprocess also includes preparing and testing the contents and functioning of that collection instrument (e.g., cognitive testing of the questions in a questionnaire). It also includes the preparation of maps as well as translation of the collection instrument. It is recommended to consider the direct connection of collection instruments to a metadata system so that metadata can be more easily captured in the collection phase. Connecting metadata and data at the point of capture can save work in later phases. Capturing the metrics of data collection (paradata) is also an important consideration in this sub-process for calculating and analysing process quality indicators. The data collection instruments/CAPI software will guide data extraction routines through the right statistical analysis software or administrative registers that are used",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>3.1 Reuse or build collection instruments</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.1.html#input",
+    "href": "Process3/3.1.html#input",
+    "title": "20  3.1 Reuse or build collection instruments",
+    "section": "",
+    "text": "Outputs from Phase 1",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>3.1 Reuse or build collection instruments</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.1.html#output",
+    "href": "Process3/3.1.html#output",
+    "title": "20  3.1 Reuse or build collection instruments",
+    "section": "20.2 Output",
+    "text": "20.2 Output\n\nData collection instruments",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>3.1 Reuse or build collection instruments</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.1.html#documentation-and-tools",
+    "href": "Process3/3.1.html#documentation-and-tools",
+    "title": "20  3.1 Reuse or build collection instruments",
+    "section": "20.3 Documentation and Tools",
+    "text": "20.3 Documentation and Tools",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>3.1 Reuse or build collection instruments</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.1.html#latest-update",
+    "href": "Process3/3.1.html#latest-update",
+    "title": "20  3.1 Reuse or build collection instruments",
+    "section": "20.4 Latest update",
+    "text": "20.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>3.1 Reuse or build collection instruments</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.1.html#verified",
+    "href": "Process3/3.1.html#verified",
+    "title": "20  3.1 Reuse or build collection instruments",
+    "section": "20.5 Verified",
+    "text": "20.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>3.1 Reuse or build collection instruments</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.2.html",
+    "href": "Process3/3.2.html",
+    "title": "21  3.2 Reuse or build processing and analysis components",
+    "section": "",
+    "text": "21.1 Input\nThis sub-process describes the activities to reuse existing components or build new components needed for the “Process” and “Analyse” phases, as designed in the “Design” phase. Services may include data tabulation plans, data dissemination portals, dashboard functions and features, information services, transformation functions, geospatial data services, workflow frameworks, provider and metadata management services.",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>3.2 Reuse or build processing and analysis components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.2.html#output",
+    "href": "Process3/3.2.html#output",
+    "title": "21  3.2 Reuse or build processing and analysis components",
+    "section": "21.2 Output",
+    "text": "21.2 Output",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>3.2 Reuse or build processing and analysis components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.2.html#documentation-and-tools",
+    "href": "Process3/3.2.html#documentation-and-tools",
+    "title": "21  3.2 Reuse or build processing and analysis components",
+    "section": "21.3 Documentation and Tools",
+    "text": "21.3 Documentation and Tools",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>3.2 Reuse or build processing and analysis components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.2.html#latest-update",
+    "href": "Process3/3.2.html#latest-update",
+    "title": "21  3.2 Reuse or build processing and analysis components",
+    "section": "21.4 Latest update",
+    "text": "21.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>3.2 Reuse or build processing and analysis components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.2.html#verified",
+    "href": "Process3/3.2.html#verified",
+    "title": "21  3.2 Reuse or build processing and analysis components",
+    "section": "21.5 Verified",
+    "text": "21.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>3.2 Reuse or build processing and analysis components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.3.html",
+    "href": "Process3/3.3.html",
+    "title": "22  3.3 Build or build dissemination components",
+    "section": "",
+    "text": "22.1 Input\nThis sub-process describes the activities to build new components or reuse existing components needed for the dissemination of statistical products as designed in sub-process 2.1 (Design outputs). All types of dissemination components are included, from those that produce traditional paper publications including library services to those that provide web services,(linked) open data outputs, geospatial statistics, maps, or access to microdata/metadata.",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>3.3 Build or build dissemination components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.3.html#input",
+    "href": "Process3/3.3.html#input",
+    "title": "22  3.3 Build or build dissemination components",
+    "section": "",
+    "text": "Output from phase 2\nDissemination Manuals and guidelines",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>3.3 Build or build dissemination components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.3.html#output",
+    "href": "Process3/3.3.html#output",
+    "title": "22  3.3 Build or build dissemination components",
+    "section": "22.2 Output",
+    "text": "22.2 Output\n\nSchedule of the release of publications\nDissemination plan",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>3.3 Build or build dissemination components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.3.html#documentation-and-tools",
+    "href": "Process3/3.3.html#documentation-and-tools",
+    "title": "22  3.3 Build or build dissemination components",
+    "section": "22.3 Documentation and Tools",
+    "text": "22.3 Documentation and Tools",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>3.3 Build or build dissemination components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.3.html#latest-update",
+    "href": "Process3/3.3.html#latest-update",
+    "title": "22  3.3 Build or build dissemination components",
+    "section": "22.4 Latest update",
+    "text": "22.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>3.3 Build or build dissemination components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.3.html#verified",
+    "href": "Process3/3.3.html#verified",
+    "title": "22  3.3 Build or build dissemination components",
+    "section": "22.5 Verified",
+    "text": "22.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>3.3 Build or build dissemination components</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.4.html",
+    "href": "Process3/3.4.html",
+    "title": "23  3.4 Configure workflows",
+    "section": "",
+    "text": "23.1 Input\nThis sub-process configures the workflow, systems and transformations used within the business processes, from data collection to dissemination. In this sub-process, the workflow is configured based on the design created in sub-process 2.6 (Design production systems and workflows). This could include modifying a standardized workflow for a specific purpose, assembling the workflows for the different phases (possibly with a workflow/business process management system) and configuring systems accordingly",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>3.4 Configure workflows</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.4.html#output",
+    "href": "Process3/3.4.html#output",
+    "title": "23  3.4 Configure workflows",
+    "section": "23.2 Output",
+    "text": "23.2 Output",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>3.4 Configure workflows</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.4.html#documentation-and-tools",
+    "href": "Process3/3.4.html#documentation-and-tools",
+    "title": "23  3.4 Configure workflows",
+    "section": "23.3 Documentation and Tools",
+    "text": "23.3 Documentation and Tools",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>3.4 Configure workflows</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.4.html#latest-update",
+    "href": "Process3/3.4.html#latest-update",
+    "title": "23  3.4 Configure workflows",
+    "section": "23.4 Latest update",
+    "text": "23.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>3.4 Configure workflows</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.4.html#verified",
+    "href": "Process3/3.4.html#verified",
+    "title": "23  3.4 Configure workflows",
+    "section": "23.5 Verified",
+    "text": "23.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>3.4 Configure workflows</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.5.html",
+    "href": "Process3/3.5.html",
+    "title": "24  3.5 Test production systems",
+    "section": "",
+    "text": "24.1 Input\nThis sub-process is concerned with the testing of assembled and configured services and related workflows. It includes technical testing and sign-off of new programmes and routines, as well as confirmation that existing routines from other statistical business processes are suitable for use in this case. Whilst part of this activity concerning the testing of individual components and services could logically be linked with sub-process 3.1, 3.2 and 3.3, this sub-process also includes testing of interactions between assembled and configured services and ensuring that the whole production solution works coherently.",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>3.5 Test production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.5.html#output",
+    "href": "Process3/3.5.html#output",
+    "title": "24  3.5 Test production systems",
+    "section": "24.2 Output",
+    "text": "24.2 Output\n\nTested production systems",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>3.5 Test production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.5.html#documentation-and-tools",
+    "href": "Process3/3.5.html#documentation-and-tools",
+    "title": "24  3.5 Test production systems",
+    "section": "24.3 Documentation and Tools",
+    "text": "24.3 Documentation and Tools",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>3.5 Test production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.5.html#latest-update",
+    "href": "Process3/3.5.html#latest-update",
+    "title": "24  3.5 Test production systems",
+    "section": "24.4 Latest update",
+    "text": "24.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>3.5 Test production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.5.html#verified",
+    "href": "Process3/3.5.html#verified",
+    "title": "24  3.5 Test production systems",
+    "section": "24.5 Verified",
+    "text": "24.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>3.5 Test production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.6.html",
+    "href": "Process3/3.6.html",
+    "title": "25  1.1 3.6 Test statistical business process",
+    "section": "",
+    "text": "25.1 Input\nThis sub-process describes the activities to manage a field test or pilot of the statistical business process. Typically, it includes a small-scale data collection, to test the collection instruments and logistics, followed by processing and analysis of the collected data, to ensure the statistical business process performs as expected. Following the pilot, it may be necessary to go back to a previous step and make adjustments to collection instruments, systems or components. For a major statistical business process, e.g., a population census, there may be several iterations until the process is working satisfactorily",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>1.1 3.6 Test statistical business process</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.6.html#input",
+    "href": "Process3/3.6.html#input",
+    "title": "25  1.1 3.6 Test statistical business process",
+    "section": "",
+    "text": "Instruments\nTraining\nPersonnel\nCAPI Devices",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>1.1 3.6 Test statistical business process</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.6.html#output",
+    "href": "Process3/3.6.html#output",
+    "title": "25  1.1 3.6 Test statistical business process",
+    "section": "25.2 Output",
+    "text": "25.2 Output\n\nFinalized questionnaire and system\nDocumentation of changes/report",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>1.1 3.6 Test statistical business process</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.6.html#documentation-and-tools",
+    "href": "Process3/3.6.html#documentation-and-tools",
+    "title": "25  1.1 3.6 Test statistical business process",
+    "section": "25.3 Documentation and Tools",
+    "text": "25.3 Documentation and Tools",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>1.1 3.6 Test statistical business process</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.6.html#latest-update",
+    "href": "Process3/3.6.html#latest-update",
+    "title": "25  1.1 3.6 Test statistical business process",
+    "section": "25.4 Latest update",
+    "text": "25.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>1.1 3.6 Test statistical business process</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.6.html#verified",
+    "href": "Process3/3.6.html#verified",
+    "title": "25  1.1 3.6 Test statistical business process",
+    "section": "25.5 Verified",
+    "text": "25.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>1.1 3.6 Test statistical business process</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.7.html",
+    "href": "Process3/3.7.html",
+    "title": "26  3.7 Finalise production systems",
+    "section": "",
+    "text": "26.1 Input\nThis sub-process includes the activities to put the assembled and configured processes and Services, including modified and newly created services, into production and ready for use. The activities include: - Producing documentation about the process components, including technical documentation and user manuals; - Finalizing process instruments and systems to be used; - Training the users on how to operate the process; - Moving the process components into the production environment and ensuring they work as expected in that environment (this activity may also be part of sub-process 3.5).",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>3.7 Finalise production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.7.html#input",
+    "href": "Process3/3.7.html#input",
+    "title": "26  3.7 Finalise production systems",
+    "section": "26.2 Output",
+    "text": "26.2 Output\nFinalized instruments and systems\nProcess documentation\nTraining of users",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>3.7 Finalise production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.7.html#documentation-and-tools",
+    "href": "Process3/3.7.html#documentation-and-tools",
+    "title": "26  3.7 Finalise production systems",
+    "section": "26.3 Documentation and Tools",
+    "text": "26.3 Documentation and Tools",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>3.7 Finalise production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.7.html#latest-update",
+    "href": "Process3/3.7.html#latest-update",
+    "title": "26  3.7 Finalise production systems",
+    "section": "26.4 Latest update",
+    "text": "26.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>3.7 Finalise production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process3/3.7.html#verified",
+    "href": "Process3/3.7.html#verified",
+    "title": "26  3.7 Finalise production systems",
+    "section": "26.5 Verified",
+    "text": "26.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 3: Build",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>3.7 Finalise production systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.html",
+    "href": "Process4/4.html",
+    "title": "27  4 Collect",
+    "section": "",
+    "text": "Phase\n\n\nThis phase collects or gathers all necessary information (e.g. data, metadata and paradata), using different collection modes (e.g. acquisition, collection, extraction, transfer), and loads them into the appropriate platform (e.g. local server, cloud) for further processing.\nWhilst it can include validation of data set formats, it does not include any transformations of the data themselves, as these are all done in the “Process” phase, except for transforming into the correct data collection valraiables. For statistical outputs produced regularly, this phase occurs in each iteration.\nThe “Collect” phase is broken down into four sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative\n\n4.1 Create frame and select sample\n4.2 Set up collection\n4.3 Run collection\n4.4 Finalise collection\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>4 Collect</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.1.html",
+    "href": "Process4/4.1.html",
+    "title": "28  4.1 Create frame and select sample",
+    "section": "",
+    "text": "28.1 Process\nThis sub-process creates or updates the frame (e.g. statistical business, household) and selects the sample for this iteration of the collection, as specified in sub-process 2.4 (Design frame and sample). It also includes the coordination of samples between instances of the same statistical process (e.g. to manage overlap or rotation), and between different processes using a common frame or register (e.g. to manage overlap or to spread response burden). Quality assurance and approval of the frame and the selected sample are also undertaken in this sub-process, though maintenance of underlying registers, from which frames for several statistical business processes are drawn, is treated as a separate statistical process. The sampling aspect of this sub-process is not usually relevant for processes based entirely on the use of pre-existing sources (e.g. administrative registers, web sites) as such processes generally create frames from the availablae data and then follow a census approach. Variables from administrative and other non-statistical sources of data can be used as auxiliary variables in the construction of sampling frame.",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>4.1 Create frame and select sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.1.html#input",
+    "href": "Process4/4.1.html#input",
+    "title": "28  4.1 Create frame and select sample",
+    "section": "28.2 Input",
+    "text": "28.2 Input\n\nA datasource for creating the frame\nOutput from sub-Process 2.4\nmaps (Geo)\nOutputs from sub-process 2.2",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>4.1 Create frame and select sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.1.html#output",
+    "href": "Process4/4.1.html#output",
+    "title": "28  4.1 Create frame and select sample",
+    "section": "28.3 Output",
+    "text": "28.3 Output\n\nSampling units\nSelected samples\nSampling frame",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>4.1 Create frame and select sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.1.html#documentation-and-tools",
+    "href": "Process4/4.1.html#documentation-and-tools",
+    "title": "28  4.1 Create frame and select sample",
+    "section": "28.4 Documentation and Tools",
+    "text": "28.4 Documentation and Tools\n\nHousehold listing manual\nStrategy for developing and maintaining SBR\nListing forms\nR-code (scripts)",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>4.1 Create frame and select sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.1.html#latest-update",
+    "href": "Process4/4.1.html#latest-update",
+    "title": "28  4.1 Create frame and select sample",
+    "section": "28.5 Latest update",
+    "text": "28.5 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>4.1 Create frame and select sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.1.html#verified",
+    "href": "Process4/4.1.html#verified",
+    "title": "28  4.1 Create frame and select sample",
+    "section": "28.6 Verified",
+    "text": "28.6 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>4.1 Create frame and select sample</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.2.html",
+    "href": "Process4/4.2.html",
+    "title": "29  4.2 Set up collection",
+    "section": "",
+    "text": "29.1 Survey sources\nThis sub-process ensures that the data collection personel, processes and technology (e.g. web-based applications, GPS) are ready to collect data and metadata, in all modes as designed. It takes place over a period of time, as it includes the strategy, planning and training activities in preparation for the specific instance of the statistical business process. Where the process is repeated regularly, some (or all) of these activities may not be explicitly required for each iteration. For one-off and new processes, these activities can be lengthy. For survey data, this sub-process includes:",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>4.2 Set up collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.2.html#survey-sources",
+    "href": "Process4/4.2.html#survey-sources",
+    "title": "29  4.2 Set up collection",
+    "section": "",
+    "text": "Preparing a collection strategy;\nProviding information for respondents (e.g. drafting letters or brochures explaining the purpose of the survey, notifying respondents when online reporting instruments will be made available);\nTranslating of materials (e.g. into the different languages spoken or used in the country).\nPreparing collection instruments (e.g. printing questionnaires, pre-filling them with existing data, loading questionnaires and data onto interviewers’ computers, APIs, web scraping tools);\nEnsuring collection resources are available (e.g. laptops, tablets, collection apps, APIs);\nConfiguring collection systems to request and receive the data;\nEnsuring the security of data to be collected;\nIdentify personnel (e.g. from within organization or recruiting incl interpreter and etc);\nTraining collection staff;\nAgreeing on terms with any service providers;\nTraining system using appropriate technology e.g. using supervised machine learning techniques, webinar; Agreeing on terms with any intermediate collection bodies, (e.g. sub-contractors for computer assisted telephone interviewing, web services);",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>4.2 Set up collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.2.html#non-survey-sources",
+    "href": "Process4/4.2.html#non-survey-sources",
+    "title": "29  4.2 Set up collection",
+    "section": "29.2 Non-survey sources",
+    "text": "29.2 Non-survey sources\n\nFor non-survey sources, this sub-process ensures that the necessary personnel, processes, systems and confidentiality procedures are in place, to receive or extract the necessary information from the source. This includes:\n\nEvaluating requests to acquire the data and logging the request in a centralised inventory;\nInitiating contacts with organisations providing the data, and sending an introductory package with details on the process of acquiring the data;\nChecking detailed information about files and metadata with the data provider and receiving a test file to assess if data are fit for use;\nArranging secure channels for the transmission of the data.",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>4.2 Set up collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.2.html#input",
+    "href": "Process4/4.2.html#input",
+    "title": "29  4.2 Set up collection",
+    "section": "29.3 Input",
+    "text": "29.3 Input\n\nCollection staff availability\nTraining staff\nTraining\nQuestionnaires\npublicity and advocacy materials i.e. adverts, brochures\nVehicles\nCAPI devices\nSub-process 3.6",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>4.2 Set up collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.2.html#output",
+    "href": "Process4/4.2.html#output",
+    "title": "29  4.2 Set up collection",
+    "section": "29.4 Output",
+    "text": "29.4 Output\n\nTrained staff\nPrinted/uploaded questionnaires\nData collection strategy\nDashboard\nInformed respondents\nData collection instruments (e.g. Manuals, questionaires, CAPI, server)",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>4.2 Set up collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.2.html#documentation-and-tools",
+    "href": "Process4/4.2.html#documentation-and-tools",
+    "title": "29  4.2 Set up collection",
+    "section": "29.5 Documentation and Tools",
+    "text": "29.5 Documentation and Tools\n\nTraining manuals\nIEC material\nApplication manuals\nHR Guidelines on recruitment\nTemplate for contracts for service providers\nICT documentation (e.g. how to set up and use)\nLogistical guidelines (e.g. storage, distribution and return of tablets)",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>4.2 Set up collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.2.html#latest-update",
+    "href": "Process4/4.2.html#latest-update",
+    "title": "29  4.2 Set up collection",
+    "section": "29.6 Latest update",
+    "text": "29.6 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>4.2 Set up collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.2.html#verified",
+    "href": "Process4/4.2.html#verified",
+    "title": "29  4.2 Set up collection",
+    "section": "29.7 Verified",
+    "text": "29.7 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>4.2 Set up collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.3.html",
+    "href": "Process4/4.3.html",
+    "title": "30  4.3 Run Collection",
+    "section": "",
+    "text": "30.1 Process\nThis sub-process is where the data collection is implemented. The different collection instruments are used to collect or gather the information which may include raw microdata or aggregates produced at the source, as well as any associated metadata. It can include the initial contact with providers and respondents and any subsequent follow-up or reminder actions or call-backs. It may include manual data entry at the point of contact, or fieldwork management and technical support, depending on the source and collection mode, including web-scraping. It records when and how providers and respondents were contacted, and whether they have responded. Depending on the geographical frame and the technology used, geo-coding may need to be done at the same time as collection of the data by using inputs from GPS, putting a mark on a map, etc.\nThis sub-process also includes the management of the providers involved in the current collection, ensuring that the relationship between the statistical organisation, data providers and other relevant stakeholders remains positive, and recording and responding to comments, queries and complaints. Proper communication and sensitization with reporting units and minimisation of non-response contribute significantly to a higher quality of the collected data.\nFor administrative, geographical or other non-statistical data, the provider is either contacted to send the information or sends it as scheduled or the provider is physically visited to provide the information. This process may be time consuming and might require follow-ups to ensure that data are provided according to the agreements. In the case where the data are published under an Open Data license and exist in machine-readable form, they may be freely accessed and used.\nThis sub-process may also include the monitoring of data collection and making any necessary changes to improve data quality. This includes generating reports, visualising and adjusting the acquisition process to ensure the data are fit for use. When data collection period elapses and the collection meets its targets, it is closed and a report on the collection is produced. Some basic checks of the structure and integrity of the information received may take place within this sub-process, (e.g. checking that files are in the right format and contain the expected fields).",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>4.3 Run Collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.3.html#input",
+    "href": "Process4/4.3.html#input",
+    "title": "30  4.3 Run Collection",
+    "section": "30.2 Input",
+    "text": "30.2 Input\n\nOutputs from sub-process 4.2\nTrained staff\nData collection strategy\nDashboard\nInformed respondents\nData collection instruments",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>4.3 Run Collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.3.html#output",
+    "href": "Process4/4.3.html#output",
+    "title": "30  4.3 Run Collection",
+    "section": "30.3 Output",
+    "text": "30.3 Output\n\nCollected data and meta-data\nData collection report\nData quality reports",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>4.3 Run Collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.3.html#documentation-and-tools",
+    "href": "Process4/4.3.html#documentation-and-tools",
+    "title": "30  4.3 Run Collection",
+    "section": "30.4 Documentation and Tools",
+    "text": "30.4 Documentation and Tools\n\nFeedback and complaint template\nCommunication strategy\nData validation procedure/instruction\nTraining manual\nContact list of data suppliers\nChecklist for key firms\nSurvey solution\nScripts",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>4.3 Run Collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.3.html#latest-update",
+    "href": "Process4/4.3.html#latest-update",
+    "title": "30  4.3 Run Collection",
+    "section": "30.5 Latest update",
+    "text": "30.5 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>4.3 Run Collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.3.html#verified",
+    "href": "Process4/4.3.html#verified",
+    "title": "30  4.3 Run Collection",
+    "section": "30.6 Verified",
+    "text": "30.6 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>4.3 Run Collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.4.html",
+    "href": "Process4/4.4.html",
+    "title": "31  4.4 Finalise collection",
+    "section": "",
+    "text": "31.1 Input\nThis sub-process includes loading the collected data and metadata into a suitable electronic environment for further processing. Documentation of identified gaps during data entry for use in quality declarations. It may include manual or automatic data capture, for example, using data entry staff or optical character recognition tools to extract information from paper questionnaires, or converting the formats of files or encoding the variables received from other organisations. It may also include analysis of the metadata and paradata associated with collection to ensure the collection activities have met requirements. In cases where there is a physical collection instrument, such as a paper questionnaire, which is not needed for further processing, this sub-process manages the storage of that material. When the collection instrument uses software such as an API or an app, this sub-process also includes the versioning and storage of these. It also involves return and safe custody keeping of all collection instruments, unutilized survey materials as outlined in sub process 4.2 (under collection strategy).",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>4.4 Finalise collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.4.html#input",
+    "href": "Process4/4.4.html#input",
+    "title": "31  4.4 Finalise collection",
+    "section": "",
+    "text": "Output form sub-process 4.3\nOutput form sub-process from 4.2\nChecklist  for return of materials and items issued.",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>4.4 Finalise collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.4.html#output",
+    "href": "Process4/4.4.html#output",
+    "title": "31  4.4 Finalise collection",
+    "section": "31.2 Output",
+    "text": "31.2 Output\n\nData\nCollect (field work) report\nStored materials and data collection applications  \nReport of returned, stored and disposed materials",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>4.4 Finalise collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.4.html#documentation-and-tools",
+    "href": "Process4/4.4.html#documentation-and-tools",
+    "title": "31  4.4 Finalise collection",
+    "section": "31.3 Documentation and Tools",
+    "text": "31.3 Documentation and Tools\nGuidelines for storage, lost, damaged and disposal of assets and equipment, incl safekeeping link",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>4.4 Finalise collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.4.html#latest-update",
+    "href": "Process4/4.4.html#latest-update",
+    "title": "31  4.4 Finalise collection",
+    "section": "31.4 Latest update",
+    "text": "31.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>4.4 Finalise collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process4/4.4.html#verified",
+    "href": "Process4/4.4.html#verified",
+    "title": "31  4.4 Finalise collection",
+    "section": "31.5 Verified",
+    "text": "31.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 4: Collect",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>4.4 Finalise collection</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.html",
+    "href": "Process5/5.html",
+    "title": "32  Process",
+    "section": "",
+    "text": "Phase\n\n\nThis phase describes the processing of collected data and their preparation for analysis. It is made up of eight sub-processes that integrate, classify, check, clean, and transform collected data, so that they can be analysed and disseminated as statistical outputs. For statistical outputs produced regularly, this phase occurs in each iteration. The sub-processes in this phase can apply to data from both statistical and non-statistical sources (with the possible exception of sub-process 5.6, which is usually specific to survey data).\nThe “Process” and “Analyse” phases can be iterative and parallel. Analysis can reveal a broader understanding of the data, which might make it apparent that additional processing is needed. Sometimes the estimates being processed might be already published aggregates (undertaken according to a Revision Policy).\nActivities within the “Process” and “Analyse” phases may also commence before the “Collect” phase is completed. This enables the verification of the quality of the data collected and compilation of provisional results where timeliness is an important concern for users, and increases the time available for analysis.\nThe Process phase is broken down into eight sub-processes , which may be sequential, from left to right, but can also occur in parallel, and can be iterative.\n\n5.1 Integrate data\n5.2 Classify and code\n5.3 Review and validate\n5.4 Edit and impute\n5.5 Derive new variables and units\n5.6 Calculate weights\n5.7 Calculate aggregates\n5.8 Finalise data files\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Process</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.1.html",
+    "href": "Process5/5.1.html",
+    "title": "33  5.1 Intergrate Data",
+    "section": "",
+    "text": "33.1 Inputs\nThis sub-process links data files data from one or more sources. It is where the results of sub-processes in the “Collect” phase are combined. The collected data can be from a mixture of external or internal sources, including extracts of administrative and other non-statistical data sources. Administrative data or other non-statistical sources of data can substitute for all or some of the variables directly collected from a survey. This sub-process also includes harmonising or creating new figures that agree between sources of data. The result is a set of linked data. Data integration can include:\nThere may also be several instances of data integration in any statistical business process. Integration takes data protection principles into account by de-identifying, that is stripping of identifiers such as name and address, to help to protect confidentiality.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>5.1 Intergrate Data</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.1.html#inputs",
+    "href": "Process5/5.1.html#inputs",
+    "title": "33  5.1 Intergrate Data",
+    "section": "",
+    "text": "Collected data from multiple sources",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>5.1 Intergrate Data</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.1.html#outputs",
+    "href": "Process5/5.1.html#outputs",
+    "title": "33  5.1 Intergrate Data",
+    "section": "33.2 Outputs",
+    "text": "33.2 Outputs\n\nIntegrated data",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>5.1 Intergrate Data</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.1.html#documentation-and-tools",
+    "href": "Process5/5.1.html#documentation-and-tools",
+    "title": "33  5.1 Intergrate Data",
+    "section": "33.3 Documentation and Tools",
+    "text": "33.3 Documentation and Tools\n\nStatistical Softwares (Stata,R e.t.c)\nData integration Report",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>5.1 Intergrate Data</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.1.html#latest-update",
+    "href": "Process5/5.1.html#latest-update",
+    "title": "33  5.1 Intergrate Data",
+    "section": "33.4 Latest update",
+    "text": "33.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>5.1 Intergrate Data</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.1.html#verified",
+    "href": "Process5/5.1.html#verified",
+    "title": "33  5.1 Intergrate Data",
+    "section": "33.5 Verified",
+    "text": "33.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>5.1 Intergrate Data</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.2.html",
+    "href": "Process5/5.2.html",
+    "title": "34  Classify and Code",
+    "section": "",
+    "text": "34.1 Inputs\nThis sub-process classifies and codes the collected data. For example, automatic (or clerical) coding routines may assign numeric codes to text responses according to a pre-determined statistical classification to facilitate data capture and processing. Some questions have coded response categories on the questionnaires or administrative source of data, others are coded after collection using an automated process (which may apply machine learning techniques) or an interactive, manual process.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Classify and Code</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.2.html#inputs",
+    "href": "Process5/5.2.html#inputs",
+    "title": "34  Classify and Code",
+    "section": "",
+    "text": "Collected data from multiple sources\nClassification & coding structures",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Classify and Code</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.2.html#outputs",
+    "href": "Process5/5.2.html#outputs",
+    "title": "34  Classify and Code",
+    "section": "34.2 Outputs",
+    "text": "34.2 Outputs\n\nProcessed (classified & coded) data\nCoding index\nDocumentation & Tools:\nClassification & Coding report\nClassification guideline\nData validation list (checklist)\nDefinitional/Explanatory notes",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Classify and Code</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.2.html#documentation-and-tools",
+    "href": "Process5/5.2.html#documentation-and-tools",
+    "title": "34  Classify and Code",
+    "section": "34.3 Documentation and Tools",
+    "text": "34.3 Documentation and Tools",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Classify and Code</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.2.html#latest-update",
+    "href": "Process5/5.2.html#latest-update",
+    "title": "34  Classify and Code",
+    "section": "34.4 Latest update",
+    "text": "34.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Classify and Code</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.2.html#verified",
+    "href": "Process5/5.2.html#verified",
+    "title": "34  Classify and Code",
+    "section": "34.5 Verified",
+    "text": "34.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Classify and Code</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.3.html",
+    "href": "Process5/5.3.html",
+    "title": "35  Review and validate",
+    "section": "",
+    "text": "35.1 Inputs\nThis sub-process examines integrated data to identify potential inconsistencies, errors and discrepancies such as outliers, item non-response and miscoding. It can also be referred to as data validation. It may be run iteratively, validating data against pre-defined edit rules, usually in a set order. It may flag data for automatic or manual inspection or editing. Reviewing and validating can apply to data from any type of source, before and after integration, as well as imputed data from sub-process 5.4 (Edit and impute). Whilst validation is treated as part of the Process phase, in practice, some elements of validation may occur alongside collection activities, particularly for modes such as computer-assisted collection. Whilst this sub-process is concerned with the detection and localisation of actual or potential errors, any correction activities that change the data are done in sub-process 5.4.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Review and validate</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.3.html#inputs",
+    "href": "Process5/5.3.html#inputs",
+    "title": "35  Review and validate",
+    "section": "",
+    "text": "Collected data\nIntegrated data",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Review and validate</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.3.html#outputs",
+    "href": "Process5/5.3.html#outputs",
+    "title": "35  Review and validate",
+    "section": "35.2 Outputs",
+    "text": "35.2 Outputs\n\nValidated data",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Review and validate</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.3.html#documentation-and-tools",
+    "href": "Process5/5.3.html#documentation-and-tools",
+    "title": "35  Review and validate",
+    "section": "35.3 Documentation and Tools",
+    "text": "35.3 Documentation and Tools\n\nStatistical software\nEditing Specifications",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Review and validate</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.3.html#latest-update",
+    "href": "Process5/5.3.html#latest-update",
+    "title": "35  Review and validate",
+    "section": "35.4 Latest update",
+    "text": "35.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Review and validate</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.3.html#verified",
+    "href": "Process5/5.3.html#verified",
+    "title": "35  Review and validate",
+    "section": "35.5 Verified",
+    "text": "35.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Review and validate</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.4.html",
+    "href": "Process5/5.4.html",
+    "title": "36  Edit and impute",
+    "section": "",
+    "text": "36.1 Inputs\nWhere data are considered incorrect, missing, unreliable or outdated, new values may be inserted or outdated data may be removed in this sub-process. The terms editing and imputation cover a variety of methods often using a rule-based approach. Specific steps typically include:",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Edit and impute</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.4.html#inputs",
+    "href": "Process5/5.4.html#inputs",
+    "title": "36  Edit and impute",
+    "section": "",
+    "text": "Validated data",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Edit and impute</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.4.html#outputs",
+    "href": "Process5/5.4.html#outputs",
+    "title": "36  Edit and impute",
+    "section": "36.2 Outputs",
+    "text": "36.2 Outputs\n\nEdited and dataset",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Edit and impute</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.4.html#documentations-and-tools",
+    "href": "Process5/5.4.html#documentations-and-tools",
+    "title": "36  Edit and impute",
+    "section": "36.3 Documentations and Tools",
+    "text": "36.3 Documentations and Tools\n\nStatistical Softwares\nEdit Specs",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Edit and impute</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.4.html#latest-update",
+    "href": "Process5/5.4.html#latest-update",
+    "title": "36  Edit and impute",
+    "section": "36.4 Latest update",
+    "text": "36.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Edit and impute</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.4.html#verified",
+    "href": "Process5/5.4.html#verified",
+    "title": "36  Edit and impute",
+    "section": "36.5 Verified",
+    "text": "36.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Edit and impute</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.5.html",
+    "href": "Process5/5.5.html",
+    "title": "37  Derive new variables and units",
+    "section": "",
+    "text": "37.1 Inputs\nThis sub-process produces variables and statistical units which are not available in the collected data but are needed to deliver the required outputs. It derives new variables by applying arithmetic formulae to one or more of the variables that are already present in the dataset, or applying different model assumptions. This activity may need to be iterative, as some derived variables may themselves be based on other derived variables. It is therefore important to ensure that variables are derived in the correct order. New variables may be derived by aggregating or splitting data from the collection units, or by various other estimation methods.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Derive new variables and units</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.5.html#inputs",
+    "href": "Process5/5.5.html#inputs",
+    "title": "37  Derive new variables and units",
+    "section": "",
+    "text": "Integrated dataset",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Derive new variables and units</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.5.html#output",
+    "href": "Process5/5.5.html#output",
+    "title": "37  Derive new variables and units",
+    "section": "37.2 Output",
+    "text": "37.2 Output\n\nDerived variables",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Derive new variables and units</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.5.html#documentations-and-tools",
+    "href": "Process5/5.5.html#documentations-and-tools",
+    "title": "37  Derive new variables and units",
+    "section": "37.3 Documentations and Tools",
+    "text": "37.3 Documentations and Tools\n\nArithmetic Formulae\nStatistical Model\nEstimations Methods guidelines\nStatistical Softwares",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Derive new variables and units</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.5.html#latest-update",
+    "href": "Process5/5.5.html#latest-update",
+    "title": "37  Derive new variables and units",
+    "section": "37.4 Latest update",
+    "text": "37.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Derive new variables and units</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.5.html#verified",
+    "href": "Process5/5.5.html#verified",
+    "title": "37  Derive new variables and units",
+    "section": "37.5 Verified",
+    "text": "37.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Derive new variables and units</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.6.html",
+    "href": "Process5/5.6.html",
+    "title": "38  Calculate weights",
+    "section": "",
+    "text": "38.1 Inputs\nThis sub-process creates weights for unit data records according to the methodology developed in sub-process 2.5. For example, weights can be used to “gross-up” data to make them representative of the target population (e.g. for sample surveys or extracts of scanner data) or to adjust for non-response in total enumerations. In other situations, variables may need weighting for normalisation purposes. It may also include weight correction for benchmarking indicators (e.g. known population totals).",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Calculate weights</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.6.html#inputs",
+    "href": "Process5/5.6.html#inputs",
+    "title": "38  Calculate weights",
+    "section": "",
+    "text": "Validated data\nPopulation projection",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Calculate weights</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.6.html#outputs",
+    "href": "Process5/5.6.html#outputs",
+    "title": "38  Calculate weights",
+    "section": "38.2 Outputs",
+    "text": "38.2 Outputs\n\nWeighted data\nWeight calculations guidelines\nStatistical software",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Calculate weights</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.6.html#documentations-and-tools",
+    "href": "Process5/5.6.html#documentations-and-tools",
+    "title": "38  Calculate weights",
+    "section": "38.3 Documentations and Tools",
+    "text": "38.3 Documentations and Tools\n\nArithmetic Formulae\nStatistical Model\nEstimations Methods guidelines\nStatistical Softwares",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Calculate weights</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.6.html#latest-update",
+    "href": "Process5/5.6.html#latest-update",
+    "title": "38  Calculate weights",
+    "section": "38.4 Latest update",
+    "text": "38.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Calculate weights</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.6.html#verified",
+    "href": "Process5/5.6.html#verified",
+    "title": "38  Calculate weights",
+    "section": "38.5 Verified",
+    "text": "38.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Calculate weights</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.7.html",
+    "href": "Process5/5.7.html",
+    "title": "39  Calculate aggregates, estimates and errors",
+    "section": "",
+    "text": "39.1 Inputs\nThis sub-process creates aggregate data and population totals from microdata or lower-level aggregates. It includes summing data for records sharing certain characteristics (e.g. aggregation of data by demographic or geographic classifications), determining measures of central tendencies and applying weights from sub-process 5.6 (Calculate weights) to derive appropriate totals. In the case of statistical outputs which use sample surveys, sampling errors corresponding to relevant aggregates may also be calculated in this sub-process. For example, for sample surveys and censuses it entails development of tabulation plans and running initial tables based on the tabulation plans. Initial tables are used to determine errors based on the aggregates and any identified errors are corrected through sub-process 5.4 (Edit and impute).",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Calculate aggregates, estimates and errors</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.7.html#inputs",
+    "href": "Process5/5.7.html#inputs",
+    "title": "39  Calculate aggregates, estimates and errors",
+    "section": "",
+    "text": "Weighted data;\nUnweighted data;\nSurvey weights;\nData classification codes;\nTabulation Plans.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Calculate aggregates, estimates and errors</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.7.html#outputs",
+    "href": "Process5/5.7.html#outputs",
+    "title": "39  Calculate aggregates, estimates and errors",
+    "section": "39.2 Outputs",
+    "text": "39.2 Outputs\n\nAggregates;\nEstimates;\nErrors;\nAnalysis weights",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Calculate aggregates, estimates and errors</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.7.html#documentations-and-tools",
+    "href": "Process5/5.7.html#documentations-and-tools",
+    "title": "39  Calculate aggregates, estimates and errors",
+    "section": "39.3 Documentations and Tools",
+    "text": "39.3 Documentations and Tools\n\nStatistical Softwares;\nCoding Index.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Calculate aggregates, estimates and errors</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.7.html#latest-update",
+    "href": "Process5/5.7.html#latest-update",
+    "title": "39  Calculate aggregates, estimates and errors",
+    "section": "39.4 Latest update",
+    "text": "39.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Calculate aggregates, estimates and errors</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.7.html#verified",
+    "href": "Process5/5.7.html#verified",
+    "title": "39  Calculate aggregates, estimates and errors",
+    "section": "39.5 Verified",
+    "text": "39.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Calculate aggregates, estimates and errors</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.8.html",
+    "href": "Process5/5.8.html",
+    "title": "40  Finalise data files",
+    "section": "",
+    "text": "40.1 Inputs\n35.This sub-process brings together the results of the other sub-processes in this phase in a data file (usually macro-data), which is used as the input to the Analyse phase. Sometimes this may be an intermediate rather than a final file, particularly for business processes where there are strong time pressures, and a requirement to produce both preliminary and final estimates.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Finalise data files</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.8.html#inputs",
+    "href": "Process5/5.8.html#inputs",
+    "title": "40  Finalise data files",
+    "section": "",
+    "text": "Outputs from sub-process 5.7",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Finalise data files</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.8.html#outputs",
+    "href": "Process5/5.8.html#outputs",
+    "title": "40  Finalise data files",
+    "section": "40.2 Outputs",
+    "text": "40.2 Outputs\n\nFinal processed data files.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Finalise data files</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.8.html#documentation-tools",
+    "href": "Process5/5.8.html#documentation-tools",
+    "title": "40  Finalise data files",
+    "section": "40.3 Documentation & Tools",
+    "text": "40.3 Documentation & Tools\n\nData processing report.",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Finalise data files</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.8.html#latest-update",
+    "href": "Process5/5.8.html#latest-update",
+    "title": "40  Finalise data files",
+    "section": "40.4 Latest update",
+    "text": "40.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Finalise data files</span>"
+    ]
+  },
+  {
+    "objectID": "Process5/5.8.html#verified",
+    "href": "Process5/5.8.html#verified",
+    "title": "40  Finalise data files",
+    "section": "40.5 Verified",
+    "text": "40.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 5: Process",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Finalise data files</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.html",
+    "href": "Process6/6.html",
+    "title": "41  Analyse",
+    "section": "",
+    "text": "Phase\n\n\n88.In this phase, statistical outputs are produced and examined in detail. It includes preparing statistical content (including commentary, technical notes, etc.), and ensuring outputs are fit for purpose before dissemination to users. Data analysis will involve the inspection, cleaning, transforming, and modelling of the data to make it useful information. This phase also includes the sub-processes and activities that enable statistical analysts to understand the data and the statistics produced. The outputs of this phase could also be used as input to other sub-processes (e.g., analysis of new sources as input to the Design phase). For statistical outputs produced regularly, this phase occurs in every iteration.\nThe “Analyse” phase and sub-processes are generic for all statistical outputs, regardless of how the data were sourced. 89. The “Analyse” phase is broken down into five sub-processes, which are generally sequential, from left to right, but can also occur in parallel, and can be iterative.\n\n6.1 Prepare draft outputs\n6.2 Validate outputs\n6.3 Interpret and explain outputs\n6.4 Apply disclosure control\n6.5 Finalise outputs\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Analyse</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.1.html",
+    "href": "Process6/6.1.html",
+    "title": "42  6.1 Prepare draft outputs",
+    "section": "",
+    "text": "42.1 Input\nThis sub-process is where the data from sub-processes 5.7 (Calculate aggregates) and 5.8 (Finalise data files) are transformed into statistical outputs such as indexes, seasonally adjusted statistics, e.g. trend, cycle, seasonal and irregular components, accessibility measures, etc., as well as the recording of quality characteristics such as coefficients of variation. The preparation of maps, GIS outputs and geo-statistical services can be included to maximise the value and capacity to analyse the statistical information.",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>6.1 Prepare draft outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.1.html#input",
+    "href": "Process6/6.1.html#input",
+    "title": "42  6.1 Prepare draft outputs",
+    "section": "",
+    "text": "Raw data\nOutputs from Sub process 5.7 and 5.8\nGIS",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>6.1 Prepare draft outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.1.html#output",
+    "href": "Process6/6.1.html#output",
+    "title": "42  6.1 Prepare draft outputs",
+    "section": "42.2 Output",
+    "text": "42.2 Output\n\nEstimates, measures, statistics",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>6.1 Prepare draft outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.1.html#documentation-tools",
+    "href": "Process6/6.1.html#documentation-tools",
+    "title": "42  6.1 Prepare draft outputs",
+    "section": "42.3 Documentation & Tools",
+    "text": "42.3 Documentation & Tools\n\nData processing report.",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>6.1 Prepare draft outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.1.html#latest-update",
+    "href": "Process6/6.1.html#latest-update",
+    "title": "42  6.1 Prepare draft outputs",
+    "section": "42.4 Latest update",
+    "text": "42.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>6.1 Prepare draft outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.1.html#verified",
+    "href": "Process6/6.1.html#verified",
+    "title": "42  6.1 Prepare draft outputs",
+    "section": "42.5 Verified",
+    "text": "42.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>6.1 Prepare draft outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.2.html",
+    "href": "Process6/6.2.html",
+    "title": "43  Validate outputs",
+    "section": "",
+    "text": "43.1 Input\nThis sub-process is where statisticians validate the quality of the outputs produced, in accordance with a general quality framework, past trends and expectations. This sub-process includes activities involved with the gathering of intelligence, with the cumulative effect of building up a body of knowledge about a specific statistical domain. This knowledge is then applied to the current collection, in the current environment, to identify any divergence from expectations and to allow informed analyses. Validation activities can include:",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Validate outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.2.html#input",
+    "href": "Process6/6.2.html#input",
+    "title": "43  Validate outputs",
+    "section": "",
+    "text": "Raw data",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Validate outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.2.html#output",
+    "href": "Process6/6.2.html#output",
+    "title": "43  Validate outputs",
+    "section": "43.2 Output",
+    "text": "43.2 Output\n\nVerified statistics\nValidated statistics",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Validate outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.2.html#documentation-and-tools",
+    "href": "Process6/6.2.html#documentation-and-tools",
+    "title": "43  Validate outputs",
+    "section": "43.3 Documentation and Tools",
+    "text": "43.3 Documentation and Tools\n\nComparison techniques\nPrevious/past statistics/documentation\nInternational guidelines",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Validate outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.2.html#latest-update",
+    "href": "Process6/6.2.html#latest-update",
+    "title": "43  Validate outputs",
+    "section": "43.4 Latest update",
+    "text": "43.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Validate outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.2.html#verified",
+    "href": "Process6/6.2.html#verified",
+    "title": "43  Validate outputs",
+    "section": "43.5 Verified",
+    "text": "43.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Validate outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.3.html",
+    "href": "Process6/6.3.html",
+    "title": "44  Interpret and explain outputs",
+    "section": "",
+    "text": "44.1 Input\nThis sub-process is where the in-depth understanding of the outputs is gained by statisticians. They use that understanding to interpret and explain the statistics by assessing how well the statistics reflect their initial expectations, viewing the statistics from all perspectives using different tools and media, and carrying out in-depth statistical analyses such as time-series analysis, consistency and comparability analysis, revision analysis (analysis of the differences between preliminary and revised estimates), analysis of asymmetries (discrepancies in mirror statistics), etc.",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Interpret and explain outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.3.html#input",
+    "href": "Process6/6.3.html#input",
+    "title": "44  Interpret and explain outputs",
+    "section": "",
+    "text": "Analysed data",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Interpret and explain outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.3.html#output",
+    "href": "Process6/6.3.html#output",
+    "title": "44  Interpret and explain outputs",
+    "section": "44.2 Output",
+    "text": "44.2 Output",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Interpret and explain outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.3.html#documentation-and-tools",
+    "href": "Process6/6.3.html#documentation-and-tools",
+    "title": "44  Interpret and explain outputs",
+    "section": "44.3 Documentation and Tools",
+    "text": "44.3 Documentation and Tools\n\nStatistical packages",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Interpret and explain outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.3.html#latest-update",
+    "href": "Process6/6.3.html#latest-update",
+    "title": "44  Interpret and explain outputs",
+    "section": "44.4 Latest update",
+    "text": "44.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Interpret and explain outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.3.html#verified",
+    "href": "Process6/6.3.html#verified",
+    "title": "44  Interpret and explain outputs",
+    "section": "44.5 Verified",
+    "text": "44.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Interpret and explain outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.4.html",
+    "href": "Process6/6.4.html",
+    "title": "45  Apply disclosure control",
+    "section": "",
+    "text": "45.1 Input\nThis sub-process ensures that the data (and metadata) to be disseminated do not breach the appropriate rules on confidentiality according to either organisation policies and rules, or to the process-specific methodology created in sub-process 2.5 (Design processing and analysis). This may include checks for primary and secondary disclosure, as well as the application of data suppression or perturbation techniques and output checking. The degree and method of statistical disclosure control may vary for different types of outputs. For example, the approach used for microdata sets for research purposes will be different to that for published tables, finalised outputs of geospatial statistics or visualisations on maps.",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Apply disclosure control</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.4.html#input",
+    "href": "Process6/6.4.html#input",
+    "title": "45  Apply disclosure control",
+    "section": "",
+    "text": "Output from Sub process 2.5\nCountry Laws and regulations",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Apply disclosure control</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.4.html#output",
+    "href": "Process6/6.4.html#output",
+    "title": "45  Apply disclosure control",
+    "section": "45.2 Output",
+    "text": "45.2 Output",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Apply disclosure control</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.4.html#documentation-and-tools",
+    "href": "Process6/6.4.html#documentation-and-tools",
+    "title": "45  Apply disclosure control",
+    "section": "45.3 Documentation and Tools",
+    "text": "45.3 Documentation and Tools",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Apply disclosure control</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.4.html#latest-update",
+    "href": "Process6/6.4.html#latest-update",
+    "title": "45  Apply disclosure control",
+    "section": "45.4 Latest update",
+    "text": "45.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Apply disclosure control</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.4.html#verified",
+    "href": "Process6/6.4.html#verified",
+    "title": "45  Apply disclosure control",
+    "section": "45.5 Verified",
+    "text": "45.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Apply disclosure control</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.5.html",
+    "href": "Process6/6.5.html",
+    "title": "46  Finalise outputs",
+    "section": "",
+    "text": "46.1 Input\nThis sub-process ensures the statistics and associated information are fit for purpose and reach the required quality level and are thus ready for use. It includes: - Completing consistency checks - Determining the level of release, and applying caveats; - Collating supporting information, including interpretation, commentary, technical notes, briefings, measures of uncertainty and any other necessary metadata; - Producing the supporting internal documents; - Conducting pre-release discussions with appropriate internal subject matter experts; - Translating the statistical outputs in countries with multilingual dissemination; - Approving the statistical content for release.",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Finalise outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.5.html#input",
+    "href": "Process6/6.5.html#input",
+    "title": "46  Finalise outputs",
+    "section": "",
+    "text": "Quality assessment framework\nPeer Reviews",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Finalise outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.5.html#output",
+    "href": "Process6/6.5.html#output",
+    "title": "46  Finalise outputs",
+    "section": "46.2 Output",
+    "text": "46.2 Output\n\nDocumentation\nApproved outputs",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Finalise outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.5.html#documentation-and-tools",
+    "href": "Process6/6.5.html#documentation-and-tools",
+    "title": "46  Finalise outputs",
+    "section": "46.3 Documentation and Tools",
+    "text": "46.3 Documentation and Tools",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Finalise outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.5.html#latest-update",
+    "href": "Process6/6.5.html#latest-update",
+    "title": "46  Finalise outputs",
+    "section": "46.4 Latest update",
+    "text": "46.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Finalise outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process6/6.5.html#verified",
+    "href": "Process6/6.5.html#verified",
+    "title": "46  Finalise outputs",
+    "section": "46.5 Verified",
+    "text": "46.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 6: Analyse",
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Finalise outputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.html",
+    "href": "Process7/7.html",
+    "title": "47  Disseminate",
+    "section": "",
+    "text": "Phase\n\n\nThis phase manages the release of the statistical products to users. It includes all activities associated with assembling and releasing a range of static and dynamic products via a range of channels such as publications, press releases, and websites among others. These activities support users to access and use the products released by the statistical organisation. For statistical products produced regularly, this phase occurs in each iteration.\nThe “Disseminate” phase is broken down into five sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative\n\n7.1 Update output systems\n7.2 Produce dissemination products\n7.3 Manage release of dissemination products\n7.4 Promote dissemination products\n7.5 Manage user support\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>47</span>  <span class='chapter-title'>Disseminate</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.1.html",
+    "href": "Process7/7.1.html",
+    "title": "48  Update output systems",
+    "section": "",
+    "text": "48.1 Inputs\nThis sub-process manages the update of systems (e.g. databases, server space and websites) where data and metadata are stored ready for dissemination purposes, including:\nFormatting, loading and linking of metadata should preferably mostly take place in earlier phases, but this sub-process includes a final check that all of the necessary metadata are in place and ready for dissemination.",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>Update output systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.1.html#inputs",
+    "href": "Process7/7.1.html#inputs",
+    "title": "48  Update output systems",
+    "section": "",
+    "text": "Servers\nWebsite\nDatabase\nDissemination platforms such as Kenya National Data Archives\nStatistical software such as SPSS, Stata, Excel\nMetadata, micro-data and technical report",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>Update output systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.1.html#outputs",
+    "href": "Process7/7.1.html#outputs",
+    "title": "48  Update output systems",
+    "section": "48.2 Outputs",
+    "text": "48.2 Outputs\n\nFinalized and approved outputs\nUploaded output and metadata output\nLinked outputs and metadata",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>Update output systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.1.html#documentation-and-tools",
+    "href": "Process7/7.1.html#documentation-and-tools",
+    "title": "48  Update output systems",
+    "section": "48.3 Documentation and Tools",
+    "text": "48.3 Documentation and Tools\n\nData dissemination policy\nData protection act\nAccess to information act",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>Update output systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.1.html#latest-update",
+    "href": "Process7/7.1.html#latest-update",
+    "title": "48  Update output systems",
+    "section": "48.4 Latest update",
+    "text": "48.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>Update output systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.1.html#verified",
+    "href": "Process7/7.1.html#verified",
+    "title": "48  Update output systems",
+    "section": "48.5 Verified",
+    "text": "48.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>Update output systems</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.2.html",
+    "href": "Process7/7.2.html",
+    "title": "49  Produce dissemination products",
+    "section": "",
+    "text": "49.1 Input\nThis sub-process produces the dissemination products, as previously designed in sub-process 2.1 (Design outputs), to meet user needs. They could include printed publications, press releases, electronic dissemination on the internet (websites) and social media blogs. The products can take many forms including interactive graphics, tables, maps, public-use microdata sets; key highlights media reports, specific target group report, brochures, linked open data, popular versions, audio/audio-visual files and downloadable files. Typical steps include:",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>Produce dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.2.html#input",
+    "href": "Process7/7.2.html#input",
+    "title": "49  Produce dissemination products",
+    "section": "",
+    "text": "Infographics software\nAuthors, editors, designers and peer reviewers\nPrinters\nMapping of dissemination and commutation channels\nAnonymized micro-data",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>Produce dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.2.html#output",
+    "href": "Process7/7.2.html#output",
+    "title": "49  Produce dissemination products",
+    "section": "49.2 Output",
+    "text": "49.2 Output\n\nStructural design/outlay of the output/product\nPrepared press releases, key highlight reports and analytical report\nFormatted, edited and peer-reviewed products/reports\nTranslated reports\nEditing and formatting guide and product colour theme;\nApproved products for release;\nIdentified dissemination and communication channels such as newspapers, social media, TV channels etc.;\nPrinted publications, printed brochures, banners etc.",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>Produce dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.2.html#documentation-and-tools",
+    "href": "Process7/7.2.html#documentation-and-tools",
+    "title": "49  Produce dissemination products",
+    "section": "49.3 Documentation and Tools",
+    "text": "49.3 Documentation and Tools\n\nCommunication Strategy\nData dissemination policy",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>Produce dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.2.html#latest-update",
+    "href": "Process7/7.2.html#latest-update",
+    "title": "49  Produce dissemination products",
+    "section": "49.4 Latest update",
+    "text": "49.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>Produce dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.2.html#verified",
+    "href": "Process7/7.2.html#verified",
+    "title": "49  Produce dissemination products",
+    "section": "49.5 Verified",
+    "text": "49.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>Produce dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.3.html",
+    "href": "Process7/7.3.html",
+    "title": "50  Manage the release of dissemination products",
+    "section": "",
+    "text": "50.1 Inputs\nThis sub-process ensures that all elements for the release are in place including managing the timing of the release and media relations. It includes briefings for specific groups such as the press or ministers or stakeholders, as well as the arrangements for any pre-release embargoes. It also includes the provision of products to subscribers, and managing access to confidential data by authorised user groups, such as researchers. Sometimes an organisation may need to retract a product, for example, if an error is discovered or need to do an addendum to correct any realized error in the product. This is also included in this sub-process. The sub-process also entails mapping out stakeholders to attend the launch and sending invitations to them as well as to identify keynote speakers during the launch of the product to the public. It also involves distributing the printed copies to stakeholders, stocking the library with the new products, publishing the product online on the organization website. Storing for future references and final archiving of all produced and disseminated products is also undertaken in this sub-process.",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>50</span>  <span class='chapter-title'>Manage the release of dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.3.html#inputs",
+    "href": "Process7/7.3.html#inputs",
+    "title": "50  Manage the release of dissemination products",
+    "section": "",
+    "text": "Micro-data and metadata dissemination platform\nData assistants\nServer and Website\nRelease Calendar",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>50</span>  <span class='chapter-title'>Manage the release of dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.3.html#outputs",
+    "href": "Process7/7.3.html#outputs",
+    "title": "50  Manage the release of dissemination products",
+    "section": "50.2 Outputs",
+    "text": "50.2 Outputs\n\nList of stakeholders\nSpeeches by keynote speakers\nPress releases\nDisseminated products\nUploaded microdata and metadata and report\nStored/archived products",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>50</span>  <span class='chapter-title'>Manage the release of dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.3.html#documentation-and-tools",
+    "href": "Process7/7.3.html#documentation-and-tools",
+    "title": "50  Manage the release of dissemination products",
+    "section": "50.3 Documentation and Tools",
+    "text": "50.3 Documentation and Tools\n\nAccess to information act\nData protection act",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>50</span>  <span class='chapter-title'>Manage the release of dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.3.html#latest-update",
+    "href": "Process7/7.3.html#latest-update",
+    "title": "50  Manage the release of dissemination products",
+    "section": "50.4 Latest update",
+    "text": "50.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>50</span>  <span class='chapter-title'>Manage the release of dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.3.html#verified",
+    "href": "Process7/7.3.html#verified",
+    "title": "50  Manage the release of dissemination products",
+    "section": "50.5 Verified",
+    "text": "50.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>50</span>  <span class='chapter-title'>Manage the release of dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.4.html",
+    "href": "Process7/7.4.html",
+    "title": "51  Promote dissemination products",
+    "section": "",
+    "text": "51.1 Input\nWhilst marketing, in general, can be considered to be an overarching process, this sub-process concerns the active promotion of the statistical products produced in a specific statistical business process, to help them reach the widest possible audience. It includes the use of customer relationship management tools, to better target potential users of the products, as well as the use of tools including websites, mainstream media (TVs, Radios and Newspapers), social media, roadshows and community-level dissemination, blogs, vlogs and podcast to facilitate the process of communicating statistical information to users. Assessment of uptake and user satisfaction is done in this sub-process, assessment could be through evaluating website hits, complaints and complements (user reviews and feedback) from users as well as undertaking a user satisfaction survey.",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>51</span>  <span class='chapter-title'>Promote dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.4.html#input",
+    "href": "Process7/7.4.html#input",
+    "title": "51  Promote dissemination products",
+    "section": "",
+    "text": "Communication strategists\nMedia platforms\nWebsite\nBlog, vlogs, podcasts and press statements\nPublished reports both technical and popular versions (key highlight report)",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>51</span>  <span class='chapter-title'>Promote dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.4.html#output",
+    "href": "Process7/7.4.html#output",
+    "title": "51  Promote dissemination products",
+    "section": "51.2 Output",
+    "text": "51.2 Output\n\nIncreased uptake of the produced product\nIncreased awareness\nEnhanced organizational visibility",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>51</span>  <span class='chapter-title'>Promote dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.4.html#documentation-and-tools",
+    "href": "Process7/7.4.html#documentation-and-tools",
+    "title": "51  Promote dissemination products",
+    "section": "51.3 Documentation and Tools",
+    "text": "51.3 Documentation and Tools\n\nPublicity and Advocacy strategy\nCommunication strategy\nOrganizational social media handles",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>51</span>  <span class='chapter-title'>Promote dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.4.html#latest-update",
+    "href": "Process7/7.4.html#latest-update",
+    "title": "51  Promote dissemination products",
+    "section": "51.4 Latest update",
+    "text": "51.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>51</span>  <span class='chapter-title'>Promote dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.4.html#verified",
+    "href": "Process7/7.4.html#verified",
+    "title": "51  Promote dissemination products",
+    "section": "51.5 Verified",
+    "text": "51.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>51</span>  <span class='chapter-title'>Promote dissemination products</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.5.html",
+    "href": "Process7/7.5.html",
+    "title": "52  Manage user support",
+    "section": "",
+    "text": "52.1 Inputs\nThis sub-process ensures that user queries and requests for services such as microdata access are recorded, and that responses are provided within the stipulated timeframe. These queries and requests should be regularly reviewed to provide input to the overarching quality management process, as they can indicate new or changing user needs. Replies to user requests can also be used to populate a knowledge database or aFrequently Asked Question page, that is made publicly available, thus reducing the burden of replying to repeated and/or similar requests from external users. This sub-process also includes managing support to any partner organisations involved in disseminating the products. This sub-process also entails training stakeholders and media on reading and interpreting results of the produced products including its uses to avoid misuse.",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>52</span>  <span class='chapter-title'>Manage user support</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.5.html#inputs",
+    "href": "Process7/7.5.html#inputs",
+    "title": "52  Manage user support",
+    "section": "",
+    "text": "Data\nWebsite and Library\nQuality Declaration\nMetadata\nOpen Data Portal\nAccess link to stored data\nContact person and contact details for further inquiries and requests\nA simplified version of the technical report\nUser technical support services\nSocial Media handles\nData support team",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>52</span>  <span class='chapter-title'>Manage user support</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.5.html#output",
+    "href": "Process7/7.5.html#output",
+    "title": "52  Manage user support",
+    "section": "52.2 Output",
+    "text": "52.2 Output\n\nAddendums\nPress conferences and press releases\nFurther analysis based on user requests\nEmerging user needs and data gaps\nUpdated frequently asked questions",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>52</span>  <span class='chapter-title'>Manage user support</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.5.html#documentation-and-tools",
+    "href": "Process7/7.5.html#documentation-and-tools",
+    "title": "52  Manage user support",
+    "section": "52.3 Documentation and Tools",
+    "text": "52.3 Documentation and Tools\n\nData dissemination policy\nData revision policy\nInquiries and data request registers\nCommunication strategy\nGuidelines on data request and access rights",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>52</span>  <span class='chapter-title'>Manage user support</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.5.html#latest-update",
+    "href": "Process7/7.5.html#latest-update",
+    "title": "52  Manage user support",
+    "section": "52.4 Latest update",
+    "text": "52.4 Latest update\n19th March 2024",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>52</span>  <span class='chapter-title'>Manage user support</span>"
+    ]
+  },
+  {
+    "objectID": "Process7/7.5.html#verified",
+    "href": "Process7/7.5.html#verified",
+    "title": "52  Manage user support",
+    "section": "52.5 Verified",
+    "text": "52.5 Verified\ndate\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 7: Disseminate",
+      "<span class='chapter-number'>52</span>  <span class='chapter-title'>Manage user support</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.html",
+    "href": "Process8/8.html",
+    "title": "53  Evaluate",
+    "section": "",
+    "text": "Phase\n\n\nThis phase manages the evaluation of a specific instance of a statistical business process, as opposed to the more general overarching process of statistical quality management described in Section VI (Overarching Processes). It can take place at the end of the instance of the process, but can also be done on an ongoing basis during the statistical production process. It relies on inputs gathered throughout the different phases. It includes evaluating the success or failure of a specific instance of the statistical business process, drawing on a range of quantitative and qualitative inputs, and identifying and prioritising potential improvements in efficiency and quality, which are then either fed into the next phase or considered during the next iteration for products produced regularly.\nFor statistical outputs produced regularly, evaluation should, at least in theory, occur for each iteration, determining whether future iterations should take place, and if so, whether any improvements should be implemented. However, in some cases, particularly for regular and well-established statistical business processes, evaluation might not be formally carried out for each iteration. In such cases, this phase can be seen as providing the decision as to whether the next iteration should start from the Specify Needs phase, or from some later phase (often the Collect phase).\nThe “Evaluate” phase is broken down into three sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative\n\n8.1 Gather evaluation inputs\n8.2 Conduct evaluation\n8.3 Agree an action plan\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>53</span>  <span class='chapter-title'>Evaluate</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.1.html",
+    "href": "Process8/8.1.html",
+    "title": "54  Gather evaluation inputs",
+    "section": "",
+    "text": "54.1 Input\nEvaluation material can be produced in any other phase or sub-process. It may take many forms, including feedback from users, process metadata (paradata), system metrics, and staff suggestions. Reports of progress against an action plan agreed during a previous iteration may also form an input to evaluations of subsequent iterations. This sub-process gathers all of these inputs, compiles quality indicators and makes them available for the person or team conducting the evaluation. The collection of some of these evaluation materials can be automated and take place in a continuous way throughout the whole process, as defined by the quality framework (see Quality Management in Section VI). On the other hand, for the evaluation of certain processes it can be necessary to perform specific activities such as small surveys, (e.g. post-enumeration surveys, re-interview studies, survey on the effectiveness of dissemination).",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>54</span>  <span class='chapter-title'>Gather evaluation inputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.1.html#input",
+    "href": "Process8/8.1.html#input",
+    "title": "54  Gather evaluation inputs",
+    "section": "",
+    "text": "Progress Reports\nField Reports\nQuality Declaration\nIncident report\nSelf-assessment reports\nParadata",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>54</span>  <span class='chapter-title'>Gather evaluation inputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.1.html#output",
+    "href": "Process8/8.1.html#output",
+    "title": "54  Gather evaluation inputs",
+    "section": "54.2 Output",
+    "text": "54.2 Output\n\nConsolidated Evaluation Reports\nAssessment/Evaluation questionnaire\nEvaluation Matrix",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>54</span>  <span class='chapter-title'>Gather evaluation inputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.1.html#documentation-and-tools",
+    "href": "Process8/8.1.html#documentation-and-tools",
+    "title": "54  Gather evaluation inputs",
+    "section": "54.3 Documentation and Tools",
+    "text": "54.3 Documentation and Tools\n\nKeSQAF\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>54</span>  <span class='chapter-title'>Gather evaluation inputs</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.2.html",
+    "href": "Process8/8.2.html",
+    "title": "55  Conduct evaluation",
+    "section": "",
+    "text": "55.1 Input\nThis sub-process analyses the evaluation inputs compares them to the expected/target benchmarking results (when available), and process them into an evaluation report or control dashboard. The evaluation can take place at the end of the whole process (End-line Evaluation) for selected activities, during its execution in a continuous way (mid-line evaluation), or throughout the process (continuous evaluation), thus allowing for quick fixes or continuous improvement. The resulting report should note any quality issues specific to this iteration of the statistical business process as well as highlight any deviation of performance metrics from expected values, and should make recommendations for changes if necessary. These recommendations can cover changes to any phase or sub-process for future iterations of the process, or can suggest that the process is not repeated. In the case of determined need of changes in the business process, a list of recommendations with proper justifications should be developed.",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>55</span>  <span class='chapter-title'>Conduct evaluation</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.2.html#input",
+    "href": "Process8/8.2.html#input",
+    "title": "55  Conduct evaluation",
+    "section": "",
+    "text": "Paradata\nQuality Assurance Team\nEvaluation Matrix and guidelines\nAssessment Questionnaire",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>55</span>  <span class='chapter-title'>Conduct evaluation</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.2.html#output",
+    "href": "Process8/8.2.html#output",
+    "title": "55  Conduct evaluation",
+    "section": "55.2 Output",
+    "text": "55.2 Output\n\nEvaluation report with recommendations for future improvements and justification for the recommendations",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>55</span>  <span class='chapter-title'>Conduct evaluation</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.2.html#documentations-and-tools",
+    "href": "Process8/8.2.html#documentations-and-tools",
+    "title": "55  Conduct evaluation",
+    "section": "55.3 Documentations and Tools",
+    "text": "55.3 Documentations and Tools\n\nKeSQAF\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>55</span>  <span class='chapter-title'>Conduct evaluation</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.3.html",
+    "href": "Process8/8.3.html",
+    "title": "56  Agree on an action plan",
+    "section": "",
+    "text": "56.1 Input\nThis sub-process brings together the necessary decision-making power to form and agree on an action plan based on the evaluation report. It should also include consideration of a mechanism for monitoring the impact of those actions, which may, in turn, provide input to evaluations of future iterations of the process.",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>56</span>  <span class='chapter-title'>Agree on an action plan</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.3.html#input",
+    "href": "Process8/8.3.html#input",
+    "title": "56  Agree on an action plan",
+    "section": "",
+    "text": "Evaluation report\nFinal product report\nProposal on improvement",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>56</span>  <span class='chapter-title'>Agree on an action plan</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.3.html#output",
+    "href": "Process8/8.3.html#output",
+    "title": "56  Agree on an action plan",
+    "section": "56.2 Output",
+    "text": "56.2 Output\n\nDocumented proposed improvements to the processes\nAction plan/roadmap/ way forward report",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>56</span>  <span class='chapter-title'>Agree on an action plan</span>"
+    ]
+  },
+  {
+    "objectID": "Process8/8.3.html#documentations-and-tools",
+    "href": "Process8/8.3.html#documentations-and-tools",
+    "title": "56  Agree on an action plan",
+    "section": "56.3 Documentations and Tools",
+    "text": "56.3 Documentations and Tools\n\n{KeSQAF}(https://www.knbs.or.ke/download/kenya-statistical-quality-assessment-framework-kesqaf/)\n\n\nGo Back\n\nGo to Home page",
+    "crumbs": [
+      "Process 8: Evaluate",
+      "<span class='chapter-number'>56</span>  <span class='chapter-title'>Agree on an action plan</span>"
+    ]
+  }
+]
