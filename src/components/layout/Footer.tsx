@@ -15,17 +15,17 @@ export function Footer() {
             <h4 className="font-medium mb-3">Quick Links</h4>
             <ul className="space-y-2 text-sm text-knbs-100">
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="https://www.knbs.or.ke/all-reports/" className="hover:text-white">
                   Publications
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="https://www.knbs.or.ke/portals/" className="hover:text-white">
                   Data Portal
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="https://www.knbs.or.ke/contacts/" className="hover:text-white">
                   Contact Us
                 </a>
               </li>
