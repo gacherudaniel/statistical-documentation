@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-import Dashboard from "./components/Dashboard";
-
-function App() {
-  return <Dashboard />;
-=======
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,12 +6,12 @@ import {
 } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Dashboard from "./components/Dashboard";
-import LoadingFallback from "./components/LoadingFallback";
+import LoadingFallback from "./components/LoadingFallback.tsx";
 
 // Lazy components
 const Home = lazy(() =>
   import("./components/Home").then((module) => ({
-    default: module.Home,
+    default: module.Homepage,
   }))
 );
 
@@ -41,7 +35,6 @@ function App() {
       </Suspense>
     </Router>
   );
->>>>>>> Stashed changes
 }
 
 export default App;
