@@ -132,33 +132,6 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
                       </div>
                     </div>
                   </div>
-
-                  <div className="bg-white border border-knbs-200 rounded-lg p-4">
-                    <div className="flex items-start gap-3">
-                      <div className="bg-knbs-100 p-2 rounded">
-                        <Database className="text-knbs-600" size={20} />
-                      </div>
-                      <div className="flex-1">
-                        <p className="font-medium text-gray-800 mb-2">
-                          Interactive Data Portal
-                        </p>
-                        <p className="text-sm text-gray-700 mb-3 leading-relaxed">
-                          Kenya National Data Archive (KeNADA) provides
-                          interactive visualization and query tools for CPI data
-                          exploration.
-                        </p>
-                        <a
-                          href="https://statistics.knbs.or.ke/nada"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-knbs-600 hover:text-knbs-700 text-sm flex items-center gap-2 hover:underline font-medium"
-                        >
-                          <ExternalLink size={14} />
-                          KeNADA Portal
-                        </a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
 

@@ -221,7 +221,7 @@ export function GeneralInfo({
                 <p className="text-sm text-gray-700">
                   <sup className="font-semibold text-knbs-600">1</sup>{" "}
                   <a
-                    href="https://www.knbs.or.ke/download/kenya-statistical-quality-assessment-framework-kesqaf/"
+                    href="https://www.knbs.or.ke/wp-content/uploads/2023/09/Kenya-Statistical-Quality-Assurance-Framework-Booklet.pdf"
                     className="text-knbs-600 hover:text-knbs-700 font-medium hover:underline transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"

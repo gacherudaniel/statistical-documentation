@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Breadcrumb } from "./layout/Breadcrumb";
 import { TopHeader } from "./layout/TopHeader";
 import { MainHeader } from "./layout/MainHeader";
@@ -15,9 +16,13 @@ import { Compendium } from "../pages/metadata/Compendium";
 
 
 export default function Dashboard() {
-  const [currentPath, setCurrentPath] = useState("/metadata/quality-reports");
+  const location = useLocation();
+  const navigate = useNavigate();
   const [selectedProduct, setSelectedProduct] =
     useState<string>("poverty-inequality");
+
+  // Use location.pathname directly instead of state to avoid cascading renders
+  const currentPath = location.pathname;
 
   // Shrink navigation for quality reports AND dictionary
   const isCompactView =
@@ -35,12 +40,12 @@ export default function Dashboard() {
       const params = new URLSearchParams(query);
       const productId = params.get("product");
 
-      setCurrentPath(basePath);
+      navigate(basePath + "?" + query);
       if (productId) {
         setSelectedProduct(productId);
       }
     } else {
-      setCurrentPath(path);
+      navigate(path);
     }
   };
 

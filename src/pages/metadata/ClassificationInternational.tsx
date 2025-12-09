@@ -85,7 +85,7 @@ export function ClassificationInternational() {
           description:
             "The reference international classification for organizing education programmes and related qualifications by levels and fields.",
           version: "2011",
-          link: "https://uis.unesco.org/en/topic/international-standard-classification-education-isced",
+          link: "https://www.uis.unesco.org/en/methods-and-tools/isced",
         },
         {
           name: "International Standard Classification of Occupations",
@@ -93,7 +93,7 @@ export function ClassificationInternational() {
           description:
             "A tool for organizing jobs into a clearly defined set of groups according to the tasks and duties undertaken in the job.",
           version: "ISCO-08",
-          link: "https://www.ilo.org/public/english/bureau/stat/isco/isco08/",
+          link: "https://ilostat.ilo.org/methods/concepts-and-definitions/classification-occupation/",
         },
         {
           name: "International Classification of Status in Employment",
@@ -101,7 +101,7 @@ export function ClassificationInternational() {
           description:
             "Provides a framework for organizing information on jobs held by persons into meaningful, homogeneous groups based on their type of explicit or implicit contract of employment.",
           version: "ICSE-18",
-          link: "https://www.ilo.org/public/english/bureau/stat/isco/icse18/",
+          link: "https://ilostat.ilo.org/methods/concepts-and-definitions/classification-status-at-work/",
         },
         {
           name: "International Classification of Functioning, Disability and Health",
@@ -141,7 +141,7 @@ export function ClassificationInternational() {
           acronym: "COFOG",
           description:
             "A detailed classification of the functions, or socioeconomic objectives, that general government units aim to achieve through various kinds of expenditure.",
-          link: "https://unstats.un.org/unsd/classifications/Econ/COFOG",
+          link: "https://unstats.un.org/unsd/classifications/cofog/revision",
         },
         {
           name: "Balance of Payments and International Investment Position Manual",

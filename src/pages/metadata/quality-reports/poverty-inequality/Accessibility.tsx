@@ -7,6 +7,10 @@ import {
   Building2,
   Database,
   Mail,
+  Globe,
+  Archive,
+  Send,
+  Download,
 } from "lucide-react";
 
 interface AccessibilityProps {
@@ -65,7 +69,9 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
               {/* Online Access */}
               <div>
                 <h5 className="font-medium text-knbs-700 mb-3 flex items-center gap-2">
-                  <span className="bg-knbs-100 p-1.5 rounded">🌐</span>
+                  <span className="bg-knbs-100 p-1.5 rounded">
+                    <Globe className="text-knbs-600" size={16} />
+                  </span>
                   Online Resources
                 </h5>
 
@@ -128,7 +134,9 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
               {/* Physical Access */}
               <div>
                 <h5 className="font-medium text-knbs-700 mb-3 flex items-center gap-2">
-                  <span className="bg-knbs-100 p-1.5 rounded">📚</span>
+                  <span className="bg-knbs-100 p-1.5 rounded">
+                    <Archive className="text-knbs-600" size={16} />
+                  </span>
                   Physical Access Points
                 </h5>
 
@@ -174,7 +182,9 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
               {/* Additional Information */}
               <div>
                 <h5 className="font-medium text-knbs-700 mb-3 flex items-center gap-2">
-                  <span className="bg-knbs-100 p-1.5 rounded">📧</span>
+                  <span className="bg-knbs-100 p-1.5 rounded">
+                    <Send className="text-knbs-600" size={16} />
+                  </span>
                   Request Additional Information
                 </h5>
 
@@ -218,19 +228,28 @@ export function Accessibility({ isOpen, onToggle }: AccessibilityProps) {
               <div className="bg-gradient-to-r from-knbs-500 to-knbs-400 text-white rounded-lg p-4">
                 <h5 className="font-semibold mb-3">Quick Access Summary</h5>
                 <div className="grid md:grid-cols-3 gap-3 text-sm">
-                  <div className="bg-white/10 rounded p-3">
-                    <p className="font-medium mb-1">📄 PDF Reports</p>
-                    <p className="text-xs opacity-90">KNBS Website</p>
+                  <div className="bg-white/10 rounded p-3 flex items-start gap-2">
+                    <FileText className="text-white/80 mt-0.5" size={14} />
+                    <div>
+                      <p className="font-medium mb-1">PDF Reports</p>
+                      <p className="text-xs opacity-90">KNBS Website</p>
+                    </div>
                   </div>
-                  <div className="bg-white/10 rounded p-3">
-                    <p className="font-medium mb-1">💾 Microdata</p>
-                    <p className="text-xs opacity-90">KeNADA Portal</p>
+                  <div className="bg-white/10 rounded p-3 flex items-start gap-2">
+                    <Download className="text-white/80 mt-0.5" size={14} />
+                    <div>
+                      <p className="font-medium mb-1">Microdata</p>
+                      <p className="text-xs opacity-90">KeNADA Portal</p>
+                    </div>
                   </div>
-                  <div className="bg-white/10 rounded p-3">
-                    <p className="font-medium mb-1">📚 Hard Copies</p>
-                    <p className="text-xs opacity-90">
-                      Library & County Offices
-                    </p>
+                  <div className="bg-white/10 rounded p-3 flex items-start gap-2">
+                    <Archive className="text-white/80 mt-0.5" size={14} />
+                    <div>
+                      <p className="font-medium mb-1">Hard Copies</p>
+                      <p className="text-xs opacity-90">
+                        Library & County Offices
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

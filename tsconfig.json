@@ -1,28 +1,17 @@
-{
+﻿{
   "files": [],
   "references": [
-<<<<<<< HEAD
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-=======
     {
       "path": "./tsconfig.app.json"
     },
     {
       "path": "./tsconfig.node.json"
     }
->>>>>>> 341fd5f8c96ccd3a141b5e71f7959b087128521c
   ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-<<<<<<< HEAD
-    },
-    "strict": true,
-    "forceConsistentCasingInFileNames": true
-=======
     }
->>>>>>> 341fd5f8c96ccd3a141b5e71f7959b087128521c
   }
 }
