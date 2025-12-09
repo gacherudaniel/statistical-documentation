@@ -1,14 +1,5 @@
-﻿export function Footer() {
+export function Footer() {
   return (
-<<<<<<< HEAD
-    <footer className="bg-knbs-800 text-white py-12 mt-auto">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-8">
-          <div>
-            <h3 className="font-semibold mb-4 text-white">About</h3>
-            <p className="text-knbs-100 text-sm leading-relaxed">
-              Kenya National Bureau of Statistics providing quality statistical information.
-=======
     <footer className="bg-knbs-800 text-white py-6 mt-auto">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-6">
@@ -17,7 +8,6 @@
             <p className="text-knbs-100 text-sm leading-relaxed">
               Kenya National Bureau of Statistics providing quality statistical
               information.
->>>>>>> origin/feature3
             </p>
           </div>
           <div>
@@ -86,16 +76,11 @@
             </ul>
           </div>
         </div>
-<<<<<<< HEAD
-        <div className="border-t border-knbs-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-knbs-200 gap-4">
-          <p>&copy; 2025 Kenya National Bureau of Statistics. All rights reserved.</p>
-=======
         <div className="border-t border-knbs-700 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-knbs-200 gap-4">
           <p>
             &copy; 2025 Kenya National Bureau of Statistics. All rights
             reserved.
           </p>
->>>>>>> origin/feature3
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">
               Twitter
@@ -110,9 +95,5 @@
         </div>
       </div>
     </footer>
-<<<<<<< HEAD
-  )
-=======
   );
->>>>>>> origin/feature3
 }
