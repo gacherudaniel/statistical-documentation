@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="bg-knbs-800 text-white py-8 mt-auto">
+    <footer className="bg-knbs-600 text-white py-8 mt-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-8">
           {/* About Section */}
@@ -68,7 +68,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-knbs-100">
               <li>
                 <a
-                  href="#"
+                  href="/quality/code-of-practice"
                   className="hover:text-white transition-colors duration-200"
                 >
                   Code of Practice
@@ -76,7 +76,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/quality/kesqaf"
                   className="hover:text-white transition-colors duration-200"
                 >
                   KeSQAF
@@ -84,7 +84,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/quality/kspm"
                   className="hover:text-white transition-colors duration-200"
                 >
                   KSPM
@@ -99,7 +99,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-knbs-100 mb-4">
               <li>
                 <a
-                  href="#"
+                  href="/metadata"
                   className="hover:text-white transition-colors duration-200"
                 >
                   Metadata
@@ -107,7 +107,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/metadata/classification"
                   className="hover:text-white transition-colors duration-200"
                 >
                   Classifications
@@ -115,7 +115,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/metadata/compendium"
                   className="hover:text-white transition-colors duration-200"
                 >
                   Compendium
@@ -123,7 +123,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/metadata/quality-reports"
                   className="hover:text-white transition-colors duration-200"
                 >
                   Quality Reports

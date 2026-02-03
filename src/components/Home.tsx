@@ -84,7 +84,7 @@ export function Homepage() {
         </div>
 
         {/* Bottom Section */}
-        <div className="bg-gradient-to-r from-knbs-700 to-knbs-800 rounded-lg p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-knbs-500 to-knbs-600 rounded-lg p-8 text-white text-center">
           <h2 className="text-2xl font-semibold mb-4">Trust & Standards</h2>
           <p className="text-knbs-100 leading-relaxed max-w-4xl mx-auto">
             All statistical information on this platform undergoes rigorous

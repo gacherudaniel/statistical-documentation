@@ -6,6 +6,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { useState } from "react";
+import kesicPdf from "../../assets/KESIC.pdf";
 
 interface Classification {
   name: string;
@@ -51,7 +52,7 @@ export function ClassificationNational() {
           version: "Rev. 1 (2023)",
           basedOn: "ISIC Rev. 4",
           link: "https://kesic.labourmarket.go.ke/kesic-classic-segments/",
-          
+          downloadLink: kesicPdf,
         },
       ],
     },
@@ -164,10 +165,11 @@ export function ClassificationNational() {
                         {classification.downloadLink && (
                           <a
                             href={classification.downloadLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
                             className="flex items-center gap-1 px-3 py-2 bg-knbs-500 text-white text-sm font-medium rounded hover:bg-knbs-600 transition-colors whitespace-nowrap"
-                          ></a>
+                          >
+                            View PDF
+                            <FileText className="w-4 h-4" />
+                          </a>
                         )}
                         {classification.link && (
                           <a
