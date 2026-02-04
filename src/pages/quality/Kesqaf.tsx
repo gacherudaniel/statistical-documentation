@@ -1,7 +1,7 @@
 import { ExternalLink, Book, Download } from "lucide-react";
 
 export function Kesqaf() {
-  const quartoBookUrl = "http://localhost:6919/"; // Change to your KeSQAF Quarto server port
+  const quartoBookUrl = "https://gacherudaniel.github.io/KESQAF/"; 
   const pdfDownloadUrl =
     "https://www.knbs.or.ke/wp-content/uploads/2023/09/Kenya-Statistical-Quality-Assurance-Framework-Booklet.pdf"; // Path to your PDF document
 

@@ -1,7 +1,7 @@
 import { ExternalLink, Book, Download } from "lucide-react";
 
 export function Kspm() {
-  const quartoBookUrl = "http://localhost:6918/"; // Change to your KSPM Quarto server port
+  const quartoBookUrl = "https://gacherudaniel.github.io/KSPM/"; // Change to your KSPM Quarto server port
   const pdfDownloadUrl =
     "https://www.knbs.or.ke/wp-content/uploads/2023/09/Kenya-Statistical-Production-Model.pdf"; // Path to your PDF document
 
