@@ -25,7 +25,6 @@ export function Sidebar({
   expandedSections, 
   onToggle, 
   isMobile = false, 
-  isOpen = true, 
   onClose 
 }: SidebarProps) {
   const handleNavClick = (id: SectionKey) => {
