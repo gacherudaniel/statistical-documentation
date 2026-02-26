@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/statistical-documentation/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KNBS Statistical Documentation</title>
+    <script type="module" crossorigin src="/statistical-documentation/assets/index-DE1_YtPv.js"></script>
+    <link rel="stylesheet" crossorigin href="/statistical-documentation/assets/index-CNDNkaBQ.css">
+    <script>
+      // Single Page App (SPA) handling for GitHub Pages
+      // This script takes the current location and redirects to the index page
+      // with the route encoded as a query parameter that index page can use
+      // for client-side routing
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 2).join('/') + '/#' +
+        l.pathname.slice(1).split('/').slice(1).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

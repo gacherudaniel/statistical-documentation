@@ -1,5 +1,5 @@
 ﻿import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -10,7 +10,7 @@ import LoadingFallback from "./components/LoadingFallback.tsx";
 
 function App() {
   return (
-    <Router basename="/statistical-documentation">
+    <Router>
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
