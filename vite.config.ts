@@ -4,7 +4,7 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/knbs-dasboard/',
+  base: '/statistical-documentation/',
   plugins: [react()],
   resolve: {
     alias: {

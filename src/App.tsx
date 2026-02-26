@@ -10,7 +10,7 @@ import LoadingFallback from "./components/LoadingFallback.tsx";
 
 function App() {
   return (
-    <Router basename="/knbs-dasboard">
+    <Router basename="/statistical-documentation">
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
