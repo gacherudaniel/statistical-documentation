@@ -173,7 +173,7 @@ export function GeneralInfo({
                       The production of the Consumer Price Index is mandated
                       under the{" "}
                       <span className="font-semibold text-gray-900 bg-knbs-100 px-2 py-1 rounded">
-                        Statistics Act No. 4 of 2006
+                        Statistics Act (Cap. 112)
                       </span>{" "}
                       which provides KNBS with the legal authority to collect,
                       compile, analyze, and disseminate statistical information.

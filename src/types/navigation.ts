@@ -6,7 +6,6 @@ export type MetadataSubItem =
   | 'quality-reports' 
   | 'classification-national' 
   | 'classification-international'
-  | 'codelists'
   | 'compendium';
 
 export interface NavigationItem {
@@ -59,7 +58,6 @@ export const NAVIGATION_STRUCTURE: NavigationItem[] = [
           { id: 'classification-national', label: 'National', path: '/metadata/classification/national' },
         ],
       },
-      { id: 'codelists', label: 'Codelists', path: '/metadata/codelists' },
       { id: 'compendium', label: 'Compendium', path: '/metadata/compendium' },
     ],
   },

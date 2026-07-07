@@ -38,8 +38,6 @@ export function Breadcrumb({ currentPath, onNavigate }: BreadcrumbProps) {
 
       if (currentPath === "/metadata/quality-reports") {
         breadcrumbs.push({ label: "Quality Reports" });
-      } else if (currentPath === "/metadata/codelists") {
-        breadcrumbs.push({ label: "Codelists" });
       } else if (currentPath === "/metadata/classification/national") {
         breadcrumbs.push({ label: "Classifications", path: "/metadata/classification/national" });
         breadcrumbs.push({ label: "National" });

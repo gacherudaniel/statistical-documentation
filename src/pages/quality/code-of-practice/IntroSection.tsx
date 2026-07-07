@@ -140,7 +140,7 @@ export function IntroSection() {
         </h2>
         <div className="bg-gray-50 border-l-4 border-gray-400 rounded-r-lg p-6">
           <p className="text-sm text-gray-700 leading-relaxed mb-4">
-            The <strong>Statistics Act, 2006</strong> gives the Kenya National
+            The <strong>Statistics Act (Cap. 112)</strong> gives the Kenya National
             Bureau of Statistics (KNBS) the role of coordinating and supervising
             all official statistical programmes undertaken within the NSS. The
             act inter alia mandates the Bureau to establish standards and ensure

@@ -121,7 +121,7 @@ export function GeneralInfo({
                   <p className="text-gray-700 leading-relaxed">
                     The statistics are produced under the{" "}
                     <span className="font-semibold text-gray-900 bg-knbs-100 px-2 py-1 rounded">
-                      Statistics Act, 2006
+                      Statistics Act (Cap. 112)
                     </span>
                     <sup>3</sup>
                   </p>
@@ -142,7 +142,7 @@ export function GeneralInfo({
                       Data Confidentiality
                     </h4>
                     <p className="text-knbs-700 leading-relaxed mb-3">
-                      The Statistics Act, 2006 guarantees the confidentiality of
+                      The Statistics Act (Cap. 112) guarantees the confidentiality of
                       data collected which is exclusively for statistical
                       purposes. All data providers are informed of the
                       safeguards in place to protect their personal information

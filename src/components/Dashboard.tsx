@@ -12,7 +12,6 @@ import { Kspm } from "../pages/quality/Kspm";
 import { QualityReports } from "../pages/metadata/quality-reports/QualityReports";
 import { ClassificationNational } from "../pages/metadata/ClassificationNational";
 import { ClassificationInternational } from "../pages/metadata/ClassificationInternational";
-import { Codelists } from "../pages/metadata/Codelists";
 import { Compendium } from "../pages/metadata/Compendium";
 
 export default function Dashboard() {
@@ -62,8 +61,6 @@ export default function Dashboard() {
         return <ClassificationInternational />;
       case "/metadata/classification/national":
         return <ClassificationNational />;
-      case "/metadata/codelists":
-        return <Codelists />;
       case "/metadata/compendium":
         return <Compendium />;
       default:
