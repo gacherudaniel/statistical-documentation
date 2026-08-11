@@ -29,7 +29,7 @@ export function Homepage() {
                 frameworks, statistical standards, classifications, and metadata
                 documentation. The platform is designed for data producers,
                 researchers, and policymakers who require reliable, structured,
-                and standardized statistical information.
+                and standardized statistical info.
               </p>
             </div>
 
