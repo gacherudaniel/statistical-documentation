@@ -1,23 +1,33 @@
 // src/components/products/CPIContent.tsx
-import type { SectionKey } from "../QualityReport";
-import { GeneralInfo } from "./sections/CPIGeneralInfo";
-import { Relevance } from "./sections/CPIRelevance";
-import { MethodologicalSoundness } from "./sections/CPIMethodologicalSoundness";
-import { Accuracy } from "./sections/CPIAccuracy";
-import { Timeliness } from "./sections/CPITimeliness";
-import { Accessibility } from "./sections/CPIAccessibility";
-import { Coherence } from "./sections/CPICoherence";
-import { References } from "./sections/CPIReferences";
+import type { SectionKey } from "../../pages/metadata/quality-reports/QualityReport";
+import type { Product } from "../../pages/metadata/quality-reports/products";
+import { GeneralInfo } from "../../pages/metadata/quality-reports/cpi/CPIGeneralInfo";
+import { Relevance } from "../../pages/metadata/quality-reports/cpi/CPIRelevance";
+import { MethodologicalSoundness } from "../../pages/metadata/quality-reports/cpi/CPIMethodologicalSoundness";
+import { Accuracy } from "../../pages/metadata/quality-reports/cpi/CPIAccuracy";
+import { Timeliness } from "../../pages/metadata/quality-reports/cpi/CPITimeliness";
+import { Accessibility } from "../../pages/metadata/quality-reports/cpi/CPIAccessibility";
+import { Coherence } from "../../pages/metadata/quality-reports/cpi/CPICoherence";
+import { References } from "../../pages/metadata/quality-reports/cpi/CPIReferences";
 
 interface CPIContentProps {
   expandedSections: Record<SectionKey, boolean>;
   onToggle: (id: SectionKey) => void;
+  selectedProduct?: Product;
 }
 
-export function CPIContent({ expandedSections, onToggle }: CPIContentProps) {
+export function CPIContent({
+  expandedSections,
+  onToggle,
+  selectedProduct,
+}: CPIContentProps) {
   return (
     <>
-      <GeneralInfo isOpen={expandedSections.general} onToggle={onToggle} />
+      <GeneralInfo
+        isOpen={expandedSections.general}
+        onToggle={onToggle}
+        selectedProduct={selectedProduct}
+      />
       <Relevance isOpen={expandedSections.relevance} onToggle={onToggle} />
       <MethodologicalSoundness
         isOpen={expandedSections.methodology}

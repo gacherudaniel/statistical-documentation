@@ -5,6 +5,7 @@ import {
   FileText,
   Award,
   TrendingUp,
+  BarChart3,
 } from "lucide-react";
 
 export function IntroSection() {
@@ -60,8 +61,9 @@ export function IntroSection() {
           </p>
         </div>
         <div className="bg-knbs-50 border border-knbs-300 rounded-lg p-4">
-          <p className="text-xs text-knbs-700 font-medium">
-            📌 Note: The indicators for measuring the success of implementation
+          <p className="text-xs text-knbs-700 font-medium flex items-center gap-2">
+            <BarChart3 size={16} className="text-knbs-600" />
+            Note: The indicators for measuring the success of implementation
             of KeSCoP are in Annex 1.
           </p>
         </div>
@@ -81,7 +83,7 @@ export function IntroSection() {
           of statistical processes.
         </p>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-gradient-to-br from-knbs-50 to-white border-2 border-knbs-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-3 mb-4">
               <div className="bg-knbs-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
@@ -138,7 +140,7 @@ export function IntroSection() {
         </h2>
         <div className="bg-gray-50 border-l-4 border-gray-400 rounded-r-lg p-6">
           <p className="text-sm text-gray-700 leading-relaxed mb-4">
-            The <strong>Statistics Act, 2006</strong> gives the Kenya National
+            The <strong>Statistics Act (Cap. 112)</strong> gives the Kenya National
             Bureau of Statistics (KNBS) the role of coordinating and supervising
             all official statistical programmes undertaken within the NSS. The
             act inter alia mandates the Bureau to establish standards and ensure

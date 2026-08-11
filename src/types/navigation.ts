@@ -6,8 +6,7 @@ export type MetadataSubItem =
   | 'quality-reports' 
   | 'classification-national' 
   | 'classification-international'
-  | 'codelists'
-  | 'dictionary';
+  | 'compendium';
 
 export interface NavigationItem {
   id: string;
@@ -17,6 +16,11 @@ export interface NavigationItem {
 }
 
 export const NAVIGATION_STRUCTURE: NavigationItem[] = [
+  {
+    id: 'home',
+    label: 'Home',
+    path: '/',
+  },
   {
     id: 'quality',
     label: 'Quality',
@@ -30,16 +34,30 @@ export const NAVIGATION_STRUCTURE: NavigationItem[] = [
     id: 'metadata',
     label: 'Metadata',
     children: [
-      { id: 'quality-reports', label: 'Quality Reports', path: '/metadata/quality-reports' },
+      { 
+        id: 'quality-reports', 
+        label: 'Quality Reports',
+        children: [
+          { 
+            id: 'poverty-inequality-report', 
+            label: 'Poverty & Inequality Statistics', 
+            path: '/metadata/quality-reports?product=poverty-inequality' 
+          },
+          { 
+            id: 'cpi-report', 
+            label: 'Consumer Price Index (CPI)', 
+            path: '/metadata/quality-reports?product=cpi' 
+          },
+        ],
+      },
       { 
         id: 'classification', 
         label: 'Classification',
         children: [
-          { id: 'classification-national', label: 'National', path: '/metadata/classification/national' },
           { id: 'classification-international', label: 'International', path: '/metadata/classification/international' },
+          { id: 'classification-national', label: 'National', path: '/metadata/classification/national' },
         ],
       },
-      { id: 'codelists', label: 'Codelists', path: '/metadata/codelists' },
       { id: 'compendium', label: 'Compendium', path: '/metadata/compendium' },
     ],
   },

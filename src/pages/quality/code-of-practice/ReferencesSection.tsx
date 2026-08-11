@@ -7,12 +7,14 @@ export function ReferencesSection() {
       author: "Government of Kenya (GoK)",
       year: "2006",
       description: "Legal framework governing statistical production in Kenya",
+      url: "https://www.knbs.or.ke/wp-content/uploads/2020/12/Statistics-Act-4-of-2006-Revised-Edition-2019.pdf"
     },
     {
       title: "Kenya Statistical Quality Assurance Framework (KeSQAF)",
       author: "Kenya National Bureau of Statistics (KNBS)",
       year: "2022",
       description: "Comprehensive framework for quality assurance in NSS",
+      url: "https://gacherudaniel.github.io/KESQAF/"
     },
     {
       title:
@@ -21,6 +23,7 @@ export function ReferencesSection() {
         "United Nations Department of Economic and Social Affairs (UNDESA)",
       year: "2022",
       description: "International guidance on NSS management and organization",
+      url: "https://unstats.un.org/capacity-development/handbook/index.cshtml"
     },
   ];
 
@@ -49,7 +52,18 @@ export function ReferencesSection() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  {ref.title}
+                  {ref.url ? (
+                    <a
+                      href={ref.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-knbs-600 transition-colors"
+                    >
+                      {ref.title}
+                    </a>
+                  ) : (
+                    ref.title
+                  )}
                 </h3>
                 <p className="text-sm text-gray-600 mb-2">
                   <span className="font-semibold">{ref.author}</span> (
@@ -57,7 +71,16 @@ export function ReferencesSection() {
                 </p>
                 <p className="text-sm text-gray-700">{ref.description}</p>
               </div>
-              <ExternalLink className="text-knbs-500 flex-shrink-0" size={20} />
+              {ref.url && (
+                <a
+                  href={ref.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-knbs-500 hover:text-knbs-600 transition-colors flex-shrink-0"
+                >
+                  <ExternalLink size={20} />
+                </a>
+              )}
             </div>
           </div>
         ))}

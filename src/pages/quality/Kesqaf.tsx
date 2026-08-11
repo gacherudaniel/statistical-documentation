@@ -1,115 +1,113 @@
-import { useState } from "react";
-import {
-  BookOpen,
-  ChevronRight,
-  FileText,
-  Settings,
-  Building2,
-  Repeat,
-  BarChart3,
-  Rocket,
-  Target,
-} from "lucide-react";
-import { IntroSection } from "./kesqaf/IntroSection";
-import { ContextSection } from "./kesqaf/ContextSection";
-import { SystemSection } from "./kesqaf/SystemSection";
-import { LevelASection } from "./kesqaf/LevelASection";
-import { LevelBSection } from "./kesqaf/LevelBSection";
-import { LevelCSection } from "./kesqaf/LevelCSection";
-import { LevelDSection } from "./kesqaf/LevelDSection";
-import { ImplementationSection } from "./kesqaf/ImplementationSection";
+import { ExternalLink, Book, Download } from "lucide-react";
 
 export function Kesqaf() {
-  const [activeSection, setActiveSection] = useState("intro");
-
-  const sections = [
-    { id: "intro", title: "Introduction & Key Terms", icon: FileText },
-    { id: "context", title: "1. Quality Context and Concepts", icon: Target },
-    { id: "system", title: "2. Statistical System in Kenya", icon: Building2 },
-    { id: "level-a", title: "3A. Managing Statistical System", icon: Settings },
-    {
-      id: "level-b",
-      title: "3B. Managing Institutional Environment",
-      icon: Building2,
-    },
-    {
-      id: "level-c",
-      title: "3C. Managing Statistical Processes",
-      icon: Repeat,
-    },
-    {
-      id: "level-d",
-      title: "3D. Managing Statistical Outputs",
-      icon: BarChart3,
-    },
-    { id: "implementation", title: "4. Implementation", icon: Rocket },
-  ];
-
-  const renderContent = () => {
-    switch (activeSection) {
-      case "intro":
-        return <IntroSection />;
-      case "context":
-        return <ContextSection />;
-      case "system":
-        return <SystemSection />;
-      case "level-a":
-        return <LevelASection />;
-      case "level-b":
-        return <LevelBSection />;
-      case "level-c":
-        return <LevelCSection />;
-      case "level-d":
-        return <LevelDSection />;
-      case "implementation":
-        return <ImplementationSection />;
-      default:
-        return <IntroSection />;
-    }
-  };
+  const quartoBookUrl = "https://gacherudaniel.github.io/KESQAF/"; 
+  const pdfDownloadUrl =
+    "https://www.knbs.or.ke/wp-content/uploads/2023/09/Kenya-Statistical-Quality-Assurance-Framework-Booklet.pdf"; // Path to your PDF document
 
   return (
-    <div className="grid grid-cols-12 gap-6">
-      {/* Sidebar Navigation */}
-      <div className="col-span-3">
-        <div className="bg-white rounded-lg shadow-sm border p-4 sticky top-4">
-          <div className="flex items-center gap-2 mb-4 pb-4 border-b">
-            <BookOpen className="text-knbs-600" size={24} />
-            <div>
-              <h3 className="font-bold text-knbs-600 text-sm">KeSQAF</h3>
-              <p className="text-xs text-gray-600">Quality Framework</p>
+    <div className="max-w-none mx-auto bg-gradient-to-b from-amber-50 to-orange-50 min-h-screen">
+      {/* E-book Header */}
+      <div className="bg-gradient-to-r from-amber-800 to-orange-900 text-white shadow-lg">
+        <div className="px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2">
+                <Book className="text-white" size={28} />
+              </div>
+              <div>
+                <h1 className="text-2xl font-serif font-bold">
+                  Kenya Statistical Quality Assurance Framework
+                </h1>
+                <p className="text-amber-100 text-sm font-medium mt-1">
+                  KeSQAF • Digital Edition • Kenya National Bureau of Statistics
+                </p>
+              </div>
+            </div>
+
+            {/* E-book Controls */}
+            <div className="flex items-center gap-3">
+              <a
+                href={pdfDownloadUrl}
+                download="KeSQAF.pdf"
+                className="flex items-center gap-2 bg-knbs-600 hover:bg-knbs-700 px-4 py-2 rounded-lg transition-colors text-sm font-medium backdrop-blur-sm"
+              >
+                <Download size={16} />
+                <span className="hidden md:inline">View PDF</span>
+              </a>
+              <a
+                href={quartoBookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors text-sm font-medium backdrop-blur-sm"
+              >
+                <ExternalLink size={16} />
+                <span className="hidden md:inline">Full Screen</span>
+              </a>
             </div>
           </div>
-
-          <nav className="space-y-1">
-            {sections.map((section) => {
-              const Icon = section.icon;
-              return (
-                <button
-                  key={section.id}
-                  onClick={() => setActiveSection(section.id)}
-                  className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center gap-2 text-sm ${
-                    activeSection === section.id
-                      ? "bg-knbs-500 text-white"
-                      : "hover:bg-gray-100 text-gray-700"
-                  }`}
-                >
-                  <Icon size={16} className="flex-shrink-0" />
-                  <span className="flex-1 text-xs leading-tight">
-                    {section.title}
-                  </span>
-                  <ChevronRight size={14} className="flex-shrink-0" />
-                </button>
-              );
-            })}
-          </nav>
         </div>
       </div>
 
-      {/* Content Area */}
-      <div className="col-span-9">
-        <div className="bg-white rounded-lg shadow-sm border">
-          {renderContent()}
+      {/* E-book Content Container */}
+      <div className="relative">
+        {/* Paper-like background with subtle texture */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-cream-50 to-amber-50 opacity-80"></div>
+
+        {/* Book Shadow Effect */}
+        <div className="relative max-w-7xl mx-auto px-4 py-6">
+          <div
+            className="bg-white rounded-2xl shadow-2xl border border-amber-200 overflow-hidden"
+            style={{
+              boxShadow:
+                "0 25px 50px -12px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+            }}
+          >
+            {/* Book Spine Visual Effect */}
+            <div className="relative">
+              <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-amber-600 to-orange-700 opacity-60"></div>
+              <div className="absolute left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-amber-400 to-orange-500 opacity-40"></div>
+            </div>
+
+            {/* Page Content */}
+            <div className="relative ml-6 bg-white">
+              <iframe
+                src={quartoBookUrl}
+                className="w-full border-0 bg-white"
+                style={{
+                  height: "calc(100vh - 200px)",
+                  minHeight: "1000px",
+                  fontFamily: "'Georgia', 'Times New Roman', serif",
+                }}
+                title="KeSQAF Digital Book"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"
+              />
+            </div>
+          </div>
+
+          {/* Book Pages Shadow Effect */}
+          <div className="absolute -bottom-2 left-8 right-8 h-4 bg-gradient-to-r from-transparent via-amber-900/20 to-transparent blur-sm rounded-full"></div>
+          <div className="absolute -bottom-1 left-10 right-10 h-3 bg-gradient-to-r from-transparent via-amber-800/15 to-transparent blur-sm rounded-full"></div>
+        </div>
+      </div>
+
+      {/* E-book Footer */}
+      <div className="bg-gradient-to-r from-amber-800 to-orange-900 text-white py-3 px-8">
+        <div className="flex items-center justify-between text-xs">
+          <div className="flex items-center gap-4">
+            <span className="text-amber-200">
+              Kenya National Bureau of Statistics
+            </span>
+            <span className="text-amber-300">•</span>
+            <span className="text-amber-200">
+              Statistical Quality Framework
+            </span>
+          </div>
+          <div className="flex items-center gap-2 text-amber-200">
+            <span>Digital Edition</span>
+            <span>•</span>
+            <span>Interactive Format</span>
+          </div>
         </div>
       </div>
     </div>
