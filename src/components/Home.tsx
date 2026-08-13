@@ -7,10 +7,10 @@ export function Homepage() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-knbs-800 mb-6">
-            Statistical Quality & Metadata
+            Statistical Quality and Metadata
           </h1>
           <p className="text-xl text-knbs-700 leading-relaxed max-w-3xl mx-auto">
-            Welcome to the Kenya National Bureau of Statistics comprehensive
+            Welcome to the Kenya National Bureau of Statistics
             platform for statistical quality assurance and metadata management.
           </p>
         </div>
@@ -24,12 +24,12 @@ export function Homepage() {
                 Platform Overview
               </h2>
               <p className="text-knbs-700 leading-relaxed">
-                This unified digital ecosystem serves Kenya's National
-                Statistical System by providing centralized access to quality
+                This unified digital ecosystem serves Kenya's 
+                Statistical System by providing centralised access to quality
                 frameworks, statistical standards, classifications, and metadata
                 documentation. The platform is designed for data producers,
                 researchers, and policymakers who require reliable, structured,
-                and standardized statistical info.
+                and standardized statistical information.
               </p>
             </div>
 
