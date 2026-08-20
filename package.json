@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "render:docs": "node scripts/render-docs.mjs",
+    "predev": "node scripts/render-docs.mjs --if-missing",
     "dev": "vite",
+    "prebuild": "npm run render:docs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

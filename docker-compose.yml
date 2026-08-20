@@ -1,0 +1,9 @@
+services:
+  site:
+    build:
+      context: .
+      args:
+        # Serve from the domain root inside the container.
+        VITE_BASE: /
+    ports:
+      - "8080:80"
