@@ -36,9 +36,9 @@ if (!quarto) {
       "",
       "  Locally:        install it from https://quarto.org/docs/get-started/",
       "  GitHub Actions: use the quarto-dev/quarto-actions/setup@v2 action",
-      "  Hosted CI that cannot install system packages (e.g. Cloudflare):",
-      "                  build with `npm run build:cloudflare`, or set",
-      "                  QUARTO_AUTO_INSTALL=1 to fetch Quarto into .quarto-cli/",
+      "  Cloudflare:     detected automatically — no configuration needed",
+      "  Other hosted CI that cannot install system packages:",
+      "                  set QUARTO_AUTO_INSTALL=1 to fetch Quarto into .quarto-cli/",
     ].join("\n")
   );
   process.exit(1);

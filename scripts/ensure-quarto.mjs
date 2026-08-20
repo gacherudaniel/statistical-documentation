@@ -3,9 +3,11 @@
  *
  * Most environments already have Quarto installed (developer machines, the
  * GitHub Actions workflow, the Dockerfile). Hosted build images that cannot
- * install system packages — Cloudflare Pages/Workers Builds, for instance —
- * can opt into a root-free install by setting QUARTO_AUTO_INSTALL=1, which
- * downloads the official tarball into `.quarto-cli/` and uses it from there.
+ * install system packages fall back to a root-free install that downloads the
+ * official tarball into `.quarto-cli/` and uses it from there. That fallback is
+ * on by default on Cloudflare (Pages and Workers Builds, which set CF_PAGES and
+ * WORKERS_CI respectively) and can be forced anywhere with QUARTO_AUTO_INSTALL=1
+ * or suppressed with QUARTO_AUTO_INSTALL=0.
  */
 import { spawnSync } from "node:child_process";
 import { createWriteStream } from "node:fs";
@@ -22,6 +24,14 @@ const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "
 const QUARTO_VERSION = process.env.QUARTO_VERSION ?? "1.8.27";
 
 const ARCHIVE_ARCH = { x64: "amd64", arm64: "arm64" };
+
+/**
+ * Cloudflare's build images have no Quarto and no way to install system
+ * packages, so they get the tarball fallback without any extra configuration.
+ */
+export function onCloudflare() {
+  return Boolean(process.env.CF_PAGES || process.env.WORKERS_CI);
+}
 
 function works(binary) {
   return spawnSync(binary, ["--version"], { stdio: "ignore" }).status === 0;
@@ -101,9 +111,10 @@ export async function resolveQuarto({ autoInstall = false } = {}) {
   const cached = path.join(projectRoot, ".quarto-cli", `quarto-${QUARTO_VERSION}`, "bin", "quarto");
   if ((await exists(cached)) && works(cached)) return cached;
 
-  const enabled =
-    autoInstall ||
-    ["1", "true", "yes"].includes((process.env.QUARTO_AUTO_INSTALL ?? "").toLowerCase());
+  const flag = (process.env.QUARTO_AUTO_INSTALL ?? "").toLowerCase();
+  if (["0", "false", "no"].includes(flag)) return null;
+
+  const enabled = autoInstall || ["1", "true", "yes"].includes(flag) || onCloudflare();
 
   return enabled ? install() : null;
 }

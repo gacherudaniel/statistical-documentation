@@ -149,27 +149,32 @@ from.
 | Target | Build command | Base path | Quarto comes from |
 | --- | --- | --- | --- |
 | GitHub Pages | `npm run build` | `/statistical-documentation/` | `quarto-actions/setup@v2` in the workflow |
-| Cloudflare | `npm run build:cloudflare` | `/` | downloaded into `.quarto-cli/` at build time |
+| Cloudflare | `npm run build` (auto-detected) | `/` | downloaded into `.quarto-cli/` at build time |
 | Docker / nginx | `docker compose up --build` | `/` | installed in the image |
 
 ### Cloudflare
 
-Cloudflare's build image cannot install system packages, so set the project's
-**build command** to:
+Cloudflare's build image ships without Quarto and cannot install system
+packages, so the build detects it and adapts — no dashboard configuration
+needed. Pages sets `CF_PAGES` and Workers Builds sets `WORKERS_CI`; when either
+is present:
 
-```bash
-npm run build:cloudflare
-```
+- [`scripts/ensure-quarto.mjs`](scripts/ensure-quarto.mjs) downloads the
+  official Quarto tarball into `.quarto-cli/` (no root needed), and
+- [`vite.config.ts`](vite.config.ts) serves from `/` rather than the GitHub
+  Pages subpath.
 
-That wrapper sets `QUARTO_AUTO_INSTALL=1`, which makes
-[`scripts/ensure-quarto.mjs`](scripts/ensure-quarto.mjs) download the official
-Quarto tarball into `.quarto-cli/` (no root needed), and `VITE_BASE=/`, because
-Cloudflare serves from the domain root rather than the GitHub Pages subpath.
-The download adds roughly 30s per build; it is skipped whenever Quarto is
-already on `PATH` or already present in `.quarto-cli/`.
+The stock **build command** `npm run build` therefore works as-is. The download
+adds roughly 30s per build and is skipped whenever Quarto is already on `PATH`
+or already present in `.quarto-cli/`.
+
+`npm run build:cloudflare` remains available for reproducing that build
+elsewhere — it just sets the same two variables explicitly.
 
 To pin a different Quarto version, set `QUARTO_VERSION`. To point the build at
-an existing binary, set `QUARTO_PATH`.
+an existing binary, set `QUARTO_PATH`. To force the tarball download on a
+non-Cloudflare machine set `QUARTO_AUTO_INSTALL=1`, and to suppress it entirely
+set `QUARTO_AUTO_INSTALL=0`.
 
 ## Documentation content
 

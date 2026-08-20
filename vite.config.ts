@@ -4,11 +4,13 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Served from a project subpath on GitHub Pages. Override with
-  // `VITE_BASE=/ npm run build` when deploying to a domain root
-  // (e.g. Cloudflare Pages); everything that links to the Quarto output in
-  // public/docs/ resolves through import.meta.env.BASE_URL, so it follows.
-  base: process.env.VITE_BASE ?? '/statistical-documentation/',
+  // Served from a project subpath on GitHub Pages, but from the domain root on
+  // Cloudflare (Pages sets CF_PAGES, Workers Builds sets WORKERS_CI). Override
+  // either default with VITE_BASE; everything that links to the Quarto output
+  // in public/docs/ resolves through import.meta.env.BASE_URL, so it follows.
+  base:
+    process.env.VITE_BASE ??
+    (process.env.CF_PAGES || process.env.WORKERS_CI ? '/' : '/statistical-documentation/'),
   plugins: [react()],
   resolve: {
     alias: {
