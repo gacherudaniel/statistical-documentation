@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Sidebar } from "../../../components/layout/Sidebar";
 import { Menu, X } from "lucide-react";
-// import { ReportTitleCard } from "./common/ReportTitleCard";
 import { GeneralInfo } from "./poverty-inequality/GeneralInfo";
 import { Relevance } from "./poverty-inequality/Relevance";
 import { MethodologicalSoundness } from "./poverty-inequality/MethodologicalSoundness";
@@ -10,7 +9,8 @@ import { Timeliness } from "./poverty-inequality/Timeliness";
 import { Accessibility } from "./poverty-inequality/Accessibility";
 import { Coherence } from "./poverty-inequality/Coherence";
 import { References } from "./poverty-inequality/References";
-import { CPIContent } from "../../../components/products/CPIContent";
+import { QuartoDocument } from "../../../components/docs/QuartoDocument";
+import { QUALITY_REPORT_DOCS } from "../../../lib/docs";
 import { PRODUCTS } from "./products";
 
 export type SectionKey =
@@ -26,13 +26,11 @@ export type SectionKey =
 
 interface QualityReportProps {
   initialProductId?: string;
-  onProductChange?: (productId: string) => void;
 }
 
 export default function QualityReport({
   initialProductId = "poverty-inequality",
-}: // onProductChange,
-QualityReportProps) {
+}: QualityReportProps) {
   const [selectedProduct, setSelectedProduct] = useState(initialProductId);
   const [isMobile, setIsMobile] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -54,6 +52,10 @@ QualityReportProps) {
   const currentProduct = PRODUCTS.find(
     (product) => product.id === selectedProduct
   );
+
+  // Reports that have been migrated to Quarto render from their generated HTML;
+  // the rest still come from React section components.
+  const quartoDoc = QUALITY_REPORT_DOCS[selectedProduct];
 
   // Check if device is mobile
   useEffect(() => {
@@ -103,18 +105,20 @@ QualityReportProps) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isMobile, sidebarOpen]);
 
-  // const handleProductChange = (productId: string) => {
-  //   setSelectedProduct(productId);
-  //   // Notify parent component about the change
-  //   if (onProductChange) {
-  //     onProductChange(productId);
-  //   }
-  // };
-
   // Update when initialProductId changes (from navigation)
   useEffect(() => {
     setSelectedProduct(initialProductId);
   }, [initialProductId]);
+
+  // Quarto-rendered reports bring their own contents pane and search, so they
+  // are shown full width without the React sidebar.
+  if (quartoDoc) {
+    return (
+      <div className="min-h-screen bg-gray-100">
+        <QuartoDocument doc={quartoDoc} footerNote="Statistical Quality Report" />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -168,54 +172,39 @@ QualityReportProps) {
 
           {/* Main Content */}
           <div className="lg:col-span-9 xl:col-span-10">
-            {/* <ReportTitleCard
-              onProductChange={handleProductChange}
-              selectedProductId={selectedProduct}
-            /> */}
-
-            {selectedProduct === "poverty-inequality" ? (
-              <>
-                <GeneralInfo
-                  isOpen={expandedSections.general}
-                  onToggle={toggleSection}
-                  selectedProduct={currentProduct}
-                />
-                <Relevance
-                  isOpen={expandedSections.relevance}
-                  onToggle={toggleSection}
-                />
-                <MethodologicalSoundness
-                  isOpen={expandedSections.methodology}
-                  onToggle={toggleSection}
-                />
-                <Accuracy
-                  isOpen={expandedSections.accuracy}
-                  onToggle={toggleSection}
-                />
-                <Timeliness
-                  isOpen={expandedSections.timeliness}
-                  onToggle={toggleSection}
-                />
-                <Accessibility
-                  isOpen={expandedSections.accessibility}
-                  onToggle={toggleSection}
-                />
-                <Coherence
-                  isOpen={expandedSections.coherence}
-                  onToggle={toggleSection}
-                />
-                <References
-                  isOpen={expandedSections.references}
-                  onToggle={toggleSection}
-                />
-              </>
-            ) : selectedProduct === "cpi" ? (
-              <CPIContent
-                expandedSections={expandedSections}
-                onToggle={toggleSection}
-                selectedProduct={currentProduct}
-              />
-            ) : null}
+            <GeneralInfo
+              isOpen={expandedSections.general}
+              onToggle={toggleSection}
+              selectedProduct={currentProduct}
+            />
+            <Relevance
+              isOpen={expandedSections.relevance}
+              onToggle={toggleSection}
+            />
+            <MethodologicalSoundness
+              isOpen={expandedSections.methodology}
+              onToggle={toggleSection}
+            />
+            <Accuracy
+              isOpen={expandedSections.accuracy}
+              onToggle={toggleSection}
+            />
+            <Timeliness
+              isOpen={expandedSections.timeliness}
+              onToggle={toggleSection}
+            />
+            <Accessibility
+              isOpen={expandedSections.accessibility}
+              onToggle={toggleSection}
+            />
+            <Coherence
+              isOpen={expandedSections.coherence}
+              onToggle={toggleSection}
+            />
+            <References
+              isOpen={expandedSections.references}
+              onToggle={toggleSection}
+            />
           </div>
         </div>
       </div>

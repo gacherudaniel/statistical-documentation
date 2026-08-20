@@ -1,0 +1,10 @@
+project:
+  type: default
+  output-dir: ../public/docs
+  render:
+    - "**/index.qmd"
+
+# Each document carries its own `format:` block (KNBS rust/sand theming,
+# embedded resources, typst PDF). Only project-wide concerns live here.
+execute:
+  freeze: false

@@ -1,0 +1,535 @@
+---
+title: "Kenya Statistics Code of Practice"
+subtitle: "Ensuring official statistics remain a valuable resource for all stakeholders in the statistical system in Kenya"
+date: last-modified
+date-format: "D MMMM YYYY"
+format:
+  html:
+    output-file: index.html
+    theme: cosmo
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    toc-title: "Contents"
+    smooth-scroll: true
+    anchor-sections: true
+    number-sections: false
+    page-layout: article
+    embed-resources: true
+    linkcolor: "#993300"
+    mainfont: Calibri, "Segoe UI", Arial, sans-serif
+    grid:
+      body-width: 820px
+      sidebar-width: 280px
+  typst:
+    output-file: kescop.pdf
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    papersize: a4
+    margin:
+      x: 2.2cm
+      y: 2.5cm
+    mainfont: "Calibri"
+    fontsize: 11pt
+    callout-icon: false
+    callout-appearance: simple
+---
+
+```{=html}
+<style>
+/* ---------- KNBS palette: rust #993300, sand #EEECE1 ---------- */
+body, #quarto-document-content { font-family: Calibri, "Segoe UI", Arial, sans-serif; }
+h1, h2, h3, h4, .quarto-title h1 { color: #993300; }
+h1.title { border-bottom: 3px solid #EEECE1; padding-bottom: .3rem; }
+a { color: #993300; }
+
+/* ---------- Justified text ("justify fit") ---------- */
+#quarto-document-content p,
+#quarto-document-content li,
+details.section-dropdown p,
+details.section-dropdown li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.6;
+}
+
+/* ---------- Expand / Collapse controls ---------- */
+.dropdown-controls { margin: .5rem 0 1.25rem; display: flex; gap: .5rem; }
+.dropdown-controls button {
+  background: #fff; color: #993300; border: 1.5px solid #993300;
+  border-radius: 5px; padding: .35rem .9rem; font-size: .9rem;
+  font-weight: 600; cursor: pointer; font-family: inherit;
+}
+.dropdown-controls button:hover { background: #993300; color: #fff; }
+
+/* ---------- Collapsible section dropdowns ---------- */
+details.section-dropdown {
+  border: 1px solid #EEECE1; border-radius: 6px; margin: .9rem 0;
+  background: #fff; overflow: hidden;
+}
+details.section-dropdown > summary {
+  cursor: pointer; list-style: none; padding: .65rem 2.2rem .65rem .95rem;
+  background: #EEECE1; color: #993300; font-weight: bold; position: relative;
+  border-bottom: 2px solid #993300; scroll-margin-top: 1rem;
+}
+details.section-dropdown > summary.summary-h1 { font-size: 1.3rem; }
+details.section-dropdown > summary.summary-h2 { font-size: 1.12rem; }
+summary::-webkit-details-marker { display: none; }
+details.section-dropdown > summary::after {
+  content: "\25B8"; position: absolute; right: 1rem; top: 50%;
+  transform: translateY(-50%); transition: transform .2s ease; font-size: .9rem;
+}
+details.section-dropdown[open] > summary::after { transform: translateY(-50%) rotate(90deg); }
+details.section-dropdown > *:not(summary) { padding-left: 1rem; padding-right: 1rem; }
+details.section-dropdown > *:not(summary):first-of-type { padding-top: .8rem; }
+details.section-dropdown > *:last-child { padding-bottom: .8rem; }
+details.section-dropdown h3 { color: #6b3a28; }
+
+/* ---------- Tables ---------- */
+table thead th { background: #EEECE1; color: #4A271C; border-bottom: 2px solid #993300; }
+table tbody tr:nth-child(even) { background: #faf9f5; }
+</style>
+```
+
+```{=typst}
+#set par(justify: true)
+#set text(hyphenate: true)
+// KNBS branding for the PDF: rust headings
+#show heading: set text(fill: rgb("#993300"))
+```
+
+::: {.callout-important}
+**Published by:** Kenya National Bureau of Statistics, P.O. Box 30266 - 00100 Nairobi, Kenya
+**Tel:** +254-20-3317583, +254-20-2911000/1, +254-20-3317612/22/23/51
+**Email:** info@knbs.or.ke / directorgeneral@knbs.or.ke / library@knbs.or.ke
+**Facebook:** Kenya Stats · **X:** \@KNBStats · **Website:** [www.knbs.or.ke](https://www.knbs.or.ke)
+
+© 2023 Kenya National Bureau of Statistics
+**ISBN:** 978-9914-9705-2-4 (print) · **ISBN:** 978-9914-9705-3-1 (pdf) · Published 2023
+
+Some rights reserved. This work is made available under the Attribution-Noncommercial 4.0 International (CC BY-NC 4.0) available at <https://creativecommons.org/licenses/by-nc/4.0/> This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as the work is appropriately cited and attribution is given to the creator.
+
+Users wishing to reuse material from this work attributed to a third party are responsible for determining whether permission is needed for that reuse and for obtaining permission from the copyright holder. The risk of claims resulting from infringement of any third party owned component in the work rests solely with the user. Any enquiries relating to this publication should be addressed to the Director General, Kenya National Bureau of Statistics. Subscription correspondence may be addressed directly to the Head of Library Services in the same building.
+
+**Recommended citation:** KNBS 2023. Kenya statistics Code of Practice, 2023. Nairobi, Kenya.
+:::
+
+# Glossary of Terms
+
+**Official Statistics**
+: Statistics that are produced in accordance with the United Nations Fundamental Principles of Official Statistics (UNFPOS) by KNBS or compiled by Statistical Units for their specific domain and certified by KNBS.
+
+**National Statistical System (NSS)**
+: The ensemble of the National Statistical Office, the KNBS, and other statistical units in Kenya that produce, provide, supply, use and disseminate official statistics on behalf of the Government of Kenya (GoK) under the supervision and coordination of the Bureau.
+
+**Kenya Statistical Quality Assurance Framework (KeSQAF)**
+: A comprehensive framework that provides a coherent and holistic system for statistical quality management in Kenya.
+
+**Statistical Business Process Model**
+: A statistical Model that provides a standard terminology for describing the different steps involved in the production of official statistics.
+
+# Acronyms
+
+| | |
+|---|---|
+| **GoK** | Government of Kenya |
+| **ICT** | Information Communication Technology |
+| **KeSCoP** | Kenya Statistics Code of Practice |
+| **KeSQAF** | Kenya Statistical Quality Assurance Framework |
+| **KNBS** | Kenya National Bureau of Statistics |
+| **KSDS** | Kenya Strategy for the Development of Statistics |
+| **NSS** | National Statistical System |
+| **ONS** | Office for National Statistics |
+| **OSR** | Office for Statistics Regulation |
+| **TWG** | Technical Working Group |
+| **UNDESA** | United Nations Department of Economic and Social Affairs |
+| **UNFPOS** | United Nations Fundamental Principles of Official Statistics |
+
+: {tbl-colwidths="[22,78]"}
+
+# Foreword
+
+Official statistics are an indispensable source of information for formulation of policy and evidence-based planning and decision making by government and other stakeholders. They provide a reliable and impartial source of information in an era of many data sources and misinformation.
+
+The Kenya Statistics Code of Practice (KeSCoP) sets out the standards and practices for the production and dissemination of official statistics in Kenya. This code of practice is based on international best practices and the Kenya Statistical Quality Assurance Framework (KeSQAF), and it is designed to ensure that official statistics in Kenya are produced in a professional, impartial and transparent manner. In addition to being a regulatory tool as set out in the Statistics Act, 2006, the KeSCoP is among the administrative tools for use by National Statistical System (NSS) members to comply with for their statistics to be designated as official.
+
+As a demonstration of the dedication towards ensuring the quality and credibility of official statistics in Kenya, the KeSCoP is anchored on three pillars; Quality, Trustworthiness and Progressiveness. Adherence to the practices outlined in these pillars will ensure official statistics remain a valuable resource for all stakeholders.
+
+The KeSCoP will be reviewed and updated every three years to ensure it remains up to date with the latest developments in statistical practice and that it continues to meet the needs of users of official statistics.
+
+I urge all members of the NSS to commit to the KeSCoP in the production and dissemination of their statistics. Adherence to KeSCoP will ensure that official statistics are a valuable resource for the public good.
+
+**Stephen Wainaina, MBS**
+**Board chairman, The Kenya National Bureau of Statistics**
+
+# Acknowledgement
+
+The Kenya Statistics Code of Practice for the National Statistical System was developed by the Kenya National Bureau of Statistics, in collaboration with stakeholders drawn from both public institutions and non-state actors. The technical support was provided by the Office for Statistics Regulation (OSR) of United Kingdom Statistics Authority.
+
+Special appreciation goes to Benjamin Avusevwa, Director, Statistical Coordination and Methods for steering the development process and to the KNBS Directors Collins Omondi, Robert Nderitu, AAbdulkadir A. Awes and Anne Mburu, for their invaluable inputs and support during the development process. I would like to express my deep appreciation to members of the Quality Working Group for their hard work and dedication in development of the document. Members of this group included: Vivianne Nyarunda, Paul Samoei, James Ng'ang'a, Rosemary Chepkoech, John Bore, Hirum Mbatia, Salome Kihara, Andrew Imbwaga, Paul Ngugi, Stephen Ngugi, Zachary Ochola, Anthony Makau, Scholastica Kingi, Sarah Omache, Silvester Maingi, Dr. Samwel Mwenda, Alinoor Hapicha, Geoffrey Kariuki.
+
+Other staff who contributed include: Godfrey Otieno, Isaac Ndegwa, Benjamin Muchiri, Henry Osoro, Prisca Mwangi, Leah Wambugu, Mary Kamundi, Katra Dahir, Edwin Metto, Cecilia Punyua, Franklin Moturi and Deka Muktar. I also wish to recognize the contribution of Florence Nyokabi and Faith Kiguoya for providing secretarial services during the working sessions. In addition, I acknowledge the contribution of Jacqueline Tundu and Kevin Ong'any (Kenya Year Book) in designing the publication layout.
+
+Finally, I deeply appreciate our partners, the Office for National Statistics (ONS) for supporting the development of the document. Special mention goes to Penny Babb, Caroline Wangeci and John Macharia for their invaluable support in the process
+
+**Macdonald G. Obudho, MBS**
+**Director General**
+
+# About the National Statistical System
+
+The Statistics Act of 2006 mandates the Kenya National Bureau of Statistics (KNBS) to produce and disseminate official statistics and coordinate the National Statistical System (NSS). The NSS is a network of statistical units within government Ministries, Departments, and Agencies of national and county governments. These units collaborate to collect, process and disseminate official statistics on behalf of the Government of Kenya.
+
+The KNBS coordinates the NSS by: planning, authorizing, coordinating and supervising all official statistical programmes undertaken within NSS; collecting, compiling, analyzing, abstracting and disseminating statistical information on the matters specified in the First Schedule in collaboration with other members of the NSS; establishing standards and ensuring the use of best practices and methods in the production and dissemination of statistical information across the NSS; collaborating with and assisting the county governments or any other institutions in the production of official statistics; providing technical advice on statistics to other state entities; promoting co-ordination among producers, users and suppliers of official statistics by forming appropriate sector committees; and designating statistics produced by the NSS as official statistics on being satisfied that the necessary criteria have been followed.
+
+The coordination of the NSS is guided by the Kenya Strategy for Development (KSDS). The KSDS is a framework developed and implemented collectively by members of the NSS. The strategy aims to plan for and harmonize the activities of the NSS and its stakeholders. The strategy also seeks to build statistical capacity across the NSS to ensure that the statistics produced meet the user needs adequately. It provides coherent plans that target production and dissemination of quality statistics that inform the implementation of national and sub-national development plans, and other development initiatives.
+
+The first Kenya Strategy for Development of Statistics, 2019/20 – 2022/23 KSDS focused on achieving effective coordination of the NSS; improving data quality; enhancing the physical and human statistical infrastructure, and promoting statistical advocacy. Implementation of the KSDS was successful in shaping the future of statistics in Kenya. Remarkable achievements include the amendment of the Statistics Act 2006 in 2019, and the drafting of the regulations; the development of the Kenya Statistical Quality Assurance Framework (KeSQAF) and a criterion for validation of data from non-official sources therein; and the implementation of several data collection programmes to update the national socioeconomic database and fill data gaps. Through the strategy, the KNBS also spearheaded the development of this Statistical Code of Practice.
+
+The KNBS commits to steward the NSS in the development of KSDS for subsequent implementation periods. The framework will ensure production of official statistics is in line with international standards and best practices; and is user-focused, inclusive and responsive to the modern data ecosystem. It will also ensure that there is continuous improvement in official statistics.
+
+# Introduction
+
+The Kenya Statistics Code of Practice (KeSCoP) is a technical and regulatory instrument that aims to contribute to the continuous improvement of statistical processes and outputs. It provides producers of official statistics with detailed practices they must commit to on statistical quality, when producing and releasing Official Statistics. It also provides producers of non-official statistics with a framework they can voluntarily comply with to produce credible statistics that can be used for official reporting where official statistics are not available.
+
+The KeSCoP is drawn from the four levels and 19 Quality Principles and requirements as outlined in the Kenya Statistical Quality Assurance Framework (KeSQAF). KeSCoP is anchored on three pillars namely; Quality, Trustworthiness and Progressiveness based on KeSQAF.
+
+Each pillar contains values and commitments that producers of statistics should commit to. Fulfilment of these commitments will lead to a well-coordinated NSS with clearly defined roles. Therefore, the KeSCoP will rely heavily on the implementation of the KeSQAF framework, especially for monitoring and evaluation purposes. The indicators for measuring the success of implementation of KeSCoP are in Annex 1.
+
+The Statistics Act, 2006 gives the Kenya National Bureau of Statistics (KNBS) the role of coordinating and supervising all official statistical programmes undertaken within the NSS. The act inter alia mandates the Bureau to establish standards and ensure the use of best practices and methods in the production and dissemination of statistical information across NSS. The Bureau as the coordinating body, presents KeSCoP to producers and users of statistics in order to improve the quality of the processes and production of statistics within the NSS. Adherence to the code of practice will improve the quality and credibility of statistics produced within the NSS, as well as enable the statistics to be designated as Official Statistics. It also provides a set of practices which producers of statistics outside the NSS can voluntarily commit to, thereby improving the quality of statistics they produce for official reporting to close existing data gaps. Further, compliance with the KeSCoP gives the users of statistics confidence that published statistics are of high quality, have public trust and are produced by institutions and people that are progressive.
+
+## Pillars of the Code
+
+The statistics code of practice is anchored on three pillars namely Quality, Trustworthiness and Progressiveness, with associated values. Pillars are fundamental rules or ideas that govern the thinking or behaviour in the generation of statistics, while values which are attached to each pillar are guiding principles adopted by members of the NSS to achieve the pillars. Each value has commitments which are replicable actions that are based on proven experience with good results, contributing to the improvement of the statistical processes.
+
+::: {.callout-important}
+Pillars are fundamental rules or ideas that govern the thinking or behaviour in the generation of statistics, while values which are attached to each pillar are guiding principles adopted by the members of the National Statistical System (NSS) to achieve the pillars
+:::
+
+# Pillar I: Quality
+
+Quality is a multidimensional concept that measures the degree to which a set of inherent characteristics fulfils requirements. It encompasses statistical outputs, the statistical process and the institutional environment housing the process. Quality statistics are relevant, timely, accurate, comprehensive, based on appropriate data and methods and are accessible.
+
+## 1. Relevance
+
+The needs of users are central in the production of statistics. The NSS produces statistical information that meets the current and emerging needs of various users.
+
+**We commit to:**
+
+i. Identify users and their needs and consult them about the content of the statistical work programme;
+ii. Monitor the relevance and value of existing statistics in meeting user needs, consider and anticipate emerging needs and priorities;
+iii. Establish and maintain stakeholder engagement;
+iv. Regularly carry out and analyze various feedback mechanisms e.g., user satisfaction survey;
+v. Fill existing data gaps as far as possible;
+vi. Continuously present data in user-friendly and readable formats including the use of infographics, interactive platforms and microdata;
+vii. Provide easy access to statistical information and data;
+viii. Continuously improve statistical outputs in terms of frequency, range of products, and level of disaggregation among others;
+ix. Support the users in the interpretation and use of statistics;
+x. Adopt modern technology in the production of statistics.
+
+## 2. Timeliness and Punctuality
+
+Availing statistics on a timely basis for the stated reference period.
+
+**We commit to:**
+
+i. Develop, publish and adhere to advance release calendars and service charters in the dissemination of statistical products and provision of services;
+ii. Adhere to the predetermined timeliness (length of time between the end of a reference period and the dissemination of the statistics) and punctuality in the periodicity (rate of statistics published when announced) as set out in the advance release calendar;
+iii. Communicate anticipated delays in the release of scheduled products.
+
+## 3. Accuracy
+
+Statistics produced accurately reflect the true value of the phenomena they are intended to measure.
+
+**We commit to:**
+
+i. Ensure applicable accuracy checks and controls in the various stages of statistical production;
+ii. Identify and/or compute and document sampling and non-sampling errors;
+iii. Carry out data editing, cleaning, validation and consistency checks.
+iv. Ensure reliability of produced statistics.
+
+## 4. Coverage/Comprehensiveness
+
+Producers of statistics ensure representativeness of the various aspects being measured. These should include target population, distribution of population and geographical coverage.
+
+**We commit to:**
+
+i. Maintain up-to-date and complete statistical sampling frames;
+ii. Monitor statistical production processes through the adoption of the Statistical Business Process Model;
+iii. Maintain a well-structured and functional coordination mechanism between the data producers and users.
+
+## 5. Methodological Soundness
+
+The producers of statistics use international concepts, classifications and methods in the production of statistics to improve efficiency and enhance the quality and usefulness of official statistics. They are also transparent about the methodology used and explain the reasons for their selection.
+
+**We commit to:**
+
+i. Adopt, apply and regularly review methodologies that are consistent with international standards, guidelines and good practices.
+ii. Continuously identify and provide explanations to users of the relevant limitations arising from the methods and their application, including bias and uncertainty;
+iii. Sustain research and development on statistical products, services and infrastructure.
+
+## 6. Professional Skills and Competencies
+
+Producers of statistics have the requisite qualifications and relevant training to obtain the skills and competencies required in statistical production.
+
+**We commit to:**
+
+i. Recruit and retain skilled staff;
+ii. Provide staff with resources required to develop their skills, knowledge and competencies;
+iii. Continuously train staff on statistical production processes;
+iv. Leverage synergies within the NSS to expand skills and competencies in statistical production.
+
+## 7. Data Sources
+
+Statistical information is based on the most appropriate data sources.
+
+**We commit to:**
+
+i. Use appropriate, reliable and cost-effective sources of data that minimize respondents' burden and fatigue;
+ii. Continuously explore alternative/emerging sources of data;
+iii. Declare and minimize data limitations by using various data sources;
+iv. Harmonize data sources and methodologies within the NSS to avoid duplication;
+v. Maintain databases that facilitate data linkage within the NSS;
+vi. Leverage on modern technology to expand the data sources.
+
+# Pillar II: Trustworthiness
+
+This is trust in the institutions and people that produce statistics. It is demonstrated by the credibility of the processes and systems of the institutions that produce statistics.
+
+The people working for the institutions need to be of high integrity, transparent and competent in the production of statistics.
+
+## 1. Impartiality and Equal Access
+
+This is the professional independence of producers of official statistics, the scientific competence of their staff and impartiality. Statistics are produced and disseminated according to guidelines, methods and procedures, respecting the scientific and technical independence of the statistical process without conflict of interest and undue influence.
+
+**We commit to:**
+
+i. Compile and present statistics objectively and ethically;
+ii. Ensure that the statistics are without any undue influence or interference;
+iii. Engage stakeholders in the production and validation of statistical information;
+iv. Disseminate statistics to all users at the same time using different media and technology to ensure wider coverage.
+
+::: {.callout-important}
+Statistics are produced and disseminated according to guidelines, methods and procedures, respecting the scientific and technical independence of the statistical process without conflict of interest and undue influence
+:::
+
+## 2. Confidentiality
+
+Protection of the statistical information against any unauthorised access and ensuring that it is used for statistical purposes only.
+
+**We commit to:**
+
+i. Inform and assure data providers that information provided is secure and will not be disclosed or shared in a manner that will identify them;
+ii. Inform data providers of the main uses of the information they provide and restrictions to prevent unauthorised access to the information;
+iii. Ensure people with access to individual or confidential information must sign a declaration stating their commitment to confidentiality and taking note of the penalties for non-compliance as provided in the Statistics Act, 2006;
+iv. Anonymize and aggregate data to ensure that publication of statistics does not allow the individual identification of data providers;
+v. Ensure protection and security of the information through encryption and giving access to only authorised persons;
+vi. Ensure that information is stored in accordance with the Statistics Act, 2006 and Data Protection Act, 2019.
+
+## 3. Accountability and Transparency
+
+To facilitate a correct interpretation of the data, the statistical units present information according to scientific standards on the sources, methods and procedures of the statistics.
+
+To provide users access to necessary information and support interpretation, the characteristics and quality of official statistics by describing and making available policies and practices surrounding statistical production and dissemination.
+
+To be open about the statistical procedures and processes used in the production of statistics and disseminate statistics that are accurate, clear, accessible, and released in a timely and orderly manner.
+
+**We commit to:**
+
+i. Document and enable access to methods, processes and procedures used in the production of statistics;
+ii. Declare any methodological modifications made to the aspects of statistics that have been produced, before the publication of results;
+iii. Allow for peer reviewing of statistical processes and procedures by stakeholders, subject matter specialists and regional and international agencies;
+iv. Cite the source of data when disseminating statistics using data collected or originally produced by other institutions;
+v. Metadata and quality reports should be made readily available to users which will enable them to judge the fitness of use of the data;
+vi. Provide guidelines and procedures for user access to data and detailed documentation such as metadata, concepts and definitions alongside the data;
+vii. Correct and communicate errors discovered in published statistics in a timely manner;
+viii. Routinely monitor and revise the statistical processes as required;
+ix. Ensure that revisions follow standard, well-established and transparent procedures;
+x. Ensure that revisions are regularly analysed in order to improve source data, statistical processes and outputs;
+xi. Present statistics in a clear format, to allow proper interpretation and use;
+xii. Clarify statistics in the event of misuse or misinterpretations.
+
+## 4. Integrity and Credibility
+
+Adherence to statistical ethics by demonstrating honesty truthfulness and reliability while maintaining a high level of expertise and competency.
+
+**We commit to:**
+
+i. Engage competent personnel with the requisite expertise to manage the statistical processes;
+ii. Collect and manage statistics using recognized best practices and conform to international statistical standards;
+iii. Inculcate a culture of honesty and truthfulness in all individuals involved in the statistical value chain;
+iv. Be accountable for statistical products and ensure prudent use of resources.
+
+# Pillar III: Progressiveness
+
+Producers of official statistics are innovative and creative to improve the quality of statistics and build resilience to deal with uncertainties. Modern practices are used in the production and dissemination of official statistics to enable producers of statistics to respond to the emerging needs of the users and the changing statistical environment. Producers of statistics also embrace technological advances in the statistics value chain.
+
+## 1. Innovation
+
+Creativity in the development of new ideas to increase efficiency and optimize the use of resources. This also entails the use of modern technology and approaches in the production and dissemination of statistics.
+
+**We commit to:**
+
+i. Adopt modern technology in data capture, processing, and dissemination of statistics;
+ii. Regularly review and update ICT architecture and hardware infrastructure and identify possibilities for innovation and modernization;
+iii. Continuously research and implement new and emerging methodologies in statistics;
+iv. Promote, organize, and support competition on different thematic areas in statistics;
+v. Cooperate with the scientific community to improve methods and promote innovation in the development, production and dissemination of statistics;
+vi. Regularly identify alternative sources of data and validate the data using appropriate quality frameworks developed and/or adopted by KNBS for official reporting.
+
+::: {.callout-important}
+Modern practices are used in the production and dissemination of official statistics to enable producers of statistics to respond to the emerging needs of the users and the changing statistical environment. Producers of statistics also embrace technological advances in the statistics value chain
+:::
+
+## 2. Continuous Improvement
+
+Develop processes, skills and output that conform to emerging data needs within the statistical environment. Efforts are made to take advantage of opportunities to undertake incremental improvements in services, products, and processes.
+
+Members continuously identify new areas of collaboration and partnerships both within and outside the NSS to build value in statistics.
+
+**We commit to:**
+
+i. Collaborate with stakeholders to develop and improve integrated systems of sharing administrative data;
+ii. Regularly review alternative sources of data to fill existing data gaps;
+iii. Build capacity on new methods of production, dissemination and use of statistics;
+iv. Undertake peer reviews and benchmarking on best practices in statistics;
+v. Regularly analyse user feedback to improve on statistical products;
+vi. Conduct monitoring and evaluation programs in statistical production;
+vii. Promote a culture of continuous improvement;
+viii. Adopt and use risk-based statistical planning;
+ix. Put in place appropriate business continuity plans to minimize impact of disruptions and keep statistical production processes running smoothly.
+
+## 3. User Focus
+
+Members of the NSS continuously engage users to customize statistical products to meet their needs in the changing data ecosystem.
+
+**We commit to:**
+
+i. Continuously review and update platforms for engagement with users;
+ii. Put in place and regularly update processes to monitor and consult with both new and existing stakeholders on the relevance and practical utility of existing statistics;
+iii. Put in place procedures to prioritize various user needs in the strategic goals and annual statistical plan;
+iv. Engage users in the development of statistical tools aligned to their needs;
+v. Produce regular user-focused statistical products.
+
+## 4. Adequate Funding
+
+The producers of statistics allocate adequate financial resources or have mechanisms in place to ensure the statistics plans are funded for each implementation period. Mechanisms to build resilience in funding for statistics are entrenched in the statistics plans to ensure continuity in the face of crisis, which may interfere with the production of statistics.
+
+**We commit to:**
+
+i. Develop a costed annual statistical plan aligned to the Kenya Strategy for the Development of Statistics (KSDS);
+ii. Develop a resource mobilization strategy that is regularly reviewed and implemented;
+iii. Allocate an adequate budget for statistics in each implementation period;
+iv. Adopt and use risk-based statistical planning;
+v. Efficiently utilize resources.
+
+# References
+
+Government of Kenya (GoK) (2006). *Statistical Act, 2006.*
+
+KNBS (2022). *Kenya Statistical Quality Assurance Framework (KeSQAF).*
+
+UNDESA (2022). *The Handbook on Management and Organization of National Statistical Systems.* 4th ed. Handbook of Statistical Organization.
+
+# Annex 1: Indicators/Measures of Success
+
+| Quality | Trustworthiness | Progressiveness |
+|---|---|---|
+| Increased scope of data sources and increased response rates | Feedback from providers and users | Increased uptake of statistics |
+| Increased uptake of statistical products e.g., number of data requests, number of downloads, website hits, sale of publications etc | The demand for statistical products | The proportion of funds allocated for statistics against the total costed annual plan |
+| Regular and scheduled statistical audits on quality | Available microdata and the corresponding metadata to users | The number of new/emerging methodologies in statistics adopted across the NSS |
+| Feedback from TWGs | Increased downloads of statistical products | Frameworks for use of alternative data sources used in official statistics |
+| Feedback trends from users on compliments, enquiries and complaints | Increased data requests | The number of collaborations with partners and stakeholders |
+| Feedback from reviewers and peers | Customer satisfaction levels | Minimized duplications in statistics production |
+| | Use of data in various policy documents, reports, research and media analysis | The number of user-focused statistical products |
+| | Increased response rates in various surveys | The number of international forums attended by NSS members |
+| | Feedback from stakeholder engagement | Timely release of statistical products arising from emerging needs |
+| | Level of adherence to established guidelines, methods and procedures | |
+
+: Indicators/Measures of Success {tbl-colwidths="[33,33,34]"}
+
+---
+
+**Kenya National Bureau of Statistics** · Real Towers, Hospital Road, P.O. Box 30266 - 00100 Nairobi, Kenya
+Tel: +254-20-3317583, +254-20-2911000/1, +254-20-3317612/22/23/51
+Email: info@knbs.or.ke | directorgeneral@knbs.or.ke | library@knbs.or.ke
+Website: [www.knbs.or.ke](https://www.knbs.or.ke)
+
+```{=html}
+<script>
+(function () {
+  function ready(fn){ if(document.readyState!=='loading'){fn();} else {document.addEventListener('DOMContentLoaded',fn);} }
+  ready(function () {
+    var root = document.getElementById('quarto-document-content') || document.querySelector('main');
+    if(!root) return;
+
+    // Turn each level-2 section into a dropdown; also level-1 sections with no
+    // level-2 children (e.g. References).
+    var sections = [];
+    root.querySelectorAll('section.level2').forEach(function(s){ sections.push(s); });
+    root.querySelectorAll('section.level1').forEach(function(s){
+      if(!s.querySelector('section.level2')) sections.push(s);
+    });
+
+    sections.forEach(function(sec){
+      var heading = sec.querySelector(':scope > h1, :scope > h2');
+      if(!heading) return;
+      var details = document.createElement('details');
+      details.open = true;                       // expanded by default: scroll + Ctrl+F work
+      details.className = 'section-dropdown';
+      var summary = document.createElement('summary');
+      summary.className = 'summary-' + heading.tagName.toLowerCase();
+      summary.innerHTML = heading.innerHTML;
+      heading.parentNode.removeChild(heading);
+      while(sec.firstChild){ details.appendChild(sec.firstChild); }
+      details.insertBefore(summary, details.firstChild);
+      sec.appendChild(details);
+    });
+
+    // Expand all / Collapse all
+    var bar = document.createElement('div');
+    bar.className = 'dropdown-controls';
+    bar.innerHTML = '<button type="button" id="expandAll">Expand all</button>' +
+                    '<button type="button" id="collapseAll">Collapse all</button>';
+    var firstSection = root.querySelector('section');
+    if(firstSection){ root.insertBefore(bar, firstSection); }
+    document.getElementById('expandAll').addEventListener('click', function(){
+      root.querySelectorAll('details.section-dropdown').forEach(function(d){ d.open = true; });
+    });
+    document.getElementById('collapseAll').addEventListener('click', function(){
+      root.querySelectorAll('details.section-dropdown').forEach(function(d){ d.open = false; });
+    });
+
+    // Relabel the "Other Formats / Typst" sidebar block as a PDF download link
+    var alt = document.querySelector('.quarto-alternate-formats');
+    if(alt){
+      var h = alt.querySelector('h2');
+      if(h){ h.textContent = 'Download'; }
+      alt.querySelectorAll('a').forEach(function(a){
+        var href = a.getAttribute('href') || '';
+        if(href.toLowerCase().indexOf('.pdf') !== -1){
+          var icon = a.querySelector('i');
+          a.textContent = '';
+          if(icon){ a.appendChild(icon); }
+          a.appendChild(document.createTextNode('Download as PDF'));
+          a.setAttribute('download', '');
+          a.setAttribute('title', 'Download this report as a PDF');
+        }
+      });
+    }
+
+    // Contents links open a collapsed section and jump to it
+    function openToHash(){
+      if(!location.hash) return;
+      var el; try { el = document.querySelector(location.hash); } catch(e){ return; }
+      if(!el) return;
+      var p = el; while(p){ if(p.tagName === 'DETAILS'){ p.open = true; } p = p.parentElement; }
+      el.scrollIntoView();
+    }
+    window.addEventListener('hashchange', openToHash);
+    openToHash();
+  });
+})();
+</script>
+```

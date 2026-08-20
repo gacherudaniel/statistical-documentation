@@ -86,31 +86,81 @@ Kenya Statistical Planning Manual
 - **Vite** - Build tool and dev server
 - **Tailwind CSS** - Utility-first styling
 - **Lucide React** - Icon library
-- **Quarto** - Statistical documentation (R-based)
+- **Quarto** - Renders the statistical documentation shipped with the app
 
 ## Project Structure
 
-\`\`\`bash
+```bash
+docs-source/                  # Quarto sources — the single home for long-form content
+├── _quarto.yml               # Project config (renders into ../public/docs)
+├── kspm/index.qmd            # Kenya Statistical Production Model
+├── kescop/index.qmd          # Kenya Statistics Code of Practice
+└── quality-reports/
+    └── cpi/index.qmd         # CPI quality report
+
+public/docs/                  # Rendered HTML + PDF (generated, git-ignored)
+scripts/render-docs.mjs       # Runs Quarto ahead of the Vite build
+
 src/
-├── components/ # Reusable components
-├── pages/ # Page components
-├── styles/ # Global styles
-├── utils/ # Utility functions
-└── App.tsx # Main app component
-\`\`\`
+├── components/
+│   ├── docs/QuartoDocument.tsx  # Shared viewer for rendered Quarto documents
+│   └── layout/               # Header, navigation, breadcrumb, footer
+├── lib/docs.ts               # Registry of every document + base-aware URLs
+├── pages/                    # Page components
+└── App.tsx                   # Main app component
+```
 
 ## Getting Started
 
-\`\`\`bash
+Requires Node 20+ and [Quarto](https://quarto.org/docs/get-started/) 1.4+ on
+your PATH. The documents contain no executable code chunks, so no R or Python
+installation is needed.
+
+```bash
 npm install
-npm run dev
-\`\`\`
+npm run dev      # renders the docs once if public/docs/ is empty, then starts Vite
+```
 
 ## Build
 
-\`\`\`bash
-npm run build
-\`\`\`
+```bash
+npm run build          # renders every Quarto document, then builds the React app
+npm run render:docs    # re-render the documents only (after editing a .qmd)
+```
+
+`npm run dev` skips the render when `public/docs/` already exists, so restarting
+the dev server stays fast; run `npm run render:docs` after changing a `.qmd`.
+
+### Building in Docker
+
+If you would rather not install Quarto locally, the included `Dockerfile` does
+the whole pipeline (Quarto render → Vite build → nginx) in one image:
+
+```bash
+docker compose up --build   # http://localhost:8080
+```
+
+## Documentation content
+
+Long-form content lives in `docs-source/` as Quarto documents and is rendered
+into `public/docs/`, which Vite copies verbatim into `dist/`. Each document
+renders twice:
+
+- a self-contained `index.html` (`embed-resources: true` inlines all CSS, JS and
+  images) that React embeds in an iframe via `QuartoDocument`, and
+- a typst-generated PDF served behind the page's **Download PDF** button.
+
+Because the HTML is self-contained, it works from any deploy base and needs no
+sibling asset directories.
+
+### Adding a document
+
+1. Create `docs-source/<slug>/index.qmd`. Copy the `format:` block from an
+   existing document to inherit the KNBS styling, and set
+   `output-file: index.html` for HTML and `output-file: <slug>.pdf` for typst.
+2. Register it in `src/lib/docs.ts` (`QUARTO_DOCS`), and — for a quality
+   report — map the product id to it in `QUALITY_REPORT_DOCS`.
+3. Render and check it: `npm run render:docs && npm run dev`.
 
 # Configuration
 
@@ -138,31 +188,23 @@ KeSCoP Structure
 Pillar 1: Professionalism (4 principles)
 Pillar 2: Impartiality (4 principles)
 Pillar 3: Progressiveness (4 principles)
-Statistical Dictionary
-The statistical dictionary is powered by Quarto and embedded via iframe.
+Previewing a single document
+While editing a `.qmd`, Quarto's own live preview is the fastest loop:
 
-Local Development
-
-# In your R/Quarto project directory
-
-quarto preview
-
-Default URL: http://localhost:5784
-
-Adding Search to Quarto Book
-Add to your \_quarto.yml:
-
-website:
-search: true
+```bash
+quarto preview docs-source/kspm/index.qmd
+```
 
 Contributing
 When adding new quality reports or framework sections:
 
-Create section components in appropriate subfolder
-Update main container with navigation items
-Follow existing component patterns (PrincipleCard, etc.)
+Write the content as a Quarto document under docs-source/ and register it in src/lib/docs.ts
+Add a navigation entry in src/types/navigation.ts
 Use KNBS color scheme consistently
 Ensure TypeScript types are properly defined
+
+Reports that still render from React section components (Poverty & Inequality)
+follow the existing component patterns under src/pages/metadata/quality-reports/.
 License
 © 2024 Kenya National Bureau of Statistics. All rights reserved.
 
