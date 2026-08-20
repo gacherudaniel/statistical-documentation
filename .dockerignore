@@ -5,3 +5,4 @@ docs-source/.quarto
 .git
 .github
 *.log
+.quarto-cli

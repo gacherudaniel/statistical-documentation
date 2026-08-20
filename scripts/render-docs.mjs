@@ -9,6 +9,7 @@ import { spawnSync } from "node:child_process";
 import { existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { resolveQuarto } from "./ensure-quarto.mjs";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourceDir = path.join(projectRoot, "docs-source");
@@ -26,20 +27,25 @@ if (onlyIfMissing && existsSync(outputDir) && readdirSync(outputDir).length > 0)
   process.exit(0);
 }
 
-if (spawnSync("quarto", ["--version"], { stdio: "ignore" }).status !== 0) {
+const quarto = await resolveQuarto();
+
+if (!quarto) {
   console.error(
     [
       "✖ Quarto is required to build this site but was not found on your PATH.",
       "",
-      "  Install it from https://quarto.org/docs/get-started/ and re-run the build.",
-      "  In CI, use the quarto-dev/quarto-actions/setup@v2 action.",
+      "  Locally:        install it from https://quarto.org/docs/get-started/",
+      "  GitHub Actions: use the quarto-dev/quarto-actions/setup@v2 action",
+      "  Hosted CI that cannot install system packages (e.g. Cloudflare):",
+      "                  build with `npm run build:cloudflare`, or set",
+      "                  QUARTO_AUTO_INSTALL=1 to fetch Quarto into .quarto-cli/",
     ].join("\n")
   );
   process.exit(1);
 }
 
 console.log("• Rendering Quarto documents from docs-source/ …");
-const render = spawnSync("quarto", ["render"], { cwd: sourceDir, stdio: "inherit" });
+const render = spawnSync(quarto, ["render"], { cwd: sourceDir, stdio: "inherit" });
 
 if (render.status !== 0) {
   console.error("✖ Quarto render failed.");

@@ -6,7 +6,8 @@ import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  // Build output and the locally provisioned Quarto toolchain are not ours to lint.
+  globalIgnores(['dist', 'public/docs', '.quarto-cli']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [

@@ -9,6 +9,7 @@
     "dev": "vite",
     "prebuild": "npm run render:docs",
     "build": "tsc -b && vite build",
+    "build:cloudflare": "QUARTO_AUTO_INSTALL=1 VITE_BASE=/ npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -140,6 +140,37 @@ the whole pipeline (Quarto render → Vite build → nginx) in one image:
 docker compose up --build   # http://localhost:8080
 ```
 
+## Deployment
+
+Every target runs the same pipeline — render Quarto, then build the app — and
+differs only in how Quarto is obtained and which base path the site is served
+from.
+
+| Target | Build command | Base path | Quarto comes from |
+| --- | --- | --- | --- |
+| GitHub Pages | `npm run build` | `/statistical-documentation/` | `quarto-actions/setup@v2` in the workflow |
+| Cloudflare | `npm run build:cloudflare` | `/` | downloaded into `.quarto-cli/` at build time |
+| Docker / nginx | `docker compose up --build` | `/` | installed in the image |
+
+### Cloudflare
+
+Cloudflare's build image cannot install system packages, so set the project's
+**build command** to:
+
+```bash
+npm run build:cloudflare
+```
+
+That wrapper sets `QUARTO_AUTO_INSTALL=1`, which makes
+[`scripts/ensure-quarto.mjs`](scripts/ensure-quarto.mjs) download the official
+Quarto tarball into `.quarto-cli/` (no root needed), and `VITE_BASE=/`, because
+Cloudflare serves from the domain root rather than the GitHub Pages subpath.
+The download adds roughly 30s per build; it is skipped whenever Quarto is
+already on `PATH` or already present in `.quarto-cli/`.
+
+To pin a different Quarto version, set `QUARTO_VERSION`. To point the build at
+an existing binary, set `QUARTO_PATH`.
+
 ## Documentation content
 
 Long-form content lives in `docs-source/` as Quarto documents and is rendered
