@@ -1,0 +1,1720 @@
+---
+title: "Kenya Statistical Production Model"
+subtitle: "Documentation for supporting the production of statistics across the Kenya Statistical System"
+date: last-modified
+date-format: "D MMMM YYYY"
+format:
+  html:
+    output-file: index.html
+    theme: cosmo
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    toc-title: "Contents"
+    smooth-scroll: true
+    anchor-sections: true
+    number-sections: false
+    page-layout: article
+    embed-resources: true
+    linkcolor: "#993300"
+    mainfont: Calibri, "Segoe UI", Arial, sans-serif
+    grid:
+      body-width: 820px
+      sidebar-width: 280px
+  typst:
+    output-file: kspm.pdf
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    papersize: a4
+    margin:
+      x: 2.2cm
+      y: 2.5cm
+    mainfont: "Calibri"
+    fontsize: 11pt
+    callout-icon: false
+    callout-appearance: simple
+---
+
+```{=html}
+<style>
+/* ---------- KNBS palette: rust #993300, sand #EEECE1 ---------- */
+body, #quarto-document-content { font-family: Calibri, "Segoe UI", Arial, sans-serif; }
+h1, h2, h3, h4, .quarto-title h1 { color: #993300; }
+h1.title { border-bottom: 3px solid #EEECE1; padding-bottom: .3rem; }
+a { color: #993300; }
+
+/* ---------- Justified text ("justify fit") ---------- */
+#quarto-document-content p,
+#quarto-document-content li,
+details.section-dropdown p,
+details.section-dropdown li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.6;
+}
+
+/* ---------- Expand / Collapse controls ---------- */
+.dropdown-controls { margin: .5rem 0 1.25rem; display: flex; gap: .5rem; }
+.dropdown-controls button {
+  background: #fff; color: #993300; border: 1.5px solid #993300;
+  border-radius: 5px; padding: .35rem .9rem; font-size: .9rem;
+  font-weight: 600; cursor: pointer; font-family: inherit;
+}
+.dropdown-controls button:hover { background: #993300; color: #fff; }
+
+/* ---------- Collapsible section dropdowns ---------- */
+details.section-dropdown {
+  border: 1px solid #EEECE1; border-radius: 6px; margin: .9rem 0;
+  background: #fff; overflow: hidden;
+}
+details.section-dropdown > summary {
+  cursor: pointer; list-style: none; padding: .65rem 2.2rem .65rem .95rem;
+  background: #EEECE1; color: #993300; font-weight: bold; position: relative;
+  border-bottom: 2px solid #993300; scroll-margin-top: 1rem;
+}
+details.section-dropdown > summary.summary-h1 { font-size: 1.3rem; }
+details.section-dropdown > summary.summary-h2 { font-size: 1.12rem; }
+summary::-webkit-details-marker { display: none; }
+details.section-dropdown > summary::after {
+  content: "\25B8"; position: absolute; right: 1rem; top: 50%;
+  transform: translateY(-50%); transition: transform .2s ease; font-size: .9rem;
+}
+details.section-dropdown[open] > summary::after { transform: translateY(-50%) rotate(90deg); }
+details.section-dropdown > *:not(summary) { padding-left: 1rem; padding-right: 1rem; }
+details.section-dropdown > *:not(summary):first-of-type { padding-top: .8rem; }
+details.section-dropdown > *:last-child { padding-bottom: .8rem; }
+details.section-dropdown h3 { color: #6b3a28; }
+/* Phase tabs (built in the browser from the stacked sections, so the PDF is unaffected) */
+.phase-strip { display: none; }            /* replaced by the tab bar */
+#phaseTabs { display: flex; flex-wrap: wrap; gap: 2px; border-bottom: 2px solid #993300; margin: 1rem 0 0; }
+#phaseTabs button {
+  background: #F7F5EF; color: #6b3a28; border: 1px solid #d9d4c2; border-bottom: none;
+  border-radius: 4px 4px 0 0; padding: .45rem .9rem; font-size: .92rem; font-weight: 600;
+  cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+#phaseTabs button:hover { background: #EEECE1; color: #993300; }
+#phaseTabs button.active { background: #993300; color: #ffffff; border-color: #993300; }
+.phase-panels { border: 1px solid #EEECE1; border-top: none; padding: 1rem; border-radius: 0 0 6px 6px; }
+body.phase-tabs-on .phase-hidden { display: none; }
+/* the phase's own dropdown chrome is redundant once it is a tab */
+body.phase-tabs-on .phase-section > details.section-dropdown > summary { display: none; }
+body.phase-tabs-on .phase-section > details.section-dropdown { border: none; }
+#phaseViewToggle {
+  background: #ffffff; color: #993300; border: 1.5px solid #993300; border-radius: 5px;
+  padding: .35rem .9rem; font-size: .9rem; font-weight: 600; cursor: pointer;
+  font-family: inherit; margin: .6rem 0 0;
+}
+#phaseViewToggle:hover { background: #993300; color: #ffffff; }
+@media print { #phaseTabs, #phaseViewToggle { display: none; } .phase-hidden { display: block !important; } }
+/* KSPM: nested sub-process dropdowns sit inside phase dropdowns */
+details.section-dropdown > summary.summary-h3 {
+  background: #f7f5ef;
+  font-size: 1rem;
+  border-bottom: 1px solid #993300;
+  color: #6b3a28;
+}
+details.section-dropdown details.section-dropdown { margin: .5rem 0; border-color: #e6e2d5; }
+
+/* ---------- Tables ---------- */
+table thead th { background: #EEECE1; color: #4A271C; border-bottom: 2px solid #993300; }
+table tbody tr:nth-child(even) { background: #faf9f5; }
+</style>
+```
+
+```{=typst}
+#set par(justify: true)
+#set text(hyphenate: true)
+// KNBS branding for the PDF: rust headings
+#show heading: set text(fill: rgb("#993300"))
+```
+
+# Introduction
+
+## About Kenya National Bureau of Statistics {#sec-about}
+
+The Kenya National Bureau of Statistics (KNBS) is eatablished under the Statistics Act, 2006 as the principal government agency for collection, compilation, analysis, publication and dissemination of statistical information, and the co-ordination of the National Statistical System, and for connected purposes. Among its functions is establishing standards and ensuring the use of best practices and methods in the production and dissemination of statistical information across the National Statistical System (NSS).
+
+This role involved the development of appropriate documents for standardization of statistic production. Key among these, is guiding documents on the production process of statistics.
+
+## Generic Statistical Business Process Model {#sec-gsbpm}
+
+Generic Statistical Business Process Model [(GSBPM)](https://unece.org/statistics/modernstats/gsbpm) is a Set of pre-defined processes, set together to reflect the entire statistical production. It was first developed in 2008 by a collaboration between United Nations Economic Commission for Europe (UNECE)/Eurostat/Organization for Economic Co-operation and Development (OECD) through the High Level Group for the Modernisation of Official Statistics (HLG-MOS). The Current version 5.1 was released in 2019.
+
+The generic framework is applicable to a wide range of statistical activities and therefore statistical organizations can customize the model to align with their specific needs, priorities, and constraints. The generic framework has been customized to the Kenyan context through tailoring the processes, methodologies, and tools outlined in the GSBPM to accommodate specific data requirements, legal frameworks, cultural considerations, and resource constraints.
+
+KNBS welcomes all producers of statistics to adopt this framework as a standard guide in the statistical production process.
+
+## Supporting Models and Frameworks {#sec-frameworks}
+
+This includes the overarching processes whcih are the framework that are needed to support the entire statistical production such as such as Quality Management, Metadata Management and Data management.These include:
+
+- [Kenya Statistics Quality Assurance Framework (KeSQAF)](https://www.knbs.or.ke/download/kenya-statistical-quality-assessment-framework-kesqaf/)
+- [Generic Activity Model for Statistical Organizations (GAMSO)](https://statswiki.unece.org/display/gsim)
+- [Generic Statistical Information Model (GISM)](https://statswiki.unece.org/display/gsim)
+
+# Statistical Production Phases
+
+Statistical activities are grouped into 8 Phases with supporting sub-processes that support statistical production.
+
+::: {.phase-strip}
+[**1**<br>Specify<br>needs](#sec-1) [**2**<br>Design](#sec-2) [**3**<br>Build](#sec-3) [**4**<br>Collect](#sec-4) [**5**<br>Process](#sec-5) [**6**<br>Analyse](#sec-6) [**7**<br>Disseminate](#sec-7) [**8**<br>Evaluate](#sec-8)
+:::
+
+
+## 1 Specify needs {#sec-1}
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABBsAAABmCAYAAACKsZnIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAACWWSURBVHhe7d1fyCV3fcfxZ3vdy6ws+cMqvQyGEiusIPQiVXITDUGQBZXiBi8i1QYXIoXiiiAVFmwsyUVIpLiFRQgh6k1ouxdCwYXEIkouS13SyNLk0vvt857MZ/PdX+ecM+c8c57z7/2C4fyZOTNznud3fn++8/v95szvv/WtO0fSGp2/erV/tl63Ll/un0nrY3rWPjE9a5+YnrVPTiM9m5a1bmf++NZbBhu0Nu9fv36qhf99Fy/2r6TpmZ61T0zP2iemZ+2T00rPpmWtE+n4T/rnkiRJkiRJkzDYIEmSJEmSJmWwQZIkSZIkTcpggyRJkiRJmpTBBkmSJEmSNCmDDZIkSZIkaVIGGyRJkiRJ0qQMNkiSJEmSpEkZbJAkSZIkSZMy2CBJkiRJkiZlsEGSJEmSJE3KYIMkSZIkSZqUwQZJkiRJkjQpgw2SJEmSJGlSBhskSVvvV7/5zdGf/sVfdMtYH3/yybuf+dt/+If+XUmSpGGr1Dfihz/5yd3Pvvqv/9q/e9gMNkiSttZ/v/tuV2h/5umn+3fG4TP//T//0786Onr51Ve7SoAkSVJr1foGCCzw2b//0Y+Onv7CF47++NZbR1/47Gf7tYfNYIMkaWt97IEHukL7n7///f6dxejF8G8vv9x9juVjDz7YvX/rD3/oHiVJkqpV6hsg0PDXf/d3XV2Dz//jt7/drxEMNkiS9so3v/zlo0/9+Z93z7lSkR4OVgAkSdJUqGMQaMDPX3ihe9S9DDZIkvYKVyfAnA0f//znu+fp3SBJkjSF12/c6J8d1zmO6xsMpeiGcb77bv+uDDZIkvbS715//eh73/hG95zeDQQfJEmSpvDj117rHjNPA4/IhQ4ZbJAk7bFnv/KVu+MvCTh4tUGSJE3p/P33d49ffPzx7hHc1UIGGyRJe44Zof/qU5/qX0mSJE3v3Nmz/TOFwQZJ0l5hvCR3pGgxb0Pmc5AkSTqJxy5c6B6H7nZl4OEDBhskSTstEzJx+6kMk3j51VfvBhx4799/9aujl65c6V5LkiQtq9Y3wN2vQJ2Dusbt997rXjN3gxc3PmCwQdpTjBVLpjhG3Z7FsWbaBkmXubUUeP3k3/xN97zOwfDO7dtd4Z5JISn82fZzX/96N3FTbocpbdqy+XNFmudzqexKm7ZKes72dTFNa5OWrW+AOgf1CzAp5GeefroLNHir7Q8ZbJD2TCqiZHhjkcG22/Oa96VNIkBAQd4ur//TP3XrU9CzMBkkeKzbclcKaRuskj+3nOVc22LV9PzDn/ykf/Yh5tVhfh1pU1apb0Td3kDDvQw2SHsmmWFm4B/jB6+8cvS7n/3s/33up2+80T+TJJ3UKvlz5e1btU1WTc/cLjB1jixp0EnaLwYbJB398Nvf7ioNqDP351Y+kqTNoivvd555pn8l7SZ6THIbYnro0CtiaDJfSfvDYIOku4GG1oVHHumfSZI2hQbZl5544ugTDz/cvyPtJnpSVplbx/kapP1ksEHSPRiDycz9THDjhHqStFmMb6eXmePZtQ/oSZmhE3X4BZPy1Qn4JO0Hgw2S7vH8tWvdMAonuJGkzfv7H/2oW7j6WyeHpHHm1WDtmtqTkgAaQYePPfhg9/rXb7/dPUraHwYbJN3FWMobN286UZMkSToVL1250j+TtG8MNkjq0H3xa8cFfr1NIFfN7NYoSZuTLucszOAfdEF3aIX2wbmzZ7tH07O0fww2SAeI7rjthEx0z2WG6Kxj+e6LL86cPFKSNL2h/FnaVW165q4qvK53oXj9xo2jf3v55f6VpH1isKGgC3kyxbFW+Yy0TkmTjOcNXlPAo/ZUeOf27e71rPT72IUL/TNpGJPXJQ+ctyyDfS7To4ZKa44z7zZqH3/yybvb8TtB0j/rFqnfNb8naRnL5s/SNlslPXNXFeQuFCxwQurDQwAqaWBo8baoq0tQj2XT9ZUzf3zrrTv984NFZlgnXQLdFedZ5TOH6P3r14/OX73av1qvW5cvH9138WL/Spqe6Xk2Guv0jGGirzoUhwY6k9uNzR+Tt9JdfJleNTk+d1GZNblpzbe5ikbllsryZ55+untvzDlSaHO3FiZR3fW5TUzP2iemZ+2T00rP25CWU66m/K5l9T6UtZtCsIag3ib/hqRjezYco0JLJbPegmeRVT4jSYfm2a98pSvoxmqDuOtGwIG8fGwwRJIkrQ9trO994xvdc4IQ6Ymo3WSwQZI0Oa5M0KsBbUS9dpNkYVsWngdBh9r1rx2uMW88ex0uwX5nyTGzRHusWV05eT/bWBmSJGk9MmSHJcMeU9bfM/9YKf/zfvvZOsQg9ZSqrmep9YhaP6AOUOsR2a4ej2WRdvta56hDTTj3evy2HlTPJX+jbWCwQZI0ueevXeuf3YtClKEW6U2Q+6uj9hRjGEWCFHyGoRi8l9n4GSNcKwBBl8Gfv/DC3cnG5vWU4OpJ2zuNfXIs3p/Xe42rLZ9+9NG7V1+4k4skSTqZlMOgZyQ9EFlS3oKAwHeeeaZ/9QEa2QynpOxmW+oJNOTrZ1n/3KVLd+sfHKcNVvzXO+/cU/5/7utf7x7R9tZkXT0v9sXQTIaE5BjzGv7ZPnUOtqcek3PiDi3sC5w7cl51rhSkvkM9iXoQ+9kGBhskSZOhMKTAn1fIsU2uJjC/A41+llnO339/99gGMG6/917/7EMUyuyLykUCGW30f4wU4hT0Q3NAUNnwNm2SJE2DekN3Vb5vNNOIH5prIAEDymAa6DymTpGG+YVHHukef/rGG91jUC+gfoCvPvVU9/gvv/hF94g/e+ihbv+13pBGfovzpQ5DAKILFBzXPbiLG774+OPdIxOt83mCHkMe+MhHusd8LoYmCObcOdaQfH/qJqlT5W+xaQYbJEmToTCk0J1VyH3zy1/uHrma0F2FGOid0EpBTuG9ypwOy8zqXwtozq92Z5xnVmVEkiQtRtlLWZ9lVsO6Bgzi1h/+0D0mYJGJn38/oo5BT4YguMGxqTe0PQdaQ/Wc1AU4fr3w8u7//m/32OJ7cDyCFl2daMm6ROpQ+f7byGCDJGlyCSpErhLQmKdgTa8DggezIv4V3RApvDOMYp3oyZBuilQU6twRkiRpO3FlP8EKlmXvwkDjnUb/L998c+YwyjEyLCLLvJ6QXNTgmAz/TN1onxhskCRNjqBCvSrxH//5n/2zDxDFz7wK6eaY7oQtCmKi/XVc5DLSnXIZ6Z5JxYX5Gcb0wJAkSacvwy0pr5fF0InI/AwM01hFggVtnWcWLsRwUYO6RttbYxn5/tvIYMNIRJxYVhn7K0mHjLwzBSGBg+SjKVhnFZIZwnDj5s3ukW6Cv3777e75LOkySW8JAhTLFuAEFepkTn/5yU92jwRPJEnS9nnyscf6Zx/WHSjP256J1AvSm/LHr73WPX7piSe6R7bPMAaGPYwNGFSZB4IAQo7DfAqz2o85BkM56vGXle9fL45kCAfvZU6HTTDYcIzEQGW4js3hdRJo/mnI2N9Fn9Fh40dNeqhLMp1kgtuExlV7nrGp8+W3lHPyd7W9ktZTQPKY/1sWPHTuXPcICtesIxiQHhAEBXgNhldkYsZaePPZXDlgWEXNnxli8dEHHuj2yzr2VbtQ1hml89mahyedMaFTzo+5JdIDg++aqyY8sn1mzIbpdD/VvKguNe1F3XZd6YE8uq245pit9ty13yiv6/+bJek0ZXlNE+tqgNTzOEkdYorf00mOr/UiH+N/m3KVMp7XbT0UvJfylnpGe4cHLghkmGX2Q5nfDqOg/vCDV17p1rMfekxmiAP7SB2EukG9EJLj1XoAx2nTF/WZ9MLMvA2YNYwiE0lyLpxv5oHIXTJYEjRgG34Htd6Seg3nXu/CxXGzL3ppzpr/4jScOT6BO/1zaXLvX79+dP7q1f7Vet26fPnovosX+1ebQaGeCezahg4ZBBlU+/42qOdNZpUrwWTuZJZkVJtAJk4muy1/s0NLz9pvpufxah5JBW7oDiWx7nyLSi+3fEvltZ4ble30wkmZw9hhZlvnec3f980hp+eU1WjTJ+mFRkp9Pw0gGkXraoQMHXcVJ/k90TBk7P221bnGOK30fCh1DdICDXiCDQzj1OkgHduzQZpQrYy2hRuvVx1zvglUYFN5kSRtHgEEGnAVwQUCwiwJNGBohvV9DTQcslpWU8doG/Y0rKiTHBquCNeeZ5I2w2CDNBGi75FuUa2hKwhE/7nKwJJuWpH3WdLdjKXtTkjEtm6bc6nv8x5XP+p2s7BdAifI52dp91u3refN96vnxLqKSlPdVpK23dh8a1b+OzaPZF2679KNNvvItiycS84nQQm2JU+u22XbemzOT7vn2VLe1nHrVXt3oIp0lTTQqmmbhddVW/doy/SqHqetw1T1mMv8nmq9g/NKV3N+M6xvf0v1s5LWx2CDNJFMYod5V49qjwcKPCqEdH3lqhPPa+Ga8Vf47osv3h3OQOGZgpOCmeh9brNTb9VDcIOuh8F5jeldce7s2Xu2Y7+zukFyHlxVyfHpokaXx5wfXX1zVSWV35xjHXeG2hX45y+8cHecmiRtqzH5VvJJ8sLkk8nrx+aRL1250j/78LZqqOUE0tMhc5uwLfl3xjOD/J3tODbrWez1sJsSgOL/XXu2VLw/VIZTdyDNpp5QG+y56MA60hOP9SIE26bukbTVlukVxwHpdd6whmV+T/kdtPUOgi75Tjn/DDsiuMDdB3gv9Zx5wQ/tPtJyermQx5IG2sCZ1sdggzSRVBJTwVuEQpHP1AoChSLvpcCsakVzSAp5CtSTjI/ErArLkNyukGBIlclUK77rrPGhXIkAfwOOz3KIXT8l7Y6x+Vbyx/R6YxJS8vq2N8G8PJIg8Elwbmlc1e7l5NVpiGm31AZTvX3fWAk6DWESPWSm/tyZp6u7HB83QQDSDvug8c4yhHTORHasnxfUGvt7WlTvmPWdwG+MAE397dUhR9o/pLmkzyzz0oimZbBBmliCDovkdjdDFYQxt9uphWoKY6K19crEaUgmzrjQLlo88vtHKkvc1lCSdsnYfCv5IldjySfTUOP2aotMeQWuBjJo2NHgqneK0e6aosGcWwcj++NCBmk2ASrqHotuQVyR1kn3Q8G11tjf00nqHXyGz/70jTfuCbpJWg+DDdJEiMTHogJ1avRkoDshKNhPu0tgxgPTPXJszw5JOjTp9p1lEz0KEpzmHvM0uOzVsLu6q/99mUuDex1dw+n9UNNs2/Nm0TFJb0lzX1vQQ3MZq9Y7qJ/xOaSnj6T1MdggTeS5S5f6Z0ddBW6WdBP89KOPdo9VriQMrVuECiMVAYIedBE8aaVj7NUuulQS4OC4JxnzW+9nLEm7YGy+lcbQmF5rs0zV7TeTBS7bC03bidugxus3bvTP7kV9YGh45jzpdcmtI1ufePjh/tnRqF4OXBDhN0Cam3ceY39PY+odH53xe6GXBeZNmilpOgYbpIlQ4NXeBe1wBgpHoum5KtCNczwufBMY6Jbjgpj3lrnSxOfqpJIZV5mKaQrcdI/katayOEaCJK1UngmU5DusIrNo10AJf0fw3qzjS9KmjM23vvrUU90j69LzjXXLNgCrRUPmkhe38+fUoXc2uHYf9YU6F0dbVvKa+RKW7cGSuRpIx0mnPLI/0lB6c9ZJIbtJr/vfQSsTRLL9rHQ/9ve0bL2D4/G7q71Ob7/33mAgRdK01hpsSBendhnqYl63rQ2nKZEhtZkwx+KYbebYnvuszHObpGtYlqG/s9ar9i6ggKz/DwpH1lWMHSS4wOzLLDznvUgEHjyvwyOoVOR/zGRjOQ7v19nJM1kkBTXr2TayPyoikWMmGALWz5q0LBOeUdizXSqxnAcFPEsqC2zDMWvlJMem8pLz5m/BuWZfQ103pUWNrSmcxjG03ciz6iz8ydupF4zNt3hMg5A8lu1APjs2j0T2wfrkvbWcYFvOK/sHeXGbjvks5VSC0tptpC/SG2U2/2/+/1lQ6xVtPYLX1A9QG/SkzVxAIb2xL+oxSdPcUSIBhxyLgAJpivSWAABpmzRee12wv7Y+jrG/p0X1DiSQxnfivLkgxJJ6Db+bXJzJ706bxf8uaWmdbcFZ+59X3p/GuUXac/uSJs8c/3jv9M/Xhj8YyJTm3e6GjIeMom1wTYV/GhlLMivk3Mjc0hWLxEbmSKHOZDU8J8NdNiq8CfyIUimq32lT3r9+/ej81av9q/W6dfny0X0XL/avpOmZnrcH5QVXpeaVKSdF5YLZztdRHm0D0/PhojLL5JS7UK8Zy/SsfXJa6Xnb0nLaYOtqC5L3JUBLACvG1CnWfW5B3YOA3LqPcxpIxwczjIIEkshtRUJjqY3yOhsvV4VZv08FsiTtMgpiAtPrRIWkXl2W9gnzCtVx95J0CGjvpe0Xp1GnWAZtTs5vXy50bDzYkC4p6WEwJF1esvAa6WaSpXZxqd2z6NFAJAokJtZ3PQD6IRQs7As8T1CCbfls3S7b1mNz3NbYcwuOM2991rHkXINAStbNmhxo6DtI0mmreVHbFbHmUeTRQ/kijwkCkFezjvy1blvzRJaqzffrtjwH+8uVD7rXsm4oX5Z2SdJ6yn+HUEia2qz2xpiyt1W3qW0tyuP62Xa72m6s9Yy2PYlZdYpFZp1bfZ99sy6v67nwN8j7dV19P++1+6jff+hc2WZo/axjou6The8xlY0GG/Il6e5PBGcoqsQfhmEBDMFgGx4zTIDoVL1tDWOyMtaLfSUo8cN+zDrYnv1QyGaymirHANvSnaZGlhgXxnFZOBbbDPV6GHtu4O9AAv/dz37WDddgfRJHfhh0peHcOD6V4Lvf7ThxEEjhfdYP3aOYbagws75+P0k6TeR15EXkdeRFPK+FXfLIGOrOyARiycNSLpAH123pncb7GW9cj9Hm+5klveKKb8YAJ++tw++kXZSZ/qlDZC4fSZrKvPbGmLK3Yj/cmY39gIAAbUJQHmfftIHYrs4vwjwe+Rz7SZuKtl+2i1l1innmnVv7vdhX6hMVt4FN2406UbTtR9R9cGzU71vRZsz/gP3Uc5t1TNqUtD3ZJ+vav9FJbSzYwD+ePwb/EP6waP+4+MErr3SPmRU3k7kMRXJmFZ5TRO/zhydRp6F/87e/HV0BnXVu+TuQwDnPdGv8l1/8ont8/tq17jEzWeeWiOnBkABNJsuZN7N0olRUyvM3l6TTUPP85Mnke7w3lJ/PMiY/T3mRCgPHSGE7xhRlhrRtqK9QkWSRpHWZor1BXSFleBraQ7eVZ10bHEhgI43+9o481Srl/dhzW4Q2JXUTzmHskAmOPavtSbAHOacLjzzSPdZzm3fMBC74blMGpDcWbJj3j6+4rQ34AxCtSeN6zOe5rc1U+MMn0RIAqD0TVpFzy/dI15302sj3zvwRfG/WJyHQg2HsOSRRksDYxzKVbkmaAr27kHu3V1m3TkyGJ0mS1mPd7Y06p962WfbcvvPMM90jPc1q78tVpD2Y3u35+2c4aM5t1jEJPCRAweemHEKBnZkgkl4PicizjO1RMKV6n2x6FuR+wFMgkFG/XxttIhHU9ctGnPhMugmRyJa5kihJkiRJ89jeGIeL2BnKQO9LGvlTyXCQLBlmOu+YtCtrL37mwZrKxoIND5071z+bL1fBuB3JSaRXwknUAAfnM0VX2/wd+KcP9VT4aH+MGzdvdo/VsscnsSWRZZiGJJ2GDAGr0oNraN08yReX8cBHPtI/Gyfj2yVJ0njram9kKP3UVqlTtFY5N9pxBAMyjcBJAzOpt+RGB0PmHZNgBOsIVrCPk/bij40FG/hCqGNpf/zaa90j76ULR8be8qXzB+Ex41JWsah7SCrAQ5Mt5p/z3KVL3eNJ5e+AZ8t5pXtL5mLgb5LvzN8r36EdK1TvRpHuM3wunyWREXiZ4oclSWOR15H3pADrluN8jfeSD547e7Z7BEPNxhS8bNN21UzlJp/nGBk3WoO0DK3gs5zHPGwz5lwkSTpU89oby5a9dR1X2nEavdqH6hStReeWC+V1WEOLdl4a85lbYdmLIq3a4z7tRI6RXgqzjsl7dVhFAif1f3YSaw028EVrF43MS5B/YqJeNIp5/7ELF7rXvJ9hAlRC64ybbMf4Xv6p7CdzOIA/ZhrYqM8zToXtcxWN2Uoj27L/JKKhbiT8I2vFdZZlzo0oEvL3YckwCo5T72LBOibNzN+HRyJQnCvrkrAz7CR4P/vGssMwtBn5n7GQhsjEeZ7MfJ/xG6rff1Hmr+1Hvkb+ydw0LDyvQ8Yo2BLQJY+sczmQ/yUNZCJc8ky2afNjKjekmcxx0w5Lq2UK+SnnAfLRBBVScaA8YJsaGJZ21ZiKtDRLWwdJPb++twhpMJ+pDZwh7fGoB+WzNQDMfngvDalYdHFR05vX3hhT9oLtWOp+apuG9ED5Dz7L65T3oH1HWkl7LvUH0kfdLm28RXWKatG5IXdBTNssF4Y5n6RJ2rycJ+up71D34bicZ9qP2Z6/DfvKe5x3+31BHSpt6xybdRlGMeuYWcf7LBy/vTvYSZw5/gPd6Z9rBBIqvQdOI7q2D96/fv3o/NWr/av1unX58tF9Fy/2r3YfP3iQcWTiUDIsMhAeDyFg1EVb++9OxjevADgNpuftlt8MFQGDA4uZng8Pv5FtyEvXwfS8fjR82jpId7X0uAFEw2Vs3Tj7aQPOraHjDeXzea+mbRptNKjahuCuOK30bN6sdSId78wEkduCQEO6nkjr0kbnKSxZKGzzKEnSWIuuIkuLnHYdZOzxUkdKoIE6VO1BLGlzDDaMkG5cdGOhe9A+XhHQeEkPWWrXL6Q7H0tbuWs/l+fpygXez9V88Jz36nHTDat9jwI2r7teAeVciPLnOUv7eZ7P0n62nvvQ52pXx6H1WcfCviu+R9bVOUiq+r2G9iFJU6l5TZun17yQhddR81fyxJq3DeVZWcfSHmco/0bdZ33OUoPW3eu+SzGNsOy/3W97XO2OWu6y5P9f0yEL6QTZvq1/1G1r+V33k33MUusiLPUYrZpuZ/1+5h2v1gdIzyy1DpXPZ5ssnGP9vkO/SUknZ7BhhNwxgvExGdejw0SBxVgmuu9lXFQdN0WhR4WOdUTZeV4rb3UM1HdffLHbBowTSyFLt8DsGzznPbon5nZC0b7HWKyMecfPX3ihf/ZBBZPjZXsKV/BdkDFiQwiw1f0ypi3fhc/VSi3fl+/DebNv1ue7pQJC10nOha6RnFetFKXLJOszB0nFNvxdWV+/jw5brczym1xUGZYWGcqvyHvSACNfI60lvyKP5HXyu5o/kycyX1Ty0a9dudI9YsxxyCdzHLZLucIVX16Du1axPnlzGlzsv5Y9PE/Xdc4j+63ljnYL6YHJzfk/pkzPOG7SYS2/00uAcdykz4znJr2Rfkkf7AeU32mED9VBhqSxzzHZD58h/Sc9V6Rzfhc5Hsdf9ni1ngMmGq7fl33znWv6Zj3j26lb8fdi8UKitB4GG0YgMyKzYplqZk7tHipsNIRBmiAtJF2ACiEFJxW/pBMKSt5L5bN6qVQ2p8C5UYGkgB5Kq7WyCc6Nbevst2n0LzKrS2P+Buyb43/i4Ye793N3gOevXesev/rUU91jJmtND4YEPHIXlnnBvTQmqShZSRDpIL9HlkXdbqVF2vyKNEXaIt8EAWMkH8sQy7xfkSdSbgwZe5zki0zkRT7bXonN58kPE4AgT15Ub6HsYF9sN2/8vLYXs9+3dQ1eR9ISahArE9khF9aYuK/izgHLyF2F2gsYQxcPSKf5XRD0Qu6utqpZ6Z33E4So5/bO7dszf5uSTs5ggzTSr99+u382LDPn55Y3VZ1VfxYKvJNIQb0J3KYQ+Q5cxeBKXa6s5Xayv++DGRT0rOcqBqiEjA10pNJEBZl9tBVuSZoCPQVmIb9KY669XRnvL8rPakNw3nGQbendQJ6XoPeYRuCiciV36qpDK7R7Emzl/51ytZU6wi/ffLN7ZNvaMM+FNQIQpLNVsU/2w5KejstIPWEd2qAL9YcEWSSth8EGaQVjG8aHiqsVqWywtFfL0m03y7JXoflMuldSSR7qOSJJUxi6IrsOi45DV++ab05xNZZ9pHs5QY2TNDK1OdRJ+N8RSMgwilZ6xtD4n9XIZjgaFwlOOqSGhjznQzArZfW2SNDlx6+91vWisFeDtF4GG6SRMiQAQ70c0pW2yhX9oXX7KJWXWVf2PtpfRRm6kjer6+MsXMlJhSjDNCRpKgxXwKz8KkMVIj0N6lC6MeYdBznOmB5yreTJ6do+JFei08Xc4O3uyfwMz1261D0OqcNrmKujbWQTICAQQWN82fK4IpBB70WOtUpD/i8/+cn+2erm9VbI8Mzau0jS+hhskEai8E2EvnZTpJsgDWsKVQpXCmted8txYbZKgZthCajPt139ns+WCfrSPTdXVvi7ZNwoFZPMv5ArDhmzWe9GQQ8G8Ll8NhX+BDEkaSpD+RUN8eRXGYKQ/CrBgLw/1qLjZC6GzK0AtmuDAlypBdukITWr7Mm+U34hc060w0K03VLXAAGveUGppKUEuKoMr2AYQ9LZKm7+9rfdY85p3jCKbIMMD6pDHabA3ye/K1BvSF3DSd+l9TPYIC2Bq+kJONBFkIWZkHMVgOECNH7phsjC8zqEIA1m8LzOoM+VAAp4KpDtdrxHYZlCm0J56L1UICNXO8B+6vY8sn09Vt2+4rzqhEqcd3uOwRUysP/8jfI34MpKJqrMvA1MRpVhFDzy9+W7sC7dijOrdfB+9o1lh2Fo/ajg5X/EkgbNLDR6xmy3rPY3we+G47TvS62h/IqGXPIbGvJ0WU9+xSOv08Bv81vyzTYfxaLj0PhKrwPyWtajDSTQgGRd8uPaFb42sFifRhafId/P5zgO56Pd0V4IOX///d1zJNAfTz72WPeYAFf1pSee6B5Jq5TLdZ/UAYbqIOSjCRiQdtkuxwDpKmmXz7CP4LfCwjZJ07WcHzperTNxXpQXbT0H/Daof4H1bQCD78/3S91N0vqcOf5h3+mfS5N7//r1o/NXr/av1uvW5ctH91282L+Spmd6Xg6Vw/QCouEzr2KXyiaNrqkaOxyfmfxrwI8KLJViKpoEDw+Z6Xk/dL0Tjht8NOqmviq8S0zPGougCL1AZvX82QanlZ5Ny1on0rE9GyRJG8cVLZapAg1UJutwp6AxxnEOPdAgSYeKoU91Hi5J62OwQZK0sgx/YGm77FbMv5Ht2iEMdR8ECSq6zWZd7YIbWceS49OjId1pueKbz/J+tmW/HCuvWfJ5ts17MW9YSN2exSEakrRdyJfJn1PGOIRCSLrI0tZB6rq2jlPrFCx1mA9q3aBdd0gMNkiSVkLBS2OeIRL0FuB5WxgH82ywTebkqIED5j0Zwr4Ys8v+GdvL8AcKd6Txz7hc9st4dI7PfrlilfHpWU+PBrrM5n3UsfJ46cqV7pFtOU8+ByofzMGS93jkNTgPzovzYx2P0mmhoky6B+nwkCu00jyZy4JAtPM8CeSX1EeoB6QuwJ1akDoGdYZax6gXE+g9mTnFal0CbJe6AXUY6jL1s4fEYIMkaWk0+il4acznChGNcN5LQKDKhHSZhCwz58+S/bNP9p8ur7nN6fPXrnWPmV2dyiMFPoGCZa5YEXDgGGBSNFDJyHki7+e93Jqtfs8M2SCgYUVWpyXpPovDg6RhGULHInERgQAAdRjqASykjczxlHoEwYjak5G7tVQEFFjP55P/8prPoZus9HhfHCfvHRqDDZKkpeX2an/20EPdYzXv1muRq7GzvHP7dvdIZYCrC+lJ8F/vvNM93rh5s3ucQp2FHQz5qBOH5ZgEFDgXKhfgHKlEpLcE6w71yoUkSbsit2idJ8EpbuU+FCjInVaon9ReZfWW9dQLWFLnqYGLQ2GwQZK0tTIMIku9swRye9STqIGFoV4Zke6SWbhSBq4uZ/gEFRK7skuStP3mXfigPkCggN6MdQhmUAfI8AkuVgwNI80w0yzL9LzcFwYbJElL+/Sjj/bPPpQeAEPrWhm6MMtD5851j1QEhq4EPHbhQvc4q4dDvdf8GKlIcKvMC4880j2P9N745Ztvdo9DCFhQkeB7Uek4xKsXkiTtglrOt5NCgjI8wyNzYWFIhl9kTgf2de7s2X7t0dGv3367f3a4DDZIkpbWjUN88MG7DetuOS5oea/2FIh0K8ycC89dutQ9zlL3QRfGyJWDLz7+ePfIMTPZJFchhoYxUPjP67GA7A9UHqo6zCL74ZHj8r3r1YzM53CIVy8kSdoFlPPUV5BJIUFPBtQgAeX80IWNbItcZCHQQPmfCyr1Ftz0emRfh8ZggyRpJQxpoLBmvCILz9thDkT76UbIDOAUzDTY6XbYNuiHcLUAfIbPsmT/fD7dF5lDgXXMFZHJGXMlgmAEEzwSvCBAkHGX7LPeESMVj0w4WfHZDJPIvA0cK8egl0XOj3NpZ6WWJEnbJXUY6gkpw1PvqBc8qN+kbkDdIRc1qN/kc9QNqCfkQgOTRSbgkG24yHKIFyLOHP9R7/TPpcm9f/360fmrV/tX63Xr8uWj+y5e7F9J0zM9r0fXO6CfAHJsIEInZ3rWPjE9a5+cVno2LWudSMf2bJAkbZRDDiRJkvaPwQZJ0kYwrIGuhXUMo70aJEmS9oPBBknSRnzi4Ye7xzqEQpIkSfvBYIMkaSMYPsFkTFns1SBJkrQ/DDZIkiRJkqRJGWyQJEmSJEmTMtggSZIkSZImZbBBkiRJkiRNymCDJEmSJEmalMEGSZIkSZI0KYMNkiRJkiRpUgYbJEmSJEnSpM78/lvfutM/l9bi/NWr/bP1unX5cv9MWh/Ts/aJ6Vn7xPSsfXIa6dm0rHU7c+dY/1ySJEmSJOmEjo7+D6WsUxFac3BRAAAAAElFTkSuQmCC){width=100%}
+
+This phase is triggered when a need for new statistics is identified or feedback about current statistics initiates a review. It includes all activities associated with engaging stakeholders to identify their detailed statistical needs (current or future), proposing high level solution options and preparing a business case to meet these needs.
+
+The **“Specify Needs”** phase is broken down into six sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative
+
+- [1.1 Identify needs](#sec-1-1)
+- [1.2 Consult and confirm needs](#sec-1-2)
+- [1.3 Establish output objectives](#sec-1-3)
+- [1.4 Identify concepts](#sec-1-4)
+- [1.5 Check data avaialability](#sec-1-5)
+- [1.6 Prepare and submit business case](#sec-1-6)
+
+### 1.1 Identify needs {#sec-1-1}
+
+This sub-process includes the initial investigation and identification of a statistical need. It may be triggered by several factors such as a new information request or an environmental change such as a reduced budget, action plans from evaluations of previous iterations of the process or other processes that might provide input to this sub-process. It also includes consideration of best practices amongst other (national and international) statistical organisations producing similar data and the methods used by those organisations.
+
+#### Input
+
+- New data/information requests
+- Reports from previous evaluations
+
+#### Output
+
+- New Identified statistical need.
+
+#### Documentation and Tools
+
+-Statistical guidelines
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 1.2 Consult and confirm needs {#sec-1-2}
+
+This sub-process focuses on consulting with the internal and external stakeholders and confirming in detail their statistical needs. A good understanding of user needs is required so that Producers know not only what it is expected to deliver, but also when, how, and, perhaps most importantly, why. For the second and subsequent iterations of this phase, the main focus will be on determining whether previously identified needs have changed. This detailed understanding of user needs is the critical part of this sub-process.
+
+#### Input
+
+- [Output from Sub-process 1.1](#sec-1-1)
+- New data/information requests
+- Reports from previous evaluations
+
+#### Output
+
+- To what extent have stakeholders been identified and included in discussions about statistical needs?
+- To what extent has relevant supporting documentation been gathered?
+
+#### Documentation and Tools
+
+-Statistical methods and standards
+-Applicable procedures for new data requests
+-Statistical guidelines
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 1.3 Establish output objectives {#sec-1-3}
+
+This sub-process identifies the statistical output objectives that are required to meet the user needs as identified in sub-process [1.2](#sec-1-2) . It includes agreeing on the suitability of the proposed outputs and their quality measures with users. Legal frameworks and available resources are likely to cause constraints when establishing output objectives.
+
+#### Input
+
+- [Outputs from sub-process 1.2](#sec-1-2)
+- Agreement with relevant institutions
+- statistical practices
+
+#### Output
+
+- Draft of statistical objectives
+- Quality measures
+
+#### Documentation and Tools
+
+- Existing legal frameworks
+- Statistical strategies
+- checklist
+-Statistical guidelines
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 1.4 Identify concepts {#sec-1-4}
+
+This sub-process clarifies the required concepts to be measured from the point of view of the users. Though the concepts identified might not align with existing statistical standards, including the choice or definition of the statistical and other concepts and variables to be used, it be should be undertaken during design variable descriptions
+
+#### [Refer to sub-process 2.2](#sec-2-2)
+
+#### Input
+
+- Statistical guidelines
+- Existing definitions and metadata handbook
+
+#### Output
+
+- Aligned concepts and variables to the statistical need
+
+#### Documentation and Tools
+
+- Statistical guidelines
+- Existing definitions and metadata handbook
+- Statistical concepts
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 1.5 Check data availability {#sec-1-5}
+
+This sub-process checks whether current sources of data could meet user requirements and the conditions under which they would be available including any restrictions on their use. An assessment of possible alternatives including research into potential administrative or other non-statistical sources of data, to: 
+
+i.Determine whether they would be suitable for use for statistical purposes;  
+ii.Assess the division of responsibilities between data providers and the statistical organisation;
+iii.Check necessary ICT resources as well as any formal agreements with data providers for accessing and sharing the data.
+
+After existing sources have been assessed, a strategy for filling any remaining gaps in the data requirement is prepared. This may include identifying possible partnerships with data holders. This sub-process also includes a more general assessment of the legal framework in which data would be collected and used and may therefore identify proposals for changes to existing legislation or the introduction of a new legal framework
+
+#### Input
+
+- ICT Systems
+- Data collection instruments’ guidelines
+
+#### Output
+
+- Report on available data, limitations, and strategy
+
+#### Documentation and Tools
+
+- Legal framework for the exercise
+- Statistical guidelines
+- Relevant checklists
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 1.6 Prepare and submit business case {#sec-1-6}
+
+This sub-process documents the findings of the other sub-processes in this phase in the form of a business for approval to implement the new or modified statistical business process. Such a business case needs to conform to the requirements of the approval body. This will include elements such as:
+
+i. A description of the "As-Is" business process (to be developed if it’s not available), with information on how the current statistics are produced, highlighting any inefficiencies and issues to be addressed;
+ii. The proposed "To-Be" solution, details how the statistical business process will be developed to produce the new or revised statistics.
+iii. An assessment of costs and benefits, as well as any external constraints.
+
+The business case describes options and makes recommendations, the benefits, costs, deliverables, time frame, budget, required technical and human resources, risk assessment and impact on stakeholders for each option.
+
+After the business case is prepared, it is submitted for approval to move to the next phase of the business process. Typically, the business case is reviewed and formally approved or disapproved by the appropriate persons/committee.
+
+#### Input
+
+- Draft of the business case, details on data to be collected
+
+#### Output
+
+- Business case, confirmation on the details of the survey like the budget and resources
+
+#### Documentation and Tools
+
+- Legal framework for carrying out the survey
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+## 2 Design {#sec-2}
+
+![](data:image/png;base64,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){width=100%}
+
+This phase describes the development and design activities, and any associated practical research work needed to define the statistical outputs, concepts, methodologies, collection instruments and operational processes. It includes all the design elements needed to define or refine the statistical products or services identified in the business case. It also specifies all relevant metadata, ready for use later in the business process, as well as quality assurance procedures. For statistical outputs produced regularly, this phase usually occurs for the first iteration and whenever improvement actions are identified in the “Evaluate” phase of a previous iteration.
+
+Design activities make substantial use of international and national standards to reduce the length and cost of the design process and enhance the comparability and usability of outputs. Organisations are encouraged to reuse or adapt design elements from existing processes and to consider geospatial aspects of data in the design to enhance the usability and value of the statistical information. Additionally, the outputs of design processes may form the basis for future standards at the organisational, national or international levels.
+
+The **“Design”** phase is broken down into six sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative.
+
+- [2.1 Design outputs](#sec-2-1)
+- [2.2 Design variable descriptions](#sec-2-2)
+- [2.3 Design collection](#sec-2-3)
+- [2.4 Design frame and sample](#sec-2-4)
+- [2.5 Design processing and analysis](#sec-2-5)
+- [2.6 Design production systems and workflow](#sec-2-6)
+
+### 2.1 Design outputs {#sec-2-1}
+
+This sub-process contains the detailed design of the statistical outputs, products and services to be produced. It also includes the related development work and preparation of the systems and tools used in the **"Disseminate"** phase. Processes governing access to any confidential outputs are also designed here. Outputs should be designed to follow existing standards wherever possible, so inputs to this process may include metadata from similar or previous collections (including extractions from statistical, administrative, geospatial and other non-statistical registers and databases), international standards, and information about practices in other statistical organisations from sub-process [1.1](#sec-1-1),  Outputs may also be designed in partnership with other interested bodies, particularly if they are considered to be joint outputs, or they will be disseminated by another organisation.
+
+#### Input
+
+- Approved business case
+- Best national and international statistical standards
+
+#### Output
+
+- Survey design
+
+#### Documentation and Tools
+
+- Statistical guidelines and framework
+- ICT Inrastructure
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 2.2 Design variable descriptions {#sec-2-2}
+
+This sub-process defines the variables to be collected via the collection instrument, as well as any other variables that will be derived from them in sub-process [5.5](#sec-5-5), and any statistical or geospatial classifications that will be used. It is expected that existing national and international standards will be followed wherever possible. This sub-process may need to run in parallel with sub-process [2.3](#sec-2-3) , as the definition of the variables to be collected, and the choice of collection instruments may be interdependent to some degree. Preparation of metadata descriptions of collected and derived variables, and statistical and geospatial classification is a necessary precondition for subsequent phases.
+
+#### [Refer to sub-process 2.3](#sec-2-3)
+
+#### Input
+
+- Approved business case
+- Statistical standards
+
+#### Output
+
+- Variables to be used
+
+#### Documentation and Tools
+
+- Statistical guidelines and frameworks
+- ICT Infrastructure
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 2.3 Design collection {#sec-2-3}
+
+This sub-process determines the most appropriate collection instruments and methods which may depend on:
+i.The type of data collection (census, sample survey, or other), the collection unit type (enterprise, person, or other) and
+ii.The available sources of data.
+
+The actual activities in this sub-process will vary according to the type of collection instrument required, which can include computer-assisted interviewing, paper questionnaires, administrative registers (e.g. by using existing service interfaces), data transfer methods, web-scraping technologies as well as technology for geospatial data. Direct or indirect use of administrative data may be introduced in the data collection mode for either controlling survey data or assisting it when capturing survey information.
+
+This sub-process includes the design of the collection instruments, questions and response templates (in conjunction with the variables and statistical classifications designed in sub-process [2.2](#sec-2-2)). It also includes the confirmation of any formal agreements. This sub-process is enabled by tools such as question libraries (to facilitate the reuse of questions and related attributes), questionnaire tools (to enable the quick and easy compilation of questions into formats suitable for cognitive testing) and agreement templates (to help standardise terms and conditions). This sub-process also includes the design of provider management systems that are specific to this business process. 
+
+Where statistical organisations do not collect data directly (i.e. a third party controls the collection and processing of the data), this sub-process may include the design of mechanisms to monitor the data and the metadata to assess the impacts of any change made by the third party.
+
+#### [Refer to sub-process 2.2](#sec-2-2)
+
+#### Input
+
+- Data collection instruments
+- ICT Systems
+- Variables to be used.
+
+#### Output
+
+- Design of the collection instruments and management systems 
+
+#### Documentation and Tools
+
+- ICT Infrastructure
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 2.4 Design frame and sample {#sec-2-4}
+
+This sub-process only applies to processes which involve data collection based on sampling, such as through statistical surveys. It identifies and specifies the population of interest, defines a sampling frame (and, where necessary, the register from which it is derived), and determines the most appropriate sampling criteria and methodology (which could include complete enumeration). Common sources for a sampling frame are administrative and statistical registers, censuses and information from other sample surveys. It may include geospatial data and classifications. 
+
+This sub-process describes how these sources can be combined if needed. Analysis of whether the frame covers the target population should be performed. A sampling plan should be made. The actual sample is created in sub-process 4.1 (Create frame and select sample), using the methodology specified in this sub-process.
+
+#### [Refer to sub-process 4.1](#sec-4-1)
+
+#### Input
+
+- Approved business case
+- Statistical Guidelines on sampling and frames
+
+#### Output
+
+- Sample
+
+#### Documentation and Tools
+
+- Approved business case
+- Management of statistical registers
+-Statistical application
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 2.5 Design processing and analysis {#sec-2-5}
+
+This sub-process designs the statistical processing methodology to be applied during the "Process" and "Analyse" phases. This can include among others, the specification of routines and rules for coding, editing and imputation which may vary based on the mode of data collection and source of data. This sub-process also includes the design of specifications for data integration from multiple data sources, validation of data and estimation. Statistical disclosure control methods are also designed here if they are specific to this business process.
+
+#### Input
+
+- Data coding/Statistical applications
+- Approved business case
+
+#### Output
+
+- Survey Methodology
+- Data validation systems
+
+#### Documentation and Tools
+
+- Approved business case
+- ICT equipment
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 2.6 Design production systems and workflow {#sec-2-6}
+
+This sub-process determines the workflow from data collection to dissemination, taking an overview of all the processes required within the whole production process and ensuring that they fit together efficiently with no gaps or redundancies. Various systems and databases are needed throughout the process. The GSBPM can be used as the basis of the business architecture layer when a statistical organisation has an existing enterprise architecture in place. The design might be adjusted to fit the organization. A general principle is to reuse processes and technology across many statistical business processes, so existing production solutions (e.g. services, systems and databases) should be examined first, to determine whether they are fit for purpose for this specific production process, then, if any gaps are identified, new solutions should be designed. It also considers how staff will interact with systems and who will be responsible for what and when.
+
+#### Input
+
+- [Outputs from sub-process 2.5](#sec-2-5)
+
+#### Output
+
+- Survey Methodology
+- Data validation systems
+
+#### Documentation and Tools
+
+- Data validation procedures
+- ICT infrastructure
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+## 3 Build {#sec-3}
+
+![](data:image/png;base64,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){width=100%}
+
+This phase builds and tests the production solution to the point where it is ready for use in the "live" environment. The outputs of the "Design" phase are assembled and configured in this phase to create the complete operational environment to run the process. New services are built by exception, created in response to gaps in the existing catalogue of services sourced from within the organisation and externally. These new services are constructed to be broadly reusable in alignment with the business architecture of the organisation where possible.
+
+For statistical outputs produced on a regular basis, this phase usually occurs for the first iteration, following a review or a change in methodology or technology, rather than for every iteration. The phase is broken down into seven sub-processes , which are generally sequential, from left to right, but can also occur in parallel, and can be iterative.
+
+The **“Build”** phase is broken down into seven sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative
+
+
+- [3.1 Reuse or build collection instruments](#sec-3-1)
+- [3.2 Reuse or build processing and analysis components](#sec-3-2)
+- [3.3 Build or build dissemination components](#sec-3-3)
+- [3.4 Configure workflows](#sec-3-4)
+- [3.5 Test production systems](#sec-3-5)
+- [3.6 Test statistical business process](#sec-3-6)
+- [3.7 Finalise production systems](#sec-3-7)
+
+### 3.1 Reuse or build collection instruments {#sec-3-1}
+
+This sub-process describes the activities to build and reuse the collection instruments to be used during the "Collect" phase. The collection instruments are built based on the design specifications created during the "Design" phase. A collection may use one or more modes to receive the data (e.g., personal or telephone interviews; paper, electronic or web questionnaires; SDMX web services). Collection instruments may also be data extraction routines used to gather data from existing statistical or administrative registers (e.g., by using existing service interfaces). This subprocess also includes preparing and testing the contents and functioning of that collection instrument (e.g., cognitive testing of the questions in a questionnaire). It also includes the preparation of maps as well as translation of the collection instrument. It is recommended to consider the direct connection of collection instruments to a metadata system so that metadata can be more easily captured in the collection phase. Connecting metadata and data at the point of capture can save work in later phases. Capturing the metrics of data collection (paradata) is also an important consideration in this sub-process for calculating and analysing process quality indicators. The data collection instruments/CAPI software will guide data extraction routines through the right statistical analysis software or administrative registers that are used
+
+#### Input
+
+- [Outputs from Phase 1](#sec-1)
+
+#### Output
+
+- Data collection instruments
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 3.2 Reuse or build processing and analysis components {#sec-3-2}
+
+This sub-process describes the activities to reuse existing components or build new 
+components needed for the “Process” and “Analyse” phases, as designed in the "Design" phase. 
+Services may include data tabulation plans, data dissemination portals, dashboard functions and features, information services, transformation functions, geospatial data services, workflow frameworks, provider and metadata management 
+services.
+
+#### Input
+
+#### Output
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 3.3 Build or build dissemination components {#sec-3-3}
+
+This sub-process describes the activities to build new components or reuse existing components needed for the dissemination of statistical products as designed in sub-process 2.1 (Design outputs). All types of dissemination components are included, from those that produce traditional paper publications including library services to those that provide web services,(linked) open data outputs, geospatial statistics, maps, or access to microdata/metadata.
+
+#### Input
+
+- [Output from phase 2](#sec-2)
+- Dissemination Manuals and guidelines
+
+#### Output
+
+- Schedule of the release of publications
+- Dissemination plan
+
+#### Documentation and Tools
+
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 3.4 Configure workflows {#sec-3-4}
+
+This sub-process configures the workflow, systems and transformations used within the 
+business processes, from data collection to dissemination. In this sub-process, the workflow is configured based on the design created in sub-process 2.6 (Design production systems and workflows). This could include modifying a standardized workflow for a specific purpose, assembling the workflows for the different phases (possibly with a workflow/business process management system) and configuring systems accordingly
+
+#### Input
+
+#### Output
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 3.5 Test production systems {#sec-3-5}
+
+This sub-process is concerned with the testing of assembled and configured services and related workflows. It includes technical testing and sign-off of new programmes and routines, as well as confirmation that existing routines from other statistical business processes are suitable for use in this case. Whilst part of this activity concerning the testing of individual components and services could logically be linked with sub-process [3.1](#sec-3-1), [3.2](#sec-3-2) and [3.3](#sec-3-3), this sub-process also includes testing of interactions between assembled and configured services and ensuring that the whole production solution works coherently.
+
+#### Input
+
+#### Output
+
+- Tested production systems
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 3.6 Test statistical business process {#sec-3-6}
+
+This sub-process describes the activities to manage a field test or pilot of the statistical business process. Typically, it includes a small-scale data collection, to test the collection instruments and logistics, followed by processing and analysis of the collected data, to ensure the statistical business process performs as expected. Following the pilot, it may be necessary to go back to a previous step and make adjustments to collection instruments, systems or components. For a major statistical business process, e.g., a population census, there may be several iterations until the process is working satisfactorily
+
+#### Input
+
+- Instruments
+- Training
+- Personnel
+- CAPI Devices
+
+#### Output
+
+- Finalized questionnaire and system
+- Documentation of changes/report
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 3.7 Finalise production systems {#sec-3-7}
+
+This sub-process includes the activities to put the assembled and configured processes and Services, including modified and newly created services, into production and ready for use. The activities include:
+- Producing documentation about the process components, including technical documentation and user manuals;
+- Finalizing process instruments and systems to be used;
+- Training the users on how to operate the process;
+- Moving the process components into the production environment and ensuring they work as expected in that environment (this activity may also be part of sub-process [3.5](#sec-3-5)).
+
+#### Input
+
+- ## Output
+
+- Finalized instruments and systems
+- Process documentation
+- Training of users
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+## 4 Collect {#sec-4}
+
+![](data:image/png;base64,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){width=100%}
+
+This phase collects or gathers all necessary information (e.g. data, metadata and paradata), using different collection modes (e.g. acquisition, collection, extraction, transfer), and loads them into the appropriate platform (e.g. local server, cloud) for further processing.
+
+Whilst it can include validation of data set formats, it does not include any transformations of the data themselves, as these are all done in the "Process" phase, except for transforming into the correct data collection valraiables. For statistical outputs produced regularly, this phase occurs in each iteration.
+
+The **“Collect”** phase is broken down into four sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative
+
+- [4.1 Create frame and select sample](#sec-4-1)
+- [4.2 Set up collection](#sec-4-2)
+- [4.3 Run collection](#sec-4-3)
+- [4.4 Finalise collection](#sec-4-4)
+
+### 4.1 Create frame and select sample {#sec-4-1}
+
+#### Process
+
+This sub-process creates or updates the frame (e.g. statistical business, household) and selects the sample for this iteration of the collection, as specified in sub-process 2.4 (Design frame and sample).
+It also includes the coordination of samples between instances of the same statistical process (e.g. to manage overlap or rotation), and between different processes using a common frame or register (e.g. to manage overlap or to spread response burden).
+Quality assurance and approval of the frame and the selected sample are also undertaken in this sub-process, though maintenance of underlying registers, from which frames for several statistical business processes are drawn, is treated as a separate statistical process.
+The sampling aspect of this sub-process is not usually relevant for processes based entirely on the use of pre-existing sources (e.g. administrative registers, web sites) as such processes generally create frames from the availablae data and then follow a census approach.
+Variables from administrative and other non-statistical sources of data can be used as auxiliary variables in the construction of sampling frame.
+
+#### Input
+
+- A datasource for creating the frame
+- [Output from sub-Process 2.4](#sec-2-4)
+- maps (Geo)
+- [Outputs from sub-process 2.2](#sec-2-2)
+
+#### Output
+
+- Sampling units
+- Selected samples
+- Sampling frame
+
+#### Documentation and Tools
+
+- Household listing manual
+- Strategy for developing and maintaining SBR
+- Listing forms
+- R-code (scripts)
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 4.2 Set up collection {#sec-4-2}
+
+This sub-process ensures that the data collection personel, processes and technology (e.g. web-based applications, GPS) are ready to collect data and metadata, in all modes as designed. It takes place over a period of time, as it includes the strategy, planning and training activities in preparation for the specific instance of the statistical business process. Where the process is repeated regularly, some (or all) of these activities may not be explicitly required for each iteration. For one-off and new processes, these activities can be lengthy. For survey data, this sub-process includes:
+
+#### Survey sources
+
+- Preparing a collection strategy;
+- Providing information for respondents (e.g. drafting letters or brochures explaining the purpose of the survey, notifying respondents when online reporting instruments will be made available);
+- Translating of materials (e.g. into the different languages spoken or used in the country).
+- Preparing collection instruments (e.g. printing questionnaires, pre-filling them with existing data, loading questionnaires and data onto interviewers' computers, APIs, web scraping tools);
+- Ensuring collection resources are available (e.g. laptops, tablets, collection apps, APIs);
+- Configuring collection systems to request and receive the data;
+- Ensuring the security of data to be collected;
+- Identify personnel (e.g. from within organization or recruiting incl interpreter and etc);
+- Training collection staff;
+- Agreeing on terms with any service providers;
+- Training system using appropriate technology e.g. using supervised machine learning techniques, webinar; Agreeing on terms with any intermediate collection bodies, (e.g. sub-contractors for computer assisted telephone interviewing, web services);
+
+#### Non-survey sources
+
+- For non-survey sources, this sub-process ensures that the necessary personnel, processes, systems and confidentiality procedures are in place, to receive or extract the necessary information from the source. This includes:
+  - Evaluating requests to acquire the data and logging the request in a centralised inventory;
+  - Initiating contacts with organisations providing the data, and sending an introductory package with details on the process of acquiring the data;
+  - Checking detailed information about files and metadata with the data provider and receiving a test file to assess if data are fit for use;
+  - Arranging secure channels for the transmission of the data.
+
+#### Input
+
+- Collection staff availability
+- Training staff
+- Training
+- Questionnaires
+- publicity and advocacy materials i.e. adverts, brochures
+- Vehicles
+- CAPI devices
+- Sub-process 3.6
+
+#### Output
+
+- Trained staff
+- Printed/uploaded questionnaires
+- Data collection strategy
+- Dashboard
+- Informed respondents
+- Data collection instruments (e.g. Manuals, questionaires, CAPI, server)
+
+#### Documentation and Tools
+
+- Training manuals
+- IEC material
+- Application manuals
+- HR Guidelines on recruitment
+- Template for contracts for service providers
+- ICT documentation (e.g. how to set up and use)
+- Logistical guidelines (e.g. storage, distribution and return of tablets) 
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 4.3 Run Collection {#sec-4-3}
+
+#### Process
+
+This sub-process is where the data collection is implemented. The different collection instruments are used to collect or gather the information which may include raw microdata or aggregates produced at the source, as well as any associated metadata. It can include the initial contact with providers and respondents and any subsequent follow-up or reminder actions or call-backs. It may include manual data entry at the point of contact, or fieldwork management and technical support, depending on the source and collection mode, including web-scraping. It records when and how providers and respondents were contacted, and whether they have responded. Depending on the geographical frame and the technology used, geo-coding may need to be done at the same time as collection of the data by using inputs from GPS, putting a mark on a map, etc. 
+
+This sub-process also includes the management of the providers involved in the current collection, ensuring that the relationship between the statistical organisation, data providers  and other relevant stakeholders remains positive, and recording and responding to comments, queries and complaints. Proper communication and sensitization with reporting units and minimisation of non-response contribute significantly to a higher quality of the collected data.
+
+For administrative, geographical or other non-statistical data, the provider is either contacted to send the information or sends it as scheduled or the provider is physically visited to provide the information. This process may be time consuming and might require follow-ups to ensure that data are provided according to the agreements. In the case where the data are published under an Open Data license and exist in machine-readable form, they may be freely accessed and used.
+
+This sub-process may also include the monitoring of data collection and making any necessary changes to improve data quality. This includes generating reports, visualising and adjusting the acquisition process to ensure the data are fit for use. When data collection period elapses and the collection meets its targets, it is closed and a report on the collection is produced. Some basic checks of the structure and integrity of the information received may take place within this sub-process, (e.g. checking that files are in the right format and contain the expected fields).
+
+#### Input
+
+- [Outputs from sub-process 4.2](#sec-4-2)
+- Trained staff
+- Data collection strategy
+- Dashboard
+- Informed respondents
+- Data collection instruments 
+
+#### Output
+
+- Collected data and meta-data
+- Data collection report
+- Data quality reports
+
+#### Documentation and Tools
+
+- Feedback and complaint template
+- Communication strategy
+- Data validation procedure/instruction
+- Training manual
+- Contact list of data suppliers
+- Checklist for key firms
+- Survey solution
+- Scripts
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 4.4 Finalise collection {#sec-4-4}
+
+This sub-process includes loading the collected data and metadata into a suitable electronic environment for further processing. Documentation of identified gaps during data entry for use in quality declarations. It may include manual or automatic data capture, for example, using data entry staff or optical character recognition tools to extract information from paper questionnaires, or converting the formats of files or encoding the variables received from other organisations.
+It may also include analysis of the metadata and paradata associated with collection to ensure the collection activities have met requirements. In cases where there is a physical collection instrument, such as a paper questionnaire, which is not needed for further processing, this sub-process manages the storage of that material. When the collection instrument uses software such as an API or an app, this sub-process also includes the versioning and storage of these.
+It also involves return and safe custody keeping of all collection instruments, unutilized survey materials as outlined in sub process 4.2 (under collection strategy).
+
+#### Input
+
+- Output form sub-process [4.3](#sec-4-3)
+- Output form sub-process from [4.2](#sec-4-2)
+- Checklist  for return of materials and items issued.
+
+#### Output
+
+- Data
+- Collect (field work) report
+- Stored materials and data collection applications  
+- Report of returned, stored and disposed materials
+
+#### Documentation and Tools
+
+Guidelines for storage, lost, damaged and disposal of assets and equipment, incl safekeeping _link_
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+## 5 Process {#sec-5}
+
+![](data:image/png;base64,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){width=100%}
+
+This phase describes the processing of collected data and their preparation for analysis. It is made up of eight sub-processes that integrate, classify, check, clean, and transform collected data, so that they can be analysed and disseminated as statistical outputs. For statistical outputs produced regularly, this phase occurs in each iteration. The sub-processes in this phase can apply to data from both statistical and non-statistical sources (with the possible exception of sub-process [5.6](#sec-5-6), which is usually specific to survey data).
+
+The "Process" and "Analyse" phases can be iterative and parallel. Analysis can reveal a broader understanding of the data, which might make it apparent that additional processing is needed. Sometimes the estimates being processed might be already published aggregates (undertaken according to a Revision Policy).
+
+Activities within the **"Process"** and **"Analyse"** phases may also commence before the **"Collect"** phase is completed. This enables the verification of the quality of the data collected and compilation of provisional results where timeliness is an important concern for users, and increases the time available for analysis.
+
+The **Process** phase is broken down into eight sub-processes , which may be sequential, from left to right, but can also occur in parallel, and can be iterative.
+
+- [5.1 Integrate data](#sec-5-1)
+- [5.2 Classify and code](#sec-5-2)
+- [5.3 Review and validate](#sec-5-3)
+- [5.4 Edit and impute](#sec-5-4)
+- [5.5 Derive new variables and units](#sec-5-5)
+- [5.6 Calculate weights](#sec-5-6)
+- [5.7 Calculate aggregates](#sec-5-7)
+- [5.8 Finalise data files](#sec-5-8)
+
+### 5.1 Intergrate Data {#sec-5-1}
+
+This sub-process links data files data from one or more sources. It is where the results of sub-processes in the "Collect" phase are combined. The collected data can be from a mixture of external or internal sources, including extracts of administrative and other non-statistical data sources. Administrative data or other non-statistical sources of data can substitute for all or some of the variables directly collected from a survey. This sub-process also includes harmonising or creating new figures that agree between sources of data. The result is a set of linked data. Data integration can include:
+
+- Combining data from multiple sources, as part of the creation of integrated statistics such as national accounts;
+- Combining geospatial data and statistical data or other non-statistical data;
+- Data pooling, with the aim of increasing the effective number of observations of some phenomena;
+- Matching or record linkage routines, with the aim of linking micro or macro data from different sources;
+- Data fusion - integration followed by reduction or replacement;
+- Prioritising is when two or more sources contain data for the same variable, with potentially different values.
+
+There may also be several instances of data integration in any statistical business process. Integration takes data protection principles into account by de-identifying, that is stripping of identifiers such as name and address, to help to protect confidentiality.
+
+#### Input
+- Collected data from multiple sources
+
+#### Output
+- Integrated data
+
+#### Documentation and Tools
+
+- Statistical Softwares (Stata,R e.t.c)
+- Data integration Report
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 5.2 Classify and Code {#sec-5-2}
+
+This sub-process classifies and codes the collected data. For example, automatic (or clerical) coding routines may assign numeric codes to text responses according to a pre-determined statistical classification to facilitate data capture and processing. Some questions have coded response categories on the questionnaires or administrative source of data, others are coded after collection using an automated process (which may apply machine learning techniques) or an interactive, manual process. 
+
+#### Input
+- Collected data from multiple sources
+- Classification & coding structures
+
+#### Output
+- Processed (classified & coded) data
+- Coding index
+- Documentation & Tools:
+- Classification & Coding report
+- Classification guideline
+- Data validation list (checklist)
+- Definitional/Explanatory notes
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 5.3 Review and validate {#sec-5-3}
+
+This sub-process examines integrated data to identify potential inconsistencies, errors and discrepancies such as outliers, item non-response and miscoding. It can also be referred to as data validation. It may be run iteratively, validating data against pre-defined edit rules, usually in a set order. It may flag data for automatic or manual inspection or editing. Reviewing and validating can apply to data from any type of source, before and after integration, as well as imputed data from sub-process 5.4 (Edit and impute). Whilst validation is treated as part of the **Process** phase, in practice, some elements of validation may occur alongside collection activities, particularly for modes such as computer-assisted collection. Whilst this sub-process is concerned with the detection and localisation of actual or potential errors, any correction activities that change the data are done in sub-process [5.4](#sec-5-4).
+
+#### Input
+- Collected data
+- Integrated data
+
+#### Output
+- Validated data
+
+#### Documentation and Tools
+- Statistical software
+- Editing Specifications
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 5.4 Edit and impute {#sec-5-4}
+
+Where data are considered incorrect, missing, unreliable or outdated, new values may be inserted or outdated data may be removed in this sub-process. The terms editing and imputation cover a variety of methods often using a rule-based approach. Specific steps typically include:
+
+- Selecting the method to be used;
+- Determining whether to add or change data;
+- Adding/changing data values;
+- Writing the new data values back to the data set, and flagging them as changed;
+- Producing metadata on the editing and imputation process
+
+#### Input
+- Validated data
+
+#### Output
+- Edited and dataset
+
+#### Documentation and Tools
+- Statistical Softwares
+- Edit Specs
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 5.5 Derive new variables and units {#sec-5-5}
+
+This sub-process produces variables and statistical units which are not available in the collected data but are needed to deliver the required outputs. It derives new variables by applying arithmetic formulae to one or more of the variables that are already present in the dataset, or applying different model assumptions. This activity may need to be iterative, as some derived variables may themselves be based on other derived variables. It is therefore important to ensure that variables are derived in the correct order. New variables may be derived by aggregating or splitting data from the collection units, or by various other estimation methods.
+
+#### Input
+- Integrated dataset
+
+#### Output
+
+- Derived variables
+
+#### Documentation and Tools
+- Arithmetic Formulae
+- Statistical Model
+- Estimations Methods guidelines
+- Statistical Softwares
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 5.6 Calculate weights {#sec-5-6}
+
+This sub-process creates weights for unit data records according to the methodology developed in [sub-process 2.5](#sec-2-5). For example, weights can be used to "gross-up" data to make them representative of the target population (e.g. for sample surveys or extracts of scanner data) or to adjust for non-response in total enumerations. In other situations, variables may need weighting for normalisation purposes. It may also include weight correction for benchmarking indicators (e.g. known population totals).
+
+#### Input
+- Validated data
+- Population projection
+
+#### Output
+- Weighted data
+- Weight calculations guidelines
+- Statistical software
+
+#### Documentation and Tools
+- Arithmetic Formulae
+- Statistical Model
+- Estimations Methods guidelines
+- Statistical Softwares
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 5.7 Calculate aggregates, estimates and errors {#sec-5-7}
+
+This sub-process creates aggregate data and population totals from microdata or lower-level aggregates. It includes summing data for records sharing certain characteristics (e.g. aggregation of data by demographic or geographic classifications), determining measures of central tendencies and applying weights from sub-process 5.6 (Calculate weights) to derive appropriate totals. In the case of statistical outputs which use sample surveys, sampling errors corresponding to relevant aggregates may also be calculated in this sub-process. For example, for sample surveys and censuses it entails development of tabulation plans and running initial tables based on the tabulation plans. Initial tables are used to determine errors based on the aggregates and any identified errors are corrected through sub-process 5.4 (Edit and impute).
+
+#### Input
+- Weighted data;
+- Unweighted data;
+- Survey weights;
+- Data classification codes;
+- Tabulation Plans.
+
+#### Output
+- Aggregates;
+- Estimates;
+- Errors;
+- Analysis weights
+
+#### Documentation and Tools
+- Statistical Softwares;
+- Coding Index.
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 5.8 Finalise data files {#sec-5-8}
+
+35.This sub-process brings together the results of the other sub-processes in this phase in a data file (usually macro-data), which is used as the input to the [Analyse phase](#sec-6). Sometimes this may be an intermediate rather than a final file, particularly for business processes where there are strong time pressures, and a requirement to produce both preliminary and final estimates.
+
+#### Input
+- Outputs from sub-process 5.7
+
+#### Output
+- Final processed data files.
+
+#### Documentation and Tools
+- Data processing report.
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+## 6 Analyse {#sec-6}
+
+![](data:image/png;base64,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){width=100%}
+
+88.In this phase, statistical outputs are produced and examined in detail. It includes preparing 
+statistical content (including commentary, technical notes, etc.), and ensuring outputs are **fit for purpose** before dissemination to users. Data analysis will involve the inspection, cleaning, transforming, and modelling of the data to make it useful information. This phase also includes the sub-processes and activities that enable statistical analysts to understand the data and the statistics produced. The outputs of this phase could also be used as input to other sub-processes (e.g., analysis of new sources as input to the **Design** phase). For statistical outputs produced regularly, this phase occurs in every iteration. 
+
+The **"Analyse"** phase and sub-processes are generic for all statistical outputs, regardless of how the data were sourced.
+89. The "Analyse" phase is broken down into five sub-processes, which are generally sequential, from left to right, but can also occur in parallel, and can be iterative.
+
+- [6.1 Prepare draft outputs](#sec-6-1)
+- [6.2 Validate outputs](#sec-6-2)
+- [6.3 Interpret and explain outputs](#sec-6-3)
+- [6.4 Apply disclosure control](#sec-6-4)
+- [6.5 Finalise outputs](#sec-6-5)
+
+### 6.1 Prepare draft outputs {#sec-6-1}
+
+This sub-process is where the data from sub-processes 5.7 (Calculate aggregates) and 5.8 (Finalise data files) are transformed into statistical outputs such as indexes, seasonally adjusted statistics, e.g. trend, cycle, seasonal and irregular components, accessibility measures, etc., as well as the recording of quality characteristics such as coefficients of variation. The preparation of maps, GIS outputs and geo-statistical services can be included to maximise the value and capacity to analyse the statistical information.
+
+#### Input
+
+- Raw data
+- Outputs from Sub process [5.7](#sec-5-7) and [5.8](#sec-5-7)
+- GIS
+
+#### Output
+
+- Estimates, measures, statistics
+
+#### Documentation and Tools
+- Data processing report.
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 6.2 Validate outputs {#sec-6-2}
+
+This sub-process is where statisticians validate the quality of the outputs produced, in accordance with a general quality framework, past trends and expectations. This sub-process includes activities involved with the gathering of intelligence, with the cumulative effect of building up a body of knowledge about a specific statistical domain. This knowledge is then applied to the current collection, in the current environment, to identify any divergence from expectations and to allow informed analyses. Validation activities can include:
+
+- Checking that the population coverage and response rates are as required;
+- Comparing the statistics with previous cycles (if applicable);
+- Checking that the associated metadata, paradata and quality indicators are present and in line with expectations;
+- Checking geospatial consistency of the data;
+- Confronting the statistics against other relevant data (both internal and external);
+- Investigating inconsistencies in the statistics;
+- Performing macro editing;
+- Validating the statistics against expectations and domain intelligence.
+- Assessing the quality of produced outputs based on the quality assessment framework
+
+#### Input
+
+- Raw data
+
+#### Output
+
+- Verified statistics
+- Validated statistics
+
+#### Documentation and Tools
+
+- Comparison techniques
+- Previous/past statistics/documentation
+- International guidelines
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 6.3 Interpret and explain outputs {#sec-6-3}
+
+This sub-process is where the in-depth understanding of the outputs is gained by statisticians. They use that understanding to interpret and explain the statistics by assessing how well the statistics reflect their initial expectations, viewing the statistics from all perspectives using different tools and media, and carrying out in-depth statistical analyses such as time-series analysis, consistency and comparability analysis, revision analysis (analysis of the differences between preliminary and revised estimates), analysis of asymmetries (discrepancies in mirror statistics), etc.
+
+#### Input
+
+- Analysed data
+
+#### Output
+
+#### Documentation and Tools
+
+- Statistical packages
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 6.4 Apply disclosure control {#sec-6-4}
+
+This sub-process ensures that the data (and metadata) to be disseminated do not breach the appropriate rules on confidentiality according to either organisation policies and rules, or to the process-specific methodology created in sub-process 2.5 (Design processing and analysis). This may include checks for primary and secondary disclosure, as well as the application of data suppression or perturbation techniques and output checking. The degree and method of statistical disclosure control may vary for different types of outputs. For example, the approach used for microdata sets for research purposes will be different to that for published tables, finalised outputs of geospatial statistics or visualisations on maps.
+
+#### Input
+
+- Output from Sub process [2.5](#sec-2-5)
+- Country Laws and regulations
+
+#### Output
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 6.5 Finalise outputs {#sec-6-5}
+
+This sub-process ensures the statistics and associated information are fit for purpose and reach the required quality level and are thus ready for use. It includes:
+- Completing consistency checks
+- Determining the level of release, and applying caveats;
+- Collating supporting information, including interpretation, commentary, technical notes, briefings, measures of uncertainty and any other necessary metadata;
+- Producing the supporting internal documents;
+- Conducting pre-release discussions with appropriate internal subject matter experts;
+- Translating the statistical outputs in countries with multilingual dissemination;
+- Approving the statistical content for release.
+
+#### Input
+
+- Quality assessment framework
+- Peer Reviews
+
+#### Output
+
+- Documentation
+- Approved outputs
+
+#### Documentation and Tools
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+## 7 Disseminate {#sec-7}
+
+![](data:image/png;base64,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){width=100%}
+
+This phase manages the release of the statistical products to users. It includes all activities associated with assembling and releasing a range of static and dynamic products via a range of channels such as publications, press releases, and websites among others. These activities support users to access and use the products released by the statistical organisation. For statistical products produced regularly, this phase occurs in each iteration.
+
+The **“Disseminate”** phase is broken down into five sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative
+
+- [7.1 Update output systems](#sec-7-1)
+- [7.2 Produce dissemination products](#sec-7-2)
+- [7.3 Manage release of dissemination products](#sec-7-3)
+- [7.4 Promote dissemination products](#sec-7-4)
+- [7.5 Manage user support](#sec-7-5)
+
+### 7.1 Update output systems {#sec-7-1}
+
+This sub-process manages the update of systems (e.g. databases, server space and websites) where data and metadata are stored ready for dissemination purposes, including:
+
+- Formatting data and metadata ready to be put into output systems;
+- Loading data and metadata into output systems;
+- Ensuring data are linked to the relevant metadata.
+
+Formatting, loading and linking of metadata should preferably mostly take place in earlier phases, but this sub-process includes a final check that all of the necessary metadata are in place and ready for dissemination.
+
+#### Input
+- Servers
+- Website
+- Database
+- Dissemination platforms such as Kenya National Data Archives
+- Statistical software such as SPSS, Stata, Excel
+- Metadata, micro-data and technical report
+
+#### Output
+- Finalized and approved outputs
+- Uploaded output and metadata output
+- Linked outputs and metadata
+
+#### Documentation and Tools
+
+- Data dissemination policy
+- Data protection act
+- Access to information act
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 7.2 Produce dissemination products {#sec-7-2}
+
+This sub-process produces the dissemination products, as previously designed in sub-process 2.1 (Design outputs), to meet user needs. They could include printed publications, press releases, electronic dissemination on the internet (websites) and social media blogs. The products can take many forms including interactive graphics, tables, maps, public-use microdata sets; key highlights media reports, specific target group report, brochures, linked open data, popular versions, audio/audio-visual files and downloadable files. Typical steps include:
+
+- Preparing the product components (explanatory texts, tables, charts, maps, quality statements, etc.);
+- Assembling the components into products;
+- Editing the products and checking that they meet publication standards;
+- Peer reviewing the compiled document. 
+- Translation of products to other languages
+
+#### Input
+
+- Infographics software
+- Authors, editors, designers and peer reviewers
+- Printers
+- Mapping of dissemination and commutation channels
+- Anonymized micro-data
+
+#### Output
+
+- Structural design/outlay of the output/product
+- Prepared press releases, key highlight reports and analytical report
+- Formatted, edited and peer-reviewed products/reports
+- Translated reports
+- Editing and formatting guide and product colour theme;
+- Approved products for release;
+- Identified dissemination and communication channels such as newspapers, social media, TV channels etc.;
+- Printed publications, printed brochures, banners etc.
+
+#### Documentation and Tools
+
+- Communication Strategy
+- Data dissemination policy
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 7.3 Manage the release of dissemination products {#sec-7-3}
+
+This sub-process ensures that all elements for the release are in place including managing the timing of the release and media relations. It includes briefings for specific groups such as the press or ministers or stakeholders, as well as the arrangements for any pre-release embargoes. It also includes the provision of products to subscribers, and managing access to confidential data by authorised user groups, such as researchers. Sometimes an organisation may need to retract a product, for example, if an error is discovered or need to do an addendum to correct any realized error in the product. This is also included in this sub-process. The sub-process also entails mapping out stakeholders to attend the launch and sending invitations to them as well as to identify keynote speakers during the launch of the product to the public. It also involves distributing the printed copies to stakeholders, stocking the library with the new products, publishing the product online on the organization website. Storing for future references and final archiving of all produced and disseminated products is also undertaken in this sub-process.
+
+#### Input
+- Micro-data and metadata dissemination platform 
+- Data assistants
+- Server and Website
+- Release Calendar
+
+#### Output
+- List of stakeholders
+- Speeches by keynote speakers
+- Press releases
+- Disseminated products
+- Uploaded microdata and metadata and report
+- Stored/archived products
+
+#### Documentation and Tools
+
+- Access to information act
+- Data protection act
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 7.4 Promote dissemination products {#sec-7-4}
+
+Whilst marketing, in general, can be considered to be an overarching process, this sub-process concerns the active promotion of the statistical products produced in a specific statistical business process, to help them reach the widest possible audience. It includes the use of customer relationship management tools, to better target potential users of the products, as well as the use of tools including websites, mainstream media (TVs, Radios and Newspapers), social media, roadshows and community-level dissemination, blogs, vlogs and podcast to facilitate the process of communicating statistical information to users. Assessment of uptake and user satisfaction is done in this sub-process, assessment could be through evaluating website hits, complaints and complements (user reviews and feedback) from users as well as undertaking a user satisfaction survey.
+
+#### Input
+
+- Communication strategists
+- Media platforms
+- Website
+- Blog, vlogs, podcasts and press statements
+- Published reports both technical and popular versions (key highlight report)
+
+#### Output
+
+- Increased uptake of the produced product
+- Increased awareness
+- Enhanced organizational visibility
+
+#### Documentation and Tools
+
+- Publicity and Advocacy strategy
+- Communication strategy
+- Organizational social media handles
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+### 7.5 Manage user support {#sec-7-5}
+
+This sub-process ensures that user queries and requests for services such as microdata access are recorded, and that responses are provided within the stipulated timeframe. These queries and requests should be regularly reviewed to provide input to the overarching quality management process, as they can indicate new or changing user needs. Replies to user requests can also be used to populate a knowledge database or a**Frequently Asked Question** page, that is made publicly available, thus reducing the burden of replying to repeated and/or similar requests from external users. This sub-process also includes managing support to any partner organisations involved in disseminating the products. This sub-process also entails training stakeholders and media on reading and interpreting results of the produced products including its uses to avoid misuse.
+
+#### Input
+- Data
+- Website and Library
+- Quality Declaration
+- Metadata
+- Open Data Portal
+- Access link to stored data
+- Contact person and contact details for further inquiries and requests
+- A simplified version of the technical report
+- User technical support services
+- Social Media handles
+- Data support team
+
+#### Output
+
+- Addendums
+- Press conferences and press releases
+- Further analysis based on user requests
+- Emerging user needs and data gaps
+- Updated **frequently asked questions**
+
+#### Documentation and Tools
+
+- Data dissemination policy
+- Data revision policy
+- Inquiries and data request registers
+- Communication strategy
+- Guidelines on data request and access rights
+
+#### Latest update
+
+19th March 2024
+
+#### Verified
+
+_date_
+
+## 8 Evaluate {#sec-8}
+
+![](data:image/png;base64,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){width=100%}
+
+This phase manages the evaluation of a specific instance of a statistical business process, as opposed to the more general overarching process of statistical quality management described in Section VI (Overarching Processes). It can take place at the end of the instance of the process, but can also be done on an ongoing basis during the statistical production process. It relies on inputs gathered throughout the different phases. It includes evaluating the success or failure of a specific instance of the statistical business process, drawing on a range of quantitative and qualitative inputs, and identifying and prioritising potential improvements in efficiency and quality, which are then either fed into the next phase or considered during the next iteration for products produced regularly.
+
+For statistical outputs produced regularly, evaluation should, at least in theory, occur for each iteration, determining whether future iterations should take place, and if so, whether any improvements should be implemented. However, in some cases, particularly for regular and well-established statistical business processes, evaluation might not be formally carried out for each iteration. In such cases, this phase can be seen as providing the decision as to whether the next iteration should start from the **Specify Needs** phase, or from some later phase (often the **Collect** phase).
+
+The **“Evaluate”** phase is broken down into three sub-processes which are generally sequential, from left to right, but can also occur in parallel, and can be iterative
+
+- [8.1 Gather evaluation inputs](#sec-8-1)
+- [8.2 Conduct evaluation](#sec-8-2)
+- [8.3 Agree an action plan](#sec-8-3)
+
+### 8.1 Gather evaluation inputs {#sec-8-1}
+
+Evaluation material can be produced in any other phase or sub-process. It may take many forms, including feedback from users, process metadata (paradata), system metrics, and staff suggestions. Reports of progress against an action plan agreed during a previous iteration may also form an input to evaluations of subsequent iterations. This sub-process gathers all of these inputs, compiles quality indicators and makes them available for the person or team conducting the evaluation. The collection of some of these evaluation materials can be automated and take place in a continuous way throughout the whole process, as defined by the quality framework (see Quality Management in Section VI). On the other hand, for the evaluation of certain processes it can be necessary to perform specific activities such as small surveys, (e.g. post-enumeration surveys, re-interview studies, survey on the effectiveness of dissemination).
+
+#### Input
+
+- Progress Reports
+- Field Reports
+- Quality Declaration
+- Incident report
+- Self-assessment reports
+- Paradata
+
+#### Output
+
+- Consolidated Evaluation Reports
+- Assessment/Evaluation questionnaire
+- Evaluation Matrix
+
+#### Documentation and Tools
+
+- KeSQAF
+
+### 8.2 Conduct evaluation {#sec-8-2}
+
+This sub-process analyses the evaluation inputs compares them to the expected/target benchmarking results (when available), and process them into an evaluation report or control dashboard. The evaluation can take place at the end of the whole process (End-line Evaluation) for selected activities, during its execution in a continuous way (mid-line evaluation), or throughout the process (continuous evaluation), thus allowing for quick fixes or continuous improvement. The resulting report should note any quality issues specific to this iteration of the statistical business process as well as highlight any deviation of performance metrics from expected values, and should make recommendations for changes if necessary. These recommendations can cover changes to any phase or sub-process for future iterations of the process, or can suggest that the process is not repeated. In the case of determined need of changes in the business process, a list of recommendations with proper justifications should be developed.
+
+#### Input
+
+- Paradata
+- Quality Assurance Team
+- Evaluation Matrix and guidelines
+- Assessment Questionnaire
+
+#### Output
+
+- Evaluation report with recommendations for future improvements and justification for the recommendations
+
+#### Documentation and Tools
+- KeSQAF
+
+### 8.3 Agree on an action plan {#sec-8-3}
+
+This sub-process brings together the necessary decision-making power to form and agree on an action plan based on the evaluation report. It should also include consideration of a mechanism for monitoring the impact of those actions, which may, in turn, provide input to evaluations of future iterations of the process.
+
+#### Input
+
+- Evaluation report
+- Final product report
+- Proposal on improvement
+
+#### Output
+
+- Documented proposed improvements to the processes
+- Action plan/roadmap/ way forward report
+
+#### Documentation and Tools
+- {KeSQAF}(https://www.knbs.or.ke/download/kenya-statistical-quality-assessment-framework-kesqaf/)
+
+```{=html}
+<script>
+(function () {
+  function ready(fn){ if(document.readyState!=='loading'){fn();} else {document.addEventListener('DOMContentLoaded',fn);} }
+  ready(function () {
+    var root = document.getElementById('quarto-document-content') || document.querySelector('main');
+    if(!root) return;
+
+    // Turn each level-2 section into a dropdown; also level-1 sections with no
+    // level-2 children (e.g. References).
+    var sections = [];
+    root.querySelectorAll('section.level2').forEach(function(s){ sections.push(s); });
+    // KSPM: sub-processes (level 3) are collapsible too - 44 of them
+    root.querySelectorAll('section.level3').forEach(function(s){ sections.push(s); });
+    root.querySelectorAll('section.level1').forEach(function(s){
+      if(!s.querySelector('section.level2')) sections.push(s);
+    });
+
+    sections.forEach(function(sec){
+      var heading = sec.querySelector(':scope > h1, :scope > h2, :scope > h3');
+      if(!heading) return;
+      var details = document.createElement('details');
+      details.open = true;                       // expanded by default: scroll + Ctrl+F work
+      details.className = 'section-dropdown';
+      var summary = document.createElement('summary');
+      summary.className = 'summary-' + heading.tagName.toLowerCase();
+      summary.innerHTML = heading.innerHTML;
+      heading.parentNode.removeChild(heading);
+      while(sec.firstChild){ details.appendChild(sec.firstChild); }
+      details.insertBefore(summary, details.firstChild);
+      sec.appendChild(details);
+    });
+
+    // Build phase tabs from the stacked phase sections (HTML only; PDF untouched)
+    var phaseSections = [];
+    for (var i = 1; i <= 8; i++) {
+      var ps = document.getElementById('sec-' + i);
+      if (ps) { ps.classList.add('phase-section'); phaseSections.push(ps); }
+    }
+    function showPhase(idx){
+      phaseSections.forEach(function(sec,k){
+        sec.classList.toggle('phase-hidden', k !== idx);
+      });
+      var btns = document.querySelectorAll('#phaseTabs button');
+      btns.forEach(function(b,k){ b.classList.toggle('active', k === idx); });
+    }
+    if (phaseSections.length === 8) {
+      var tabsEl = document.createElement('div');
+      tabsEl.id = 'phaseTabs';
+      phaseSections.forEach(function(sec, idx){
+        var sm = sec.querySelector(':scope > details.section-dropdown > summary');
+        var label = sm ? sm.textContent.trim() : ('Phase ' + (idx+1));
+        var btn = document.createElement('button');
+        btn.type = 'button'; btn.textContent = label;
+        btn.addEventListener('click', function(){ showPhase(idx); });
+        tabsEl.appendChild(btn);
+      });
+      phaseSections[0].parentNode.insertBefore(tabsEl, phaseSections[0]);
+      var wrap = document.createElement('div');
+      wrap.className = 'phase-panels';
+      phaseSections[0].parentNode.insertBefore(wrap, phaseSections[0]);
+      phaseSections.forEach(function(sec){ wrap.appendChild(sec); });
+
+      var vt = document.createElement('button');
+      vt.type='button'; vt.id='phaseViewToggle'; vt.textContent='Show all phases';
+      tabsEl.parentNode.insertBefore(vt, tabsEl);
+      vt.addEventListener('click', function(){
+        var on = !document.body.classList.contains('phase-tabs-on');
+        document.body.classList.toggle('phase-tabs-on', on);
+        vt.textContent = on ? 'Show all phases' : 'Back to phase tabs';
+        if(on){ showPhase(0); }
+      });
+      document.body.classList.add('phase-tabs-on');
+      showPhase(0);
+    }
+
+    // Expand all / Collapse all
+    var bar = document.createElement('div');
+    bar.className = 'dropdown-controls';
+    bar.innerHTML = '<button type="button" id="expandAll">Expand all</button>' +
+                    '<button type="button" id="collapseAll">Collapse all</button>';
+    var firstSection = root.querySelector('section');
+    if(firstSection){ root.insertBefore(bar, firstSection); }
+    document.getElementById('expandAll').addEventListener('click', function(){
+      root.querySelectorAll('details.section-dropdown').forEach(function(d){ d.open = true; });
+    });
+    document.getElementById('collapseAll').addEventListener('click', function(){
+      root.querySelectorAll('details.section-dropdown').forEach(function(d){ d.open = false; });
+    });
+
+    // Relabel the "Other Formats / Typst" sidebar block as a PDF download link
+    var alt = document.querySelector('.quarto-alternate-formats');
+    if(alt){
+      var h = alt.querySelector('h2');
+      if(h){ h.textContent = 'Download'; }
+      alt.querySelectorAll('a').forEach(function(a){
+        var href = a.getAttribute('href') || '';
+        if(href.toLowerCase().indexOf('.pdf') !== -1){
+          var icon = a.querySelector('i');
+          a.textContent = '';
+          if(icon){ a.appendChild(icon); }
+          a.appendChild(document.createTextNode('Download as PDF'));
+          a.setAttribute('download', '');
+          a.setAttribute('title', 'Download this report as a PDF');
+        }
+      });
+    }
+
+    // Open a target section: its own dropdown plus every dropdown containing it
+    function reveal(el){
+      if(!el) return;
+      // if the target lives in a phase that is currently hidden by the tabs, show it
+      var host = el.closest ? el.closest('.phase-section') : null;
+      if(host && document.body.classList.contains('phase-tabs-on')){
+        var idx = phaseSections.indexOf(host);
+        if(idx > -1){ showPhase(idx); }
+      }
+      var p = el;
+      while(p){ if(p.tagName === 'DETAILS'){ p.open = true; } p = p.parentElement; }
+      var own = el.querySelector(':scope > details.section-dropdown');
+      if(own){ own.open = true; }
+      el.scrollIntoView();
+    }
+    function openToHash(){
+      if(!location.hash) return;
+      var el; try { el = document.querySelector(location.hash); } catch(e){ return; }
+      reveal(el);
+    }
+    window.addEventListener('hashchange', openToHash);
+    // Quarto's contents sidebar intercepts clicks, so hashchange may not fire:
+    // catch in-page anchor clicks directly (contents links and cross-references).
+    document.addEventListener('click', function(ev){
+      var a = ev.target.closest ? ev.target.closest('a[href^="#"]') : null;
+      if(!a) return;
+      var id = a.getAttribute('href');
+      if(!id || id === '#') return;
+      var el; try { el = document.querySelector(id); } catch(e){ return; }
+      if(el){ setTimeout(function(){ reveal(el); }, 0); }
+    }, true);
+    openToHash();
+  });
+})();
+</script>
+```

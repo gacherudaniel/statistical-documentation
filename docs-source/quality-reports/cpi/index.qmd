@@ -1,0 +1,375 @@
+---
+title: "Quality Report for Consumer Price Index"
+date: last-modified
+date-format: "20 05 2025"
+format:
+  html:
+    output-file: index.html
+    theme: cosmo
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    toc-title: "Contents"
+    smooth-scroll: true
+    anchor-sections: true
+    number-sections: false
+    page-layout: article
+    embed-resources: true
+    linkcolor: "#993300"
+    mainfont: Calibri, "Segoe UI", Arial, sans-serif
+    grid:
+      body-width: 820px
+      sidebar-width: 280px
+  typst:
+    output-file: cpi-quality-report.pdf
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    papersize: a4
+    margin:
+      x: 2.2cm
+      y: 2.5cm
+    mainfont: "Calibri"
+    fontsize: 11pt
+    callout-icon: false
+---
+
+```{=html}
+<style>
+/* ---------- KNBS palette: rust #993300, sand #EEECE1 ---------- */
+body, #quarto-document-content { font-family: Calibri, "Segoe UI", Arial, sans-serif; }
+h1, h2, h3, h4, .quarto-title h1 { color: #993300; }
+h1.title { border-bottom: 3px solid #EEECE1; padding-bottom: .3rem; }
+a { color: #993300; }
+
+/* ---------- Justified text ("justify fit") ---------- */
+#quarto-document-content p,
+#quarto-document-content li,
+details.section-dropdown p,
+details.section-dropdown li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.6;
+}
+
+/* ---------- Expand / Collapse controls ---------- */
+.dropdown-controls { margin: .5rem 0 1.25rem; display: flex; gap: .5rem; }
+.dropdown-controls button {
+  background: #fff; color: #993300; border: 1.5px solid #993300;
+  border-radius: 5px; padding: .35rem .9rem; font-size: .9rem;
+  font-weight: 600; cursor: pointer; font-family: inherit;
+}
+.dropdown-controls button:hover { background: #993300; color: #fff; }
+
+/* ---------- Collapsible section dropdowns ---------- */
+details.section-dropdown {
+  border: 1px solid #EEECE1; border-radius: 6px; margin: .9rem 0;
+  background: #fff; overflow: hidden;
+}
+details.section-dropdown > summary {
+  cursor: pointer; list-style: none; padding: .65rem 2.2rem .65rem .95rem;
+  background: #EEECE1; color: #993300; font-weight: bold; position: relative;
+  border-bottom: 2px solid #993300; scroll-margin-top: 1rem;
+}
+details.section-dropdown > summary.summary-h1 { font-size: 1.3rem; }
+details.section-dropdown > summary.summary-h2 { font-size: 1.12rem; }
+summary::-webkit-details-marker { display: none; }
+details.section-dropdown > summary::after {
+  content: "\25B8"; position: absolute; right: 1rem; top: 50%;
+  transform: translateY(-50%); transition: transform .2s ease; font-size: .9rem;
+}
+details.section-dropdown[open] > summary::after { transform: translateY(-50%) rotate(90deg); }
+details.section-dropdown > *:not(summary) { padding-left: 1rem; padding-right: 1rem; }
+details.section-dropdown > *:not(summary):first-of-type { padding-top: .8rem; }
+details.section-dropdown > *:last-child { padding-bottom: .8rem; }
+details.section-dropdown h3 { color: #6b3a28; }
+
+/* ---------- Tables ---------- */
+table thead th { background: #EEECE1; color: #4A271C; border-bottom: 2px solid #993300; }
+table tbody tr:nth-child(even) { background: #faf9f5; }
+</style>
+```
+
+```{=typst}
+#set par(justify: true)
+#set text(hyphenate: true)
+```
+
+This Quality report is an assurance of the quality of the statistical product in regard to the quality dimensions of relevance, accuracy, reliability, timeliness, punctuality, accessibility, clarity, coherence, comparability, consistency, methodological soundness and integrity as outlined in the [Kenya Statistical Quality Assurance Framework (KeSQAF)](https://www.knbs.or.ke/download/kenya-statistical-quality-assessment-framework-kesqaf/).The report documents the statistics production process to inform on the adequacy and appropriateness use of the statistics.
+
+# A General information
+
+## A.1 Statistical Classification
+
+The classification used is based on the [Classification of Statistical Activities,Version 2.0(CSA 2.0)](https://unstats.un.org/unsd/classifications/CSA2/CSA2_22Dec2023.pdf/)
+
+### A.1.1 Statistical Product
+
+Consumer Price Index (CPI)
+
+### A.1.2 Subject Area
+
+Economic Statistics
+
+### A.1.3 Statistical Area
+
+**Prices**
+
+Covers any statistical activity dealing with prices, including Purchasing Power Parities (PPPs) and international comparisons of Gross Domestic Product (GDP); covers topics like Consumer Price Indices (CPI), inflation, Producer Price Indices (PPI), price indices for specific products and services (e.g., Information and Communication Technology products or rents).
+
+## A.2 Name of Producing Institution
+
+Kenya National Bureau of Statistics
+
+## A.3 Legal Framework
+
+The statistics are produced under the [Statistics Act, Cap. 112 Laws of Kenya ](https://www.knbs.or.ke/download/statistics-act-4-of-2006revised-edition-2019/)
+
+## A.4 Confidentiality and Data Security
+
+The [Statistics Act, Cap. 112 Laws of Kenya](https://www.knbs.or.ke/download/statistics-act-4-of-2006revised-edition-2019/) guarantees the confidentiality of data collected which is exclusively for statistical purposes. All data providers are informed of the safeguards in place to protect their personal information as per the Data Protection Act 2019
+
+Measures are in place to safeguard personal data throughout the statistical production, storage, dissemination and disposal.
+
+# B Quality Report
+
+## B.1. Relevance
+
+*Relevance is the degree to which statistical information meets the real or perceived needs of clients.*
+
+### B.1.1 Objective of the Statistics
+
+The Consumer Price Index (CPI) measures the changes in prices for all private consumption in Kenya. CPI provides a general measure of the inflation rate. The inflation rate is defined as a percentage change in the CPI between two periods. Year-on-year inflation, month-to-month inflation, and annual average inflation rates are measures calculated every month.
+
+The Harmonized Consumer Price Index (HCPI) is calculated to improve comparisons between countries. HCPI differs from the CPI with regard to the coverage of products and calculation methods. Harmonized CPI is produced for the East African Community and COMESA.
+
+The population of interest consists of all transactions included in private consumption in Kenya, i.e. final expenditures made by households. The population of interest can be further specified in terms of three different dimensions; a population of outlets (shops, marketplaces etc.), a population of products (goods and services) and a time dimension.
+
+In most cases, it is not possible to measure all transactions between sellers and consumers. The survey's target population is then defined instead as the products offered for sale to consumers. The combination of outlet, product and time thus leads to a specification of the goods and services for which a price is to be measured.
+
+The difference between the population of interest (all products the outlets sell) and the target population (the products for which prices are collected within the CPI) is that the target population can include prices of products that may not be sold at all during the price collection period. When prices are collected, however, an instruction to the price collector is to select products that are usually sold a lot, i.e. can be considered representative for consumers.
+
+### B.1.2 Use of the Statistics
+
+Being a measure of price changes, the CPI is used by Central Bank of Kenya, the National Treasury and Economic Planning, the Ministry of Labour and Social Protection, Kenya Power, KenGen, Universities, the Kenya Institute for Public Policy Research and Analysis (KIPPRA), and the National Drought Management Authority. Other users include other Government, Non-Governmental Organizations (NGOs), international agencies, the business community (including investors), researchers and the general public.
+
+Specifically, the CPI is widely used in Kenya for the following:
+
+i. As the main estimator of the rate of inflation. The percentage change of the CPI over one year is what is usually referred to as the rate of inflation.
+ii. As a macroeconomic indicator. The CPI is used for general economic/social analysis and policy formulation particularly since it conveys important information about indirect tax revenue.
+iii. As a tool in wage negotiation and indexation. CPI is used to adjust taxes and to determine, among other things, wage levels in the event of trade disputes, social security benefits, public service remuneration and pensions.
+iv. As a deflator of expenditure. The prevailing CPI can be used to establish the real/constant value by deflating nominal values (previous cost) of goods and services.
+v. As a determinant in the supplier price variations. Suppliers quote prevailing market prices at the point of winning tender contracts. However, prices change thereafter in such a way that it becomes impossible to continue supplying at the awarded tender prices. In such circumstances, the CPI is used as the basis to vary the tender prices following a change in the respective prices of goods and services.
+
+## B.2 Methodological Soundness
+
+*Methodological soundness is the extent to which the methodology used to compile statistics complies with the relevant international standards or/and guidelines.*
+
+The overall structure and compilation of Consumer Price Indices (monthly, annual and quarterly) is in accordance with the International CPI manual Concepts and Methods 2004 and revised version 2020. The Kenyan CPI is generally produced in line with the practices set out in the East Africa Community's (EAC) guidance for the Harmonized CPI (HCPI), which benefit from incorporating many of the international developments in consumer price index theory and methods in recent years.
+
+Household final monetary expenditure obtained mainly from the Household Budget Survey (HBS) is used as the main source of data to update weights. Household expenditure patterns change over time, it is recommended that the CPI be rebased to reflect new base, weights, outlets, item varieties and other attributes. Rebasing CPI also provides an opportunity to make improvements in the compilation of the index such as bringing on board rural and urban components. The last HBS was conducted seven years ago hence deviating from the recommended period of 5 years for weights update. National CPI should cover urban and rural CPI but currently, Kenya is covering urban CPI only. Though KIHBS captured both the rural and urban population which was used to update the urban CPI. However, the construction of a rural CPI was not possible due to cost implications. Despite these deviations, Kenya's Urban CPI is good enough to measure the inflation rate for the whole country.
+
+The compilation of CPI in Kenya follows the latest [2018 Classification of Individual Consumption by Purpose (COICOP)](https://unstats.un.org/unsd/classifications/unsdclassifications/COICOP_2018_-_pre-edited_white_cover_version_-_2018-12-26.pdf). The CPI goods and services are categorized into 13 COICOP divisions;
+
+i. Food and Non-Alcoholic Beverages
+ii. Alcoholic Beverages, Tobacco and Narcotics
+iii. Clothing and Footwear
+iv. Housing, Water, Electricity, Gas and Other Fuels
+v. Furnishings, Household Equipment and Routine Household Maintenance
+vi. Health
+vii. Transport
+viii. Information and Communication
+ix. Recreation, Sport and Culture
+x. Education Services
+xi. Restaurants and Accommodation Services
+xii. Insurance and Financial Services
+xiii. Personal Care, Social Protection and Miscellaneous Goods and Services
+
+Under divisions, there are further classifications which include groups, classes, sub-classes and elementary aggregates. Kenya has a total of 330 elementary aggregates.
+
+**Compilation practices applied**
+
+CPI in Kenya has a fixed basket which is updated after conducting HBS. In the previous CPI, the basket had 234 goods and services which was replaced by the current basket of 330 elementary aggregates.
+
+Kenya's CPI has a total of ten income segments. Nairobi is composed of three income segments which are the Nairobi Upper Income Group, Nairobi Middle Income Group and Nairobi Lower Income Group. The three are combined to form a hybrid basket of Nairobi Combined. The rest of Kenya comprises seven baskets namely; Central, Coast, Eastern, North Eastern, Nyanza, Rift Valley and Western which are combined to form the Rest of the urban. Kenya CPI comprises of Rest of the Urban and Nairobi combined.
+
+### Index formulation
+
+The CPI is currently constructed using a modified short-term Laspeyres-type index. It is not a Laspeyres index since the weight reference period differs from the price reference period as processing household budget surveys took time to deliver results. This led to price-updating of the weights to the price reference period (Lowe index) to keep the implied quantities fixed at the weight reference period levels. This approach is recommended by the EAC and is currently used to construct the KNBS CPI.
+
+### Index compilation
+
+The indices are constructed using data that have been provided by KNBS's county offices. These data will have been assessed by the area supervisors and then checked by the head office data collection team. It is at this stage that data cleaning, imputation for missing prices and identification of outliers is completed. Once cleaning is finished a file is produced and aggregation of the indices is undertaken in STATA.
+
+When calculating the index on a detailed level (elementary aggregates), the index is calculated using Jevon's index formula -- the geometrical mean value of price ratios. This formula is best practice according to all CPI manuals and guidelines. The modified Laspeyres formula uses short-term price relatives describing the price development month to month. The use of Modified Laspeyres which allow the chaining process facilitates the introduction of replacement outlets, the introduction of new varieties and new products as needs arise.
+
+## B.3 Accuracy and reliability
+
+*Accuracy refers to the closeness of computations or estimates to the unknown exact or true values that the statistics were intended to measure. Reliability is closely associated with accuracy and speaks of the closeness of the initial estimated value to the subsequent estimated value.*
+
+### B.3.1 Sampling Error
+
+In Kenya, it is not possible to calculate sampling error since a sampling frame is not established. Purposive selection, mostly in combination with the cut-off principle, is instead used in drawing the sample for outlets and items. A high number of price observations is made every month to reduce the error of the unknown sampling error. In the current CPI, the scope of zone coverage was increased from 25 data collection zones to 50 data collection zones. In addition, the number of price observations increased from about 12000 in the previous CPI to over 65,000 price observations in the current CPI.
+
+**Sampling**
+
+**Geographical sampling** -The geographic dimension of the sample of prices is designed in such a way as to provide a national sample which is representative of household expenditure in the country as a whole. The sample price collection covers all regions in the Country which are all urban. Stratification was done on Geographic areas when constructing the sample (difference in expenditure patterns)
+
+### Outlet selection
+
+The selection of outlets was undertaken using non-probability sampling because a population frame of good enough quality was not available. Given the absence of a frame, a judgmental/purposive approach was taken that identified at least three zones in each of the ten baskets. Having selected the zones within the regions (baskets) the next step was to select the major urban centres within them, except for the Nairobi Lower Income Group cluster where eight centres were selected. This generated 50 zones and outlets within each were purposively selected on the basis of them selling the items in the basket, with a mix of high-end, medium and lower-end outlets.
+
+### Item selection
+
+Item selection is again non-probabilistic and the approach used by KNBS is aligned with the guidance set out by EAC. Having selected the outlets the products required for the sample of prices were selected in such a way as to provide a national sample that is representative of household expenditure in the country as a whole. This means the sample of prices collected covers each of the product categories that account for more than one part in a thousand of total expenditures covered by the CPI. Within each product category, the selection of items for inclusion in the price sample was determined in accordance with both importance and representation. Thus, the objective of the sample of items was to collect those that were available for a prolonged period, account for a high share of expenditure in the relevant product category and were in outlets where prices can be collected each month.
+
+**Geographical coverage**
+
+Kenya's urban CPI covers the whole country with a total of 50 data collection zones which are distributed across the country. Price collection for the urban CPI is carried out every second and third week of the month. In Nairobi a total of 14 data collection centres are covered where Nairobi's upper-income group has three zones; Nairobi's middle-income group has three data collection zones and Nairobi Lower lower-income group has 8 data collection zones. The rest of the urban has a total of seven regions namely; Central, Coast, Eastern, North Eastern, Nyanza, Rift Valley and Western which has a total of 36 data collection centres. Even if not all counties are covered in the CPI, the data collection zones are stratified according to expenditures and the geographic coverage is judged to be very high in Kenya.
+
+**Product Coverage**
+
+The CPI generally covers all goods and services for household final consumption within the economic territory of the Republic of Kenya. It, therefore, includes seasonal products; goods and services consumed by tourists, foreign visitors and cross-border purchases; legal services; financial services; and package holidays among other common goods and services. Since the main use of CPI in Kenya is the measurement of inflation, its compilation follows a Household Final Monetary Consumption Expenditure (HFMCE) approach. It, therefore, excludes non-monetary transactions such as rent for owner-occupied houses. Illegal transactions such as Games of chance (Gambling); Prostitution and Black market products are excluded from the CPI. Interest and credit charges are also excluded as they are financing costs rather than consumption expenditures. Owner occupiers' housing costs (OOH) were excluded from the weights, and so was the CPI. While this is aligned with the guide related to the compilation of the HCPI, OOH should be included according to COICOP. Including OOH using the rental equivalence approach is easier if there is a reasonably well-developed rental sector in the country. The Bureau collects prices for rentals in urban areas there is a possibility that these data could be available to be used as proxies for OOH. During the International Monetary Fund (IMF) Mission to Kenya, it was agreed to continue to exclude OOH because of concerns that its inclusion could distort the weights and thus the index.
+
+### B.3.2 Non-Sampling Errors
+
+**Data processing**
+
+During compilation, consistency and plausibility checks are incorporated to prevent measurement or data entry errors are largely prevented in the process of data compilation. Inconsistent entries are rejected by the processing program. Owing to the incorporated plausibility checks, warning messages are displayed for example during monthly price collection where the price fall or rise is above 30 per cent a confirmation message pops up to confirm the entry. If a confirmation message is ignored, the relevant case will be automatically shown to a specially qualified staff member of the competent statistical office for final assessment or clarification. Stata is utilized in the compilation of CPI and ODK for data collection. Therefore, the risk of errors in data processing is very low and does not affect the quality of the data.
+
+**Model assumptions**
+
+In outlets such as supermarkets, the price collectors in most cases can observe the prices directly, in outlets where prices are not displayed face to face interviews are conducted. If an item is temporarily missing it is recorded as out of stock. If an item is out of stock for more than three months it is replaced. For temporary missing items, imputation is done using class mean imputation and targeted mean imputation methods. Items which are permanently missing comparable replacement or non-comparable replacement are carried out. Non-comparable replacement which is explicit quantity adjustment is one of the methods utilized. Class mean imputation and match models are also utilized in quality adjustment. When a replacement is needed an adjustment of changed quality needs to be done as the principle in CPI is to compare like to like over time. These methods ensure pure price changes are captured hence improving the quality of CPI statistics in Kenya.
+
+## B.4 Timeliness and Punctuality
+
+*Timeliness pertains to the length of time between data availability and the event or phenomenon they describe. This references both the timeliness of source data and the timeliness of output. Punctuality is the time lag between the actual delivery of the data and the target date when it should have been delivered.*
+
+**Reference period**
+
+Price observations are done every month in the second and third weeks. Price observations for pump prices are observed on the 15th of every month. Each item is observed once every month. However, if an item becomes too volatile the number of observations is increased.
+
+**Other reference periods**
+
+Weight reference period September 2015-August 2016
+
+Price reference period- February 2019
+
+Index reference period --February 2019
+
+Monthly CPI and Inflation rate reports and tables are disseminated monthly during the last working day of the month. The reports are simultaneously released through the press release and the data are released simultaneously to all interested parties. This release is also always available on the KNBS website. The [advance release calendar](http://www.knbs.or.ke/index.php?option=com_phocadownload&view=file&id=774&Itemid=1211) for the full year is available on the KNBS website.
+
+## B.5 Accessibility and Clarity
+
+*Accessibility refers to the ease and conditions under which statistical information can be obtained." Clarity is the extent to which easily comprehensible metadata are available, where these metadata are necessary to give a full understanding of statistical data.*
+
+A press release is issued monthly each time the results are published. Monthly CPI release includes the CPI statement and inflation statistics. Data are presented in charts and tables and are explained in text.
+
+New releases and the monthly bulletin, as well as other publications, are available in both hard copy and electronic format. All publications are available via the KNBS website. Data is currently published in pdf format.
+
+For CPI statistics, [metadata](https://www.knbs.or.ke/download/inflation-trends-1961-present) is provided alongside the published statistics and is available on the KNBS website.
+
+In accordance with commitment in the KNBS Service Charter, a user can request summarized/compiled statistics which are not in any KNBS publications through a written request to the Director General, or by email to [datarequest@knbs.or.ke](mailto:datarequest@knbs.or.ke) for free. Response to data requests takes up to five days and is done with strict observance of confidentiality.
+
+## B.6 Coherence and Comparability/consistency
+
+*Coherence is the adequacy of statistics to be combined in different ways and for different uses. Consistency refers to statistics having logical and numerical coherence.*
+
+Changes in classification -Kenya shifted from the use of the previous version of 1999 to COICOP 2018. The 1999 version had 12 divisions while the current one has 13 divisions. Division 12 was divided into Division 12 Insurance and Financial Services and Division 13 Personal Care, Social Protection and Miscellaneous Goods and Services. There was also the introduction of a subclass. Food and non-alcoholic beverages had 2 groups now it has 3 groups. Restructuring between Division 08 Information and Communication and Division 09 Recreation, Sport and Culture and renaming of the Divisions was done in the new COICOP. Some services and goods were moved to division 8.
+
+The previous CPI-based February 2009 indices are comparable with the current CPI-based February 2019 indices after chain linking was done for the two series to form one series. Harmonized CPI is produced for the East African Community to ensure comparability within the region as national CPI for partner states may not be comparable. Indices in various regions in Kenya which form the ten baskets are comparable as the same methodology is utilized to compile them.
+
+# References
+
+Kenya National Bureau of Statistics. (2022). Kenya Statistical Quality Assurance Framework (KeSQAF). Nairobi: Kenya
+
+National Council for Law Reporting. (2019). *Data Protection Act, 2019*. Government Printer: Kenya
+
+National Council for Law Reporting. (2006). *Statistics Act, CAP 112 Laws of Kenya*. Government Printer: Kenya
+
+United Nations Statistics Division. (2024). *Classification of Statistical Activities (CSA), version 2*
+
+United Nations Economic Commission for Europe, International Labour Office, International Monetary Fund, Organisation for Economic Development and Co-operation, Statistical Office of the European Communities, The World Bank, and the (UK) Office for National Statistics. (2009). *Practical Guide to Produc ing Consumer Price Indices*. Geneva and New York: United Nations. 
+
+International Labour Organization/International Monetary Fund/Organisation for Economic Co-operation and Development/European Union/United Nations/The World Bank. (2020). *Consumer price index manual : concepts and methods*. Washington, DC USA. 
+
+East Africa Community (EAC) .(March, 2022). EAC Guidelines for Compiling Harmonised Consumer Price Indices (HCPI) . Arusha, Tanzania.
+
+```{=html}
+<script>
+(function () {
+  function ready(fn){ if(document.readyState!=='loading'){fn();} else {document.addEventListener('DOMContentLoaded',fn);} }
+  ready(function () {
+    var root = document.getElementById('quarto-document-content') || document.querySelector('main');
+    if(!root) return;
+
+    // Turn each level-2 section into a dropdown; also level-1 sections with no
+    // level-2 children (e.g. References).
+    var sections = [];
+    root.querySelectorAll('section.level2').forEach(function(s){ sections.push(s); });
+    root.querySelectorAll('section.level1').forEach(function(s){
+      if(!s.querySelector('section.level2')) sections.push(s);
+    });
+
+    sections.forEach(function(sec){
+      var heading = sec.querySelector(':scope > h1, :scope > h2');
+      if(!heading) return;
+      var details = document.createElement('details');
+      details.open = true;                       // expanded by default: scroll + Ctrl+F work
+      details.className = 'section-dropdown';
+      var summary = document.createElement('summary');
+      summary.className = 'summary-' + heading.tagName.toLowerCase();
+      summary.innerHTML = heading.innerHTML;
+      heading.parentNode.removeChild(heading);
+      while(sec.firstChild){ details.appendChild(sec.firstChild); }
+      details.insertBefore(summary, details.firstChild);
+      sec.appendChild(details);
+    });
+
+    // Expand all / Collapse all
+    var bar = document.createElement('div');
+    bar.className = 'dropdown-controls';
+    bar.innerHTML = '<button type="button" id="expandAll">Expand all</button>' +
+                    '<button type="button" id="collapseAll">Collapse all</button>';
+    var firstSection = root.querySelector('section');
+    if(firstSection){ root.insertBefore(bar, firstSection); }
+    document.getElementById('expandAll').addEventListener('click', function(){
+      root.querySelectorAll('details.section-dropdown').forEach(function(d){ d.open = true; });
+    });
+    document.getElementById('collapseAll').addEventListener('click', function(){
+      root.querySelectorAll('details.section-dropdown').forEach(function(d){ d.open = false; });
+    });
+
+    // Relabel the "Other Formats / Typst" sidebar block as a PDF download link
+    var alt = document.querySelector('.quarto-alternate-formats');
+    if(alt){
+      var h = alt.querySelector('h2');
+      if(h){ h.textContent = 'Get This Report'; }
+      alt.querySelectorAll('a').forEach(function(a){
+        var href = a.getAttribute('href') || '';
+        if(href.toLowerCase().indexOf('.pdf') !== -1){
+          var icon = a.querySelector('i');
+          a.textContent = '';
+          if(icon){ a.appendChild(icon); }
+          a.appendChild(document.createTextNode('Download as PDF'));
+          a.setAttribute('download', '');
+          a.setAttribute('title', 'Download this report as a PDF');
+        }
+      });
+    }
+
+    // Contents links open a collapsed section and jump to it
+    function openToHash(){
+      if(!location.hash) return;
+      var el; try { el = document.querySelector(location.hash); } catch(e){ return; }
+      if(!el) return;
+      var p = el; while(p){ if(p.tagName === 'DETAILS'){ p.open = true; } p = p.parentElement; }
+      el.scrollIntoView();
+    }
+    window.addEventListener('hashchange', openToHash);
+    openToHash();
+  });
+})();
+</script>
+```

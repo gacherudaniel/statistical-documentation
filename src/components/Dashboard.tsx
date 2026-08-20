@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { Breadcrumb } from "./layout/Breadcrumb";
 import { TopHeader } from "./layout/TopHeader";
 import { MainHeader } from "./layout/MainHeader";
@@ -17,26 +16,17 @@ import { Compendium } from "../pages/metadata/Compendium";
 export default function Dashboard() {
   const location = useLocation();
   const navigate = useNavigate();
-  const [selectedProduct, setSelectedProduct] =
-    useState<string>("poverty-inequality");
+  const [searchParams] = useSearchParams();
 
   // Use location.pathname directly instead of state to avoid cascading renders
   const currentPath = location.pathname;
 
-  const handleNavigate = (path: string) => {
-    // Check if path has query parameter for product selection
-    if (path.includes("?product=")) {
-      const [basePath, query] = path.split("?");
-      const params = new URLSearchParams(query);
-      const productId = params.get("product");
+  // The selected quality report lives in the URL (`?product=cpi`) rather than
+  // in component state, so reports stay linkable and survive a page reload.
+  const selectedProduct = searchParams.get("product") ?? "poverty-inequality";
 
-      navigate(basePath + "?" + query);
-      if (productId) {
-        setSelectedProduct(productId);
-      }
-    } else {
-      navigate(path);
-    }
+  const handleNavigate = (path: string) => {
+    navigate(path);
   };
 
   const renderContent = () => {
@@ -51,12 +41,7 @@ export default function Dashboard() {
       case "/quality/kspm":
         return <Kspm />;
       case "/metadata/quality-reports":
-        return (
-          <QualityReports
-            selectedProduct={selectedProduct}
-            onProductChange={setSelectedProduct}
-          />
-        );
+        return <QualityReports selectedProduct={selectedProduct} />;
       case "/metadata/classification/international":
         return <ClassificationInternational />;
       case "/metadata/classification/national":
